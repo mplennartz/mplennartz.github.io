@@ -1,0 +1,152 @@
+/* Cursed Conspiracy Theme - Color Scheme inspired by reference images */
+:root {
+  /* Dark Theme Colors */
+  --bg-primary: #000000;
+  --bg-secondary: #0a0a0a;
+  --bg-tertiary: #1a1a1a;
+  --bg-box: #111111;
+  
+  /* Text Colors */
+  --text-primary: #00ff00;    /* Bright green - classic terminal */
+  --text-secondary: #33ff33;  /* Lighter green */
+  --text-white: #ffffff;      /* White for readability */
+  --text-gray: #cccccc;       /* Light gray */
+  --text-accent: #ffff00;     /* Yellow highlights */
+  --text-warning: #ff0000;    /* Red for warnings/spooky */
+  --text-dim: #999999;        /* Dimmed text */
+  
+  /* Border Colors */
+  --border-primary: #333333;
+  --border-bright: #00ff00;
+  --border-warning: #ff0000;
+  
+  /* Effects */
+  --glow-green: 0 0 10px var(--text-primary);
+  --glow-red: 0 0 10px var(--text-warning);
+  --glow-yellow: 0 0 8px var(--text-accent);
+  
+  /* Fonts */
+  --font-primary: 'MS Sans Serif', Arial, sans-serif;
+  --font-mono: 'Courier New', 'Lucida Console', monospace;
+  --font-retro: 'Times New Roman', serif;
+}
+
+/* Base Styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-primary);
+  color: var(--text-white);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  line-height: 1.4;
+  background-image: 
+    radial-gradient(circle at 25% 25%, #001100 0%, transparent 50%),
+    radial-gradient(circle at 75% 75%, #000011 0%, transparent 50%);
+}
+
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+/* Links */
+a {
+  color: var(--text-accent);
+  text-decoration: underline;
+}
+
+a:hover {
+  color: var(--text-primary);
+  text-shadow: var(--glow-green);
+}
+
+/* Buttons */
+.enter-button, .nav-button, .retro-button {
+  display: inline-block;
+  background-color: var(--bg-secondary);
+  color: var(--text-primary);
+  border: 2px solid var(--border-bright);
+  padding: 8px 16px;
+  text-decoration: none;
+  font-family: var(--font-mono);
+  font-weight: bold;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.enter-button:hover, .nav-button:hover, .retro-button:hover {
+  background-color: var(--bg-tertiary);
+  text-shadow: var(--glow-green);
+  box-shadow: var(--glow-green);
+}
+
+/* Warning/Alert Styles */
+.warning-text {
+  background-color: var(--bg-box);
+  border: 1px solid var(--border-primary);
+  padding: 15px;
+  margin: 20px 0;
+}
+
+.important {
+  color: var(--text-accent);
+  font-weight: bold;
+}
+
+.small-print {
+  font-size: 12px;
+  color: var(--text-dim);
+  font-style: italic;
+}
+
+/* Retro Elements */
+.blink {
+  animation: blink 1s linear infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Cursor Effects */
+.terminal-cursor::after {
+  content: '█';
+  animation: blink 1s linear infinite;
+  color: var(--text-primary);
+}
+
+/* Atmospheric Effects */
+.atmospheric {
+  text-shadow: 0 0 5px currentColor;
+}
+
+.spooky {
+  color: var(--text-warning);
+  text-shadow: var(--glow-red);
+}
+
+.highlight {
+  background-color: var(--text-accent);
+  color: var(--bg-primary);
+  padding: 2px 4px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;
+  }
+  
+  body {
+    font-size: 12px;
+  }
+} 

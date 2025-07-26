@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case File: [STORY TITLE] - Cursed Investigations Bureau</title>
+    <link rel="stylesheet" href="../../css/cursed-theme.css">
+    <link rel="stylesheet" href="../../css/retro-style.css">
+    <style>
+        /* Story-specific styling */
+        .case-header {
+            background-color: var(--bg-box);
+            border: 3px solid var(--border-warning);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .case-number {
+            color: var(--text-warning);
+            font-family: var(--font-mono);
+            font-size: 24px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .case-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: var(--glow-green);
+        }
+        
+        .classification {
+            background-color: var(--text-warning);
+            color: var(--bg-primary);
+            padding: 5px 15px;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        
+        .story-content {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .story-section {
+            margin: 25px 0;
+        }
+        
+        .section-header {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 18px;
+            border-bottom: 1px solid var(--border-primary);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .evidence-box {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-primary);
+            padding: 15px;
+            margin: 15px 0;
+            font-family: var(--font-mono);
+            font-size: 13px;
+        }
+        
+        .witness-statement {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-accent);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .timestamp {
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+        }
+        
+        .warning-box {
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--text-warning);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title">CURSED INVESTIGATIONS BUREAU</h1>
+            <p class="site-subtitle">~~ Classified Case File Access ~~</p>
+        </div>
+
+        <!-- Case Header -->
+        <div class="case-header">
+            <h1 class="case-number">CASE FILE #[CASE-NUMBER]</h1>
+            <h2 class="case-title">[STORY TITLE]</h2>
+            <div class="classification">CLASSIFIED - [THREAT LEVEL]</div>
+            <p class="timestamp">Date Opened: [DATE] | Last Updated: [UPDATE-DATE]</p>
+        </div>
+
+        <!-- Investigation Details Table -->
+        <div class="content-section">
+            <table class="retro-table">
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Lead Investigator</td>
+                    <td><span class="terminal-font">[INVESTIGATOR NAME]</span></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>[LOCATION]</td>
+                </tr>
+                <tr>
+                    <td>Phenomenon Type</td>
+                    <td>[PHENOMENON TYPE]</td>
+                </tr>
+                <tr>
+                    <td>Threat Level</td>
+                    <td><span class="spooky">[THREAT DESCRIPTION]</span></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><span class="atmospheric">[CASE STATUS]</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Story Content -->
+        <div class="story-content">
+            <div class="story-section">
+                <h3 class="section-header">📋 INITIAL REPORT</h3>
+                <p>[Write the initial report describing how the Bureau became involved in this case. Set the scene and establish the basic facts.]</p>
+                
+                <p>[Continue with details about when and where the phenomena began, initial witness reports, etc.]</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">👁️ WITNESS TESTIMONIES</h3>
+                
+                <div class="witness-statement">
+                    <strong>[Witness Name, Title]:</strong><br>
+                    "[Quote from witness describing their experience. Use <span class="spooky">spooky</span> or <span class="atmospheric">atmospheric</span> classes for emphasis.]"
+                    <div class="timestamp">Recorded: [Date and Time]</div>
+                </div>
+                
+                <div class="witness-statement">
+                    <strong>[Second Witness Name, Title]:</strong><br>
+                    "[Another witness statement. Add multiple as needed.]"
+                    <div class="timestamp">Recorded: [Date and Time]</div>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🔍 BUREAU INVESTIGATION</h3>
+                <p>[Describe the Bureau's investigation process, equipment used, initial findings.]</p>
+                
+                <div class="evidence-box">
+                    <strong>EVIDENCE LOG - ENTRY #[NUMBER]</strong><br>
+                    [List specific evidence with technical details]<br>
+                    [EMF readings, temperature changes, audio recordings, etc.]<br>
+                    [Photo/video evidence descriptions]<br>
+                    [Any other measurable phenomena]
+                </div>
+                
+                <p>[Describe historical research, background investigation, or any connections discovered.]</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">[CUSTOM SECTION HEADER]</h3>
+                <p>[Add custom sections as needed for your specific story - could be "Digital Manifestations", "Cryptid Behavior", "Government Connection", etc.]</p>
+                
+                <div class="evidence-box">
+                    <strong>[EVIDENCE TYPE]:</strong><br>
+                    [Details of specific evidence for this section]
+                </div>
+                
+                <p>[Continue narrative for this section.]</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">⚠️ CURRENT STATUS</h3>
+                <p>[Describe the current state of the investigation/phenomenon.]</p>
+                
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ [WARNING TYPE] ⚠️</strong></p>
+                    <p>[Safety warnings, recommendations, or ongoing threats.]</p>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">📊 INVESTIGATION CONCLUSION</h3>
+                <p>[Summarize findings, classify the phenomenon, provide recommendations.]</p>
+                
+                <div class="evidence-box">
+                    <strong>CASE STATUS:</strong> [STATUS]<br>
+                    <strong>THREAT LEVEL:</strong> [LEVEL]<br>
+                    <strong>NEXT REVIEW:</strong> [DATE]<br>
+                    <strong>CLEARANCE REQUIRED:</strong> [CLEARANCE LEVEL]
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Cases -->
+        <div class="content-section">
+            <h2 class="section-title">🔗 RELATED INVESTIGATIONS</h2>
+            <ul>
+                <li><a href="[LINK]">[Related Case Title]</a></li>
+                <li><a href="[LINK]">[Related Case Title]</a></li>
+                <li><a href="../../investigators.html">More cases by [Investigator Name]</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-nav">
+            <a href="../../stories.html" class="nav-button">← BACK TO CASE FILES</a>
+            <a href="../../home.html" class="nav-button">MAIN ARCHIVES</a>
+            <a href="[NEXT-STORY-LINK]" class="nav-button">NEXT CASE →</a>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 Cursed Investigations Bureau | Established Never</p>
+            <p class="small-print">This case file is classified fiction created for entertainment purposes only.</p>
+        </div>
+    </div>
+
+    <script src="../../js/retro-effects.js"></script>
+</body>
+</html>
+
+<!--
+TEMPLATE INSTRUCTIONS:
+1. Copy this file to your story location (e.g., stories/ghost-stories/new-story.html)
+2. Replace all [BRACKETED] placeholders with your content
+3. Update file paths (../) if needed based on your directory depth
+4. Add/remove witness statements and evidence boxes as needed
+5. Customize section headers for your story type
+6. Update navigation links to point to actual files
+7. Choose appropriate CSS classes:
+   - .spooky for red/scary text
+   - .atmospheric for green glowing text
+   - .highlight for yellow background text
+   - .terminal-font for monospace text
+   - .blink for blinking animation
+
+SUGGESTED CASE NUMBERS:
+- Ghost Stories: CIB-001 to CIB-099
+- Cryptid Sightings: CIB-100 to CIB-199  
+- Conspiracy Files: CIB-200 to CIB-299
+- Other Phenomena: CIB-300+
+
+THREAT LEVELS:
+- LOW THREAT (green)
+- MEDIUM THREAT (yellow)
+- HIGH THREAT (red)
+--> 

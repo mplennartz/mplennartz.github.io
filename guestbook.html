@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook - Cursed Investigations Bureau</title>
+    <link rel="stylesheet" href="css/cursed-theme.css">
+    <link rel="stylesheet" href="css/retro-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title">CURSED INVESTIGATIONS BUREAU</h1>
+            <p class="site-subtitle">~~ Visitor Guestbook ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 001337</span> 
+                <span class="blink">●</span>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="home.html" class="nav-button">HOME</a>
+                <a href="investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="stories.html" class="nav-button">CASE FILES</a>
+                <a href="evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="contact.html" class="nav-button">CONTACT</a>
+                <a href="guestbook.html" class="nav-button active">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <!-- Guestbook Header -->
+        <div class="content-section">
+            <h2 class="section-title">VISITOR GUESTBOOK</h2>
+            <p>Sign our digital guestbook! Share your own paranormal experiences, theories about our investigations, or just say hello. All entries are <span class="terminal-font">MONITORED</span> for security purposes.</p>
+            
+            <div class="warning-box">
+                <span class="blink">⚠</span> WARNING: Submissions may be reviewed by federal agencies <span class="blink">⚠</span>
+            </div>
+        </div>
+
+        <!-- Guestbook Form -->
+        <div class="content-section">
+            <h3 class="subsection-title">LEAVE A MESSAGE</h3>
+            <form class="guestbook-form" id="guestbookForm">
+                <table class="form-table">
+                    <tr>
+                        <td class="form-label">Name:</td>
+                        <td><input type="text" name="name" class="form-input" placeholder="Enter your alias..." maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Location:</td>
+                        <td><input type="text" name="location" class="form-input" placeholder="City, State/Country" maxlength="50"></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Clearance Level:</td>
+                        <td>
+                            <select name="clearance" class="form-input">
+                                <option value="civilian">Civilian</option>
+                                <option value="informant">Informant</option>
+                                <option value="investigator">Investigator</option>
+                                <option value="classified">CLASSIFIED</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Message:</td>
+                        <td><textarea name="message" class="form-textarea" placeholder="Share your experience, theory, or message..." maxlength="500"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="submit-button" disabled>SUBMIT MESSAGE</button>
+                            <button type="reset" class="reset-button">CLEAR FORM</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- Existing Messages -->
+        <div class="content-section">
+            <h3 class="subsection-title">RECENT MESSAGES</h3>
+            <div class="guestbook-entries" id="guestbookEntries">
+                
+                <!-- Sample Entry 1 -->
+                <div class="guestbook-entry">
+                    <div class="entry-header">
+                        <span class="entry-name">TruthSeeker42</span>
+                        <span class="entry-location">Portland, OR</span>
+                        <span class="entry-clearance civilian">Civilian</span>
+                        <span class="entry-date">Oct 28, 1998 - 11:47 PM</span>
+                    </div>
+                    <div class="entry-message">
+                        I've been following your investigations for months. That server room phantom story hits close to home - we've had similar experiences at my office building. Strange electrical anomalies, cold spots near the mainframe... Keep up the excellent work!
+                    </div>
+                </div>
+
+                <!-- Sample Entry 2 -->
+                <div class="guestbook-entry">
+                    <div class="entry-header">
+                        <span class="entry-name">Agent_X</span>
+                        <span class="entry-location">[REDACTED]</span>
+                        <span class="entry-clearance classified">CLASSIFIED</span>
+                        <span class="entry-date">Oct 27, 1998 - 3:33 AM</span>
+                    </div>
+                    <div class="entry-message">
+                        Your Bigfoot digital footprint analysis is remarkably accurate. We have additional footage that corroborates your findings. Contact secured channels for data exchange. Trust no one.
+                    </div>
+                </div>
+
+                <!-- Sample Entry 3 -->
+                <div class="guestbook-entry">
+                    <div class="entry-header">
+                        <span class="entry-name">CryptidWatcher</span>
+                        <span class="entry-location">Seattle, WA</span>
+                        <span class="entry-clearance informant">Informant</span>
+                        <span class="entry-date">Oct 25, 1998 - 7:15 PM</span>
+                    </div>
+                    <div class="entry-message">
+                        Amazing work on the coffee shop Sasquatch documentation! I'm a regular at that café and can confirm the sightings. The creature seems peaceful and just wants good espresso. Who can blame it?
+                    </div>
+                </div>
+
+                <!-- Sample Entry 4 -->
+                <div class="guestbook-entry">
+                    <div class="entry-header">
+                        <span class="entry-name">WebMaster_1998</span>
+                        <span class="entry-location">Silicon Valley, CA</span>
+                        <span class="entry-clearance investigator">Investigator</span>
+                        <span class="entry-date">Oct 23, 1998 - 1:23 PM</span>
+                    </div>
+                    <div class="entry-message">
+                        Excellent site design! Very authentic to our era. The paranormal phenomena you're documenting align with similar reports in our databases. Keep digging for the truth - they don't want us to know.
+                    </div>
+                </div>
+
+                <!-- Sample Entry 5 -->
+                <div class="guestbook-entry">
+                    <div class="entry-header">
+                        <span class="entry-name">Anonymous</span>
+                        <span class="entry-location">Area 51</span>
+                        <span class="entry-clearance civilian">Civilian</span>
+                        <span class="entry-date">Oct 20, 1998 - 11:11 PM</span>
+                    </div>
+                    <div class="entry-message">
+                        The USB conspiracy goes deeper than you know. I worked on Project DIGITAL PHANTOM before I "retired." Check the serial numbers. Follow the paper trail. But be careful - they're watching.
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="retro-footer">
+            <p class="terminal-font">* All guestbook entries are logged and monitored * Suspicious activity will be reported *</p>
+            <div class="web-ring">
+                <a href="#" class="web-ring-link">← Previous Site</a> |
+                <a href="#" class="web-ring-link">Paranormal Web Ring</a> |
+                <a href="#" class="web-ring-link">Next Site →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/retro-effects.js"></script>
+    <script src="js/guestbook.js"></script>
+</body>
+</html> 

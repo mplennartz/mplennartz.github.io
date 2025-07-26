@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Cursed Investigations Bureau</title>
+    <link rel="stylesheet" href="css/cursed-theme.css">
+    <link rel="stylesheet" href="css/retro-style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title">CURSED INVESTIGATIONS BUREAU</h1>
+            <p class="site-subtitle">~~ Contact the Bureau ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 001337</span> 
+                <span class="blink">●</span>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="home.html" class="nav-button">HOME</a>
+                <a href="investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="stories.html" class="nav-button">CASE FILES</a>
+                <a href="evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="contact.html" class="nav-button active">CONTACT</a>
+                <a href="guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <!-- Contact Information -->
+        <div class="content-section">
+            <h2 class="section-title">CONTACT THE BUREAU</h2>
+            <p>Have a paranormal experience to report? Spotted a cryptid? Discovered evidence of a government conspiracy? Contact our investigators through the secure channels below.</p>
+            
+            <div class="warning-box">
+                <span class="blink">⚠</span> All communications are encrypted and monitored for your protection <span class="blink">⚠</span>
+            </div>
+        </div>
+
+        <!-- Contact Methods -->
+        <div class="content-section">
+            <h3 class="subsection-title">SECURE CONTACT METHODS</h3>
+            
+            <div class="warning-box">
+                <span class="blink">⚠</span> CONTACT INFORMATION TEMPORARILY UNAVAILABLE <span class="blink">⚠</span><br>
+                <span class="small-text">All secure communication channels are currently undergoing maintenance for enhanced security protocols.</span>
+            </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="content-section">
+            <h3 class="subsection-title">SECURE TRANSMISSION FORM</h3>
+            <form class="contact-form" id="contactForm">
+                <table class="form-table">
+                    <tr>
+                        <td class="form-label">Contact Name:</td>
+                        <td><input type="text" name="name" class="form-input" placeholder="Enter your name or alias..." required></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Email Address:</td>
+                        <td><input type="email" name="email" class="form-input" placeholder="your.email@domain.com" required></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Security Level:</td>
+                        <td>
+                            <select name="security" class="form-input" required>
+                                <option value="">Select Classification...</option>
+                                <option value="public">Public Information</option>
+                                <option value="confidential">Confidential</option>
+                                <option value="secret">Secret</option>
+                                <option value="top-secret">Top Secret</option>
+                                <option value="cosmic">Cosmic Clearance</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Incident Type:</td>
+                        <td>
+                            <select name="incident" class="form-input" required>
+                                <option value="">Select Type...</option>
+                                <option value="ghost">Paranormal/Ghost Activity</option>
+                                <option value="cryptid">Cryptid Sighting</option>
+                                <option value="ufo">UFO/Alien Encounter</option>
+                                <option value="conspiracy">Government Conspiracy</option>
+                                <option value="technology">Supernatural Technology</option>
+                                <option value="other">Other Unexplained Phenomenon</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Location:</td>
+                        <td><input type="text" name="location" class="form-input" placeholder="City, State/Country (or coordinates)" required></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Date of Incident:</td>
+                        <td><input type="date" name="date" class="form-input" required></td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Urgency Level:</td>
+                        <td>
+                            <input type="radio" name="urgency" value="low" id="urgency-low"> <label for="urgency-low">Low</label>&nbsp;&nbsp;
+                            <input type="radio" name="urgency" value="medium" id="urgency-medium"> <label for="urgency-medium">Medium</label>&nbsp;&nbsp;
+                            <input type="radio" name="urgency" value="high" id="urgency-high"> <label for="urgency-high">High</label>&nbsp;&nbsp;
+                            <input type="radio" name="urgency" value="critical" id="urgency-critical"> <label for="urgency-critical" class="spooky">CRITICAL</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="form-label">Message:</td>
+                        <td><textarea name="message" class="form-textarea" placeholder="Describe your encounter, evidence, or information in detail..." required></textarea></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td>
+                            <button type="submit" class="submit-button" disabled>TRANSMIT SECURELY</button>
+                            <button type="reset" class="reset-button">CLEAR & RESTART</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+        <!-- Office Hours -->
+        <div class="content-section">
+            <h3 class="subsection-title">BUREAU OPERATING HOURS</h3>
+            <table class="hours-table">
+                <tr>
+                    <td>Monday - Friday:</td>
+                    <td class="terminal-font">9:00 AM - 11:59 PM EST</td>
+                </tr>
+                <tr>
+                    <td>Saturday:</td>
+                    <td class="terminal-font">12:00 PM - 3:33 AM EST</td>
+                </tr>
+                <tr>
+                    <td>Sunday:</td>
+                    <td class="terminal-font">CLOSED (Maintenance Day)</td>
+                </tr>
+                <tr>
+                    <td>Halloween:</td>
+                    <td class="terminal-font spooky">24/7 EMERGENCY OPERATIONS</td>
+                </tr>
+            </table>
+            <p class="small-text">* Response times may vary during heightened paranormal activity *</p>
+        </div>
+
+        <!-- Emergency Protocols -->
+        <div class="content-section">
+            <h3 class="subsection-title">EMERGENCY PROTOCOLS</h3>
+            <div class="emergency-box">
+                <h4>IMMEDIATE THREAT SITUATIONS:</h4>
+                <ul>
+                    <li>🔴 <strong>Life-threatening paranormal entity:</strong> Call 911, then our emergency hotline</li>
+                    <li>🟡 <strong>Active government surveillance:</strong> Use secure postal mail only</li>
+                    <li>🟢 <strong>Evidence deteriorating:</strong> Fax photos immediately to secure line</li>
+                    <li>⚫ <strong>Dimensional breach:</strong> Evacuate area, call Cosmic Clearance line</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="retro-footer">
+            <p class="terminal-font">* All transmissions are logged for quality assurance and security purposes *</p>
+            <div class="web-ring">
+                <a href="#" class="web-ring-link">← Paranormal Network</a> |
+                <a href="#" class="web-ring-link">Truth Seekers Ring</a> |
+                <a href="#" class="web-ring-link">Conspiracy Web →</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/retro-effects.js"></script>
+    <script src="js/contact.js"></script>
+</body>
+</html> 

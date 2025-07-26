@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Case Files - Cursed Investigations Bureau</title>
+    <link rel="stylesheet" href="css/cursed-theme.css">
+    <link rel="stylesheet" href="css/retro-style.css">
+    <style>
+        .story-category {
+            margin: 30px 0;
+        }
+        
+        .category-header {
+            background: linear-gradient(90deg, var(--bg-secondary), var(--bg-box), var(--bg-secondary));
+            border: 2px outset var(--border-primary);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+        
+        .category-title {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 20px;
+            margin: 0 0 5px 0;
+        }
+        
+        .category-description {
+            color: var(--text-white);
+            font-size: 14px;
+            font-style: italic;
+        }
+        
+        .story-list {
+            display: grid;
+            gap: 15px;
+        }
+        
+        .story-card {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+        
+        .story-card:hover {
+            border-color: var(--border-bright);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+        
+        .story-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        
+        .story-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 16px;
+            margin: 0;
+            text-decoration: none;
+        }
+        
+        .story-title:hover {
+            text-shadow: var(--glow-green);
+        }
+        
+        .story-meta {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--text-dim);
+            text-align: right;
+        }
+        
+        .story-description {
+            color: var(--text-white);
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 0;
+        }
+        
+        .story-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+        
+        .story-tag {
+            background-color: var(--bg-secondary);
+            color: var(--text-accent);
+            font-size: 10px;
+            padding: 2px 6px;
+            border: 1px solid var(--border-primary);
+            font-family: var(--font-mono);
+        }
+        
+        .danger-level {
+            padding: 2px 6px;
+            font-size: 11px;
+            font-family: var(--font-mono);
+            border: 1px solid;
+        }
+        
+        .danger-low { 
+            background-color: var(--text-primary); 
+            color: var(--bg-primary); 
+            border-color: var(--text-primary);
+        }
+        
+        .danger-medium { 
+            background-color: var(--text-accent); 
+            color: var(--bg-primary); 
+            border-color: var(--text-accent);
+        }
+        
+        .danger-high { 
+            background-color: var(--text-warning); 
+            color: var(--bg-primary); 
+            border-color: var(--text-warning);
+        }
+        
+        @media (max-width: 600px) {
+            .story-header {
+                flex-direction: column;
+            }
+            
+            .story-meta {
+                text-align: left;
+            }
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title">CURSED INVESTIGATIONS BUREAU</h1>
+            <p class="site-subtitle">~~ Documenting the Unexplained Since Never ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 001337</span> 
+                <span class="blink">●</span>
+            </div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="home.html" class="nav-button">HOME</a>
+                <a href="investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="stories.html" class="nav-button">CASE FILES</a>
+                <a href="evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="contact.html" class="nav-button">CONTACT</a>
+                <a href="guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <!-- Page Title -->
+        <div class="content-section">
+            <h2 class="section-title">📁 CLASSIFIED CASE FILES 📁</h2>
+            <p>Access granted to level-classified documentation of supernatural encounters, cryptid sightings, and government cover-ups. 
+               <span class="spooky">Viewer discretion advised.</span></p>
+            
+            <div class="marquee">
+                <div class="marquee-text">*** BREAKING: New cases added weekly *** Some files contain GRAPHIC EVIDENCE *** Report suspicious activity immediately ***</div>
+            </div>
+        </div>
+
+        <!-- Ghost Stories Category -->
+        <div class="story-category" id="ghost-stories">
+            <div class="category-header">
+                <h3 class="category-title">👻 SPECTRAL ENCOUNTERS</h3>
+                <p class="category-description">Digital-age hauntings and technological manifestations of the deceased</p>
+            </div>
+            
+            <div class="story-list">
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/ghost-stories/server-room-phantom.html" class="story-title">The Phantom of Server Room B</a>
+                        <div class="story-meta">
+                            Case #CIB-001<br>
+                            Date: 10/28/98<br>
+                            <span class="danger-level danger-medium">MEDIUM THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Corporate employees report mysterious system crashes, unexplained temperature drops, and apparitions 
+                        appearing on security monitors in the company's server room. Investigation reveals tragic history.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">CORPORATE HAUNTING</span>
+                        <span class="story-tag">DIGITAL MANIFESTATION</span>
+                        <span class="story-tag">INVESTIGATOR 07</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/ghost-stories/wifi-dead-zone.html" class="story-title">The WiFi Dead Zone Incident</a>
+                        <div class="story-meta">
+                            Case #CIB-007<br>
+                            Date: 10/15/98<br>
+                            <span class="danger-level danger-low">LOW THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        An entire city block experiences complete internet blackout every night at 3:33 AM. Investigation 
+                        uncovers connection to historical tragedy and restless spirits interfering with modern technology.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">TECHNOLOGY INTERFERENCE</span>
+                        <span class="story-tag">RECURRING PHENOMENON</span>
+                        <span class="story-tag">INVESTIGATOR 89</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/ghost-stories/vanishing-forum-post.html" class="story-title">The Vanishing Forum Post</a>
+                        <div class="story-meta">
+                            Case #CIB-063<br>
+                            Date: 11/12/98<br>
+                            <span class="danger-level danger-medium">MEDIUM THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Multiple users witness detailed forum post describing a violent murder, only to find it vanishes 
+                        without trace. Digital forensics reveal no evidence despite consistent witness testimony.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">DIGITAL ANOMALY</span>
+                        <span class="story-tag">PHANTOM EVIDENCE</span>
+                        <span class="story-tag">INVESTIGATOR 42</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Cryptid Sightings Category -->
+        <div class="story-category" id="cryptid-sightings">
+            <div class="category-header">
+                <h3 class="category-title">🦶 CRYPTID EVIDENCE</h3>
+                <p class="category-description">Documented encounters with legendary creatures in the modern world</p>
+            </div>
+            
+            <div class="story-list">
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/cryptid-sightings/bigfoot-digital.html" class="story-title">Bigfoot's Digital Footprint</a>
+                        <div class="story-meta">
+                            Case #CIB-023<br>
+                            Date: 10/25/98<br>
+                            <span class="danger-level danger-high">HIGH THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Silicon Valley parking garage security footage captures 8-foot tall humanoid figure. Enhanced digital 
+                        analysis reveals details that challenge everything we know about legendary sasquatch behavior.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">VIDEO EVIDENCE</span>
+                        <span class="story-tag">URBAN SASQUATCH</span>
+                        <span class="story-tag">INVESTIGATOR 23</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/cryptid-sightings/nessie-webcam.html" class="story-title">Nessie's Webcam Appearance</a>
+                        <div class="story-meta">
+                            Case #CIB-031<br>
+                            Date: 09/12/98<br>
+                            <span class="danger-level danger-medium">MEDIUM THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Live tourism webcam at Loch Ness captures 47 seconds of unexplained aquatic movement. Computer 
+                        enhancement reveals structure unlike any known marine life. Could this be definitive proof?
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">AQUATIC CRYPTID</span>
+                        <span class="story-tag">WEBCAM EVIDENCE</span>
+                        <span class="story-tag">INVESTIGATOR 66</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/cryptid-sightings/mothman-social.html" class="story-title">Mothman's Social Media Presence</a>
+                        <div class="story-meta">
+                            Case #CIB-088<br>
+                            Date: 10/31/98<br>
+                            <span class="danger-level danger-high">HIGH THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Multiple witnesses report winged humanoid sightings that correlate with mysterious forum posts 
+                        predicting local disasters. Digital tracking reveals impossible posting patterns and <span class="spooky">ominous warnings</span>.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">PROPHECY</span>
+                        <span class="story-tag">DIGITAL COMMUNICATION</span>
+                        <span class="story-tag">INVESTIGATOR 13</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/cryptid-sightings/coffee-shop-encounter.html" class="story-title">Cryptid Coffee Shop Encounter</a>
+                        <div class="story-meta">
+                            Case #CIB-055<br>
+                            Date: 09/03/98<br>
+                            <span class="danger-level danger-low">LOW THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        7-foot tall fur-covered humanoid regularly visits Seattle coffee shop, displaying sophisticated 
+                        understanding of coffee culture and payment systems. Peaceful coexistence with local community.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">URBAN CRYPTID</span>
+                        <span class="story-tag">CULTURAL INTEGRATION</span>
+                        <span class="story-tag">INVESTIGATOR 07</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/cryptid-sightings/wild-at-heart.html" class="story-title">Wild at Heart</a>
+                        <div class="story-meta">
+                            Case #CIB-089<br>
+                            Date: 12/15/98<br>
+                            <span class="danger-level danger-high">HIGH THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        New Jersey Pine Barrens investigation uncovers feral humanoid population with connection to Jersey Devil legend. 
+                        Mangled body discovery leads to cave system exploration and <span class="spooky">violent cryptid encounter</span>.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">FERAL HUMANOID</span>
+                        <span class="story-tag">JERSEY DEVIL</span>
+                        <span class="story-tag">INVESTIGATOR JORDAN</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Conspiracy Files Category -->
+        <div class="story-category" id="conspiracy-files">
+            <div class="category-header">
+                <h3 class="category-title">🕵️ GOVERNMENT COVER-UPS</h3>
+                <p class="category-description">Classified documents and evidence of institutional supernatural suppression</p>
+            </div>
+            
+            <div class="story-list">
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/conspiracy-files/usb-conspiracy.html" class="story-title">The USB Drive Conspiracy</a>
+                        <div class="story-meta">
+                            Case #CIB-042<br>
+                            Date: 10/20/98<br>
+                            <span class="danger-level danger-high">HIGH THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Anonymous source leaks government USB drives containing classified supernatural research data. 
+                        Files reveal decades of cover-ups and suggest <span class="spooky">active monitoring</span> of paranormal investigators.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">LEAKED DOCUMENTS</span>
+                        <span class="story-tag">SURVEILLANCE</span>
+                        <span class="story-tag">INVESTIGATOR 42</span>
+                    </div>
+                </div>
+
+                <div class="story-card">
+                    <div class="story-header">
+                        <a href="stories/conspiracy-files/bermuda-wifi.html" class="story-title">Bermuda Triangle WiFi Dead Zone</a>
+                        <div class="story-meta">
+                            Case #CIB-051<br>
+                            Date: 08/15/98<br>
+                            <span class="danger-level danger-medium">MEDIUM THREAT</span>
+                        </div>
+                    </div>
+                    <p class="story-description">
+                        Military satellite data reveals complete electronic communications blackout in classic Bermuda Triangle 
+                        coordinates. Investigation uncovers government weather modification experiments and dimensional anomalies.
+                    </p>
+                    <div class="story-tags">
+                        <span class="story-tag">DIMENSIONAL PHENOMENA</span>
+                        <span class="story-tag">MILITARY COVER-UP</span>
+                        <span class="story-tag">INVESTIGATOR 51</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Submission Form -->
+        <div class="content-section">
+            <h2 class="section-title">📝 REPORT NEW PHENOMENA</h2>
+            <p class="warning-text">
+                <strong>SECURE REPORTING SYSTEM:</strong> If you have encountered unexplained phenomena, 
+                submit your report through our encrypted channels. All submissions are thoroughly investigated.
+            </p>
+            <p>Email reports to: <span class="terminal-font">reports@cursed.gov</span> (Use PGP encryption)</p>
+            <p class="small-print">Note: False reports are prosecuted to the full extent of supernatural law.</p>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 Cursed Investigations Bureau | Established Never | 
+               <span class="terminal-font">Best viewed with Netscape Navigator 4.0</span></p>
+            <p class="small-print">This site is a work of fiction created for entertainment purposes only.</p>
+            <a href="home.html" class="nav-button">← RETURN TO MAIN ARCHIVES</a>
+        </div>
+    </div>
+
+    <script src="js/retro-effects.js"></script>
+</body>
+</html> 
