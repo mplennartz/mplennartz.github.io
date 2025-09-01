@@ -21,6 +21,19 @@
             flex: 1;
             min-width: 300px;
             max-width: 400px;
+            transition: all 0.3s ease;
+        }
+        
+        .investigator-card:hover {
+            border-color: var(--border-bright);
+            box-shadow: 0 0 10px var(--border-bright);
+            transform: translateY(-2px);
+        }
+        
+        .investigator-card a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
         }
         
         .investigator-profile {
@@ -135,17 +148,19 @@
         <div class="investigator-grid">
             <!-- Investigator 07 -->
             <div class="investigator-card">
-                <div class="investigator-profile">
-                    <div class="investigator-image">
-                        SILHOUETTE<br>CLASSIFIED
+                <a href="characters/investigator-07.html" style="text-decoration: none; color: inherit;">
+                    <div class="investigator-profile">
+                        <div class="investigator-image">
+                            SILHOUETTE<br>CLASSIFIED
+                        </div>
+                        <div class="investigator-details">
+                            <h3 class="investigator-name">INVESTIGATOR 07</h3>
+                            <div class="investigator-id">ID: CIB-007 | CLEARANCE: ALPHA</div>
+                            <p class="investigator-description">Description unknown. Currently assigned to spectral phenomena and digital hauntings.</p>
+                            <div class="investigator-status">STATUS: ACTIVE</div>
+                        </div>
                     </div>
-                    <div class="investigator-details">
-                        <h3 class="investigator-name">INVESTIGATOR 07</h3>
-                        <div class="investigator-id">ID: CIB-007 | CLEARANCE: ALPHA</div>
-                        <p class="investigator-description">Description unknown. Currently assigned to spectral phenomena and digital hauntings.</p>
-                        <div class="investigator-status">STATUS: ACTIVE</div>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <!-- Investigator 23 -->
@@ -195,17 +210,19 @@
 
             <!-- Investigator 13 -->
             <div class="investigator-card">
-                <div class="investigator-profile">
-                    <div class="investigator-image">
-                        SILHOUETTE<br>CLASSIFIED
+                <a href="characters/investigator-13.html" style="text-decoration: none; color: inherit;">
+                    <div class="investigator-profile">
+                        <div class="investigator-image">
+                            SILHOUETTE<br>CLASSIFIED
+                        </div>
+                        <div class="investigator-details">
+                            <h3 class="investigator-name">INVESTIGATOR 13</h3>
+                            <div class="investigator-id">ID: CIB-013 | CLEARANCE: OMEGA</div>
+                            <p class="investigator-description">Description unknown. <span class="spooky">WARNING:</span> Handles extremely dangerous supernatural entities.</p>
+                            <div class="investigator-status spooky">STATUS: CLASSIFIED</div>
+                        </div>
                     </div>
-                    <div class="investigator-details">
-                        <h3 class="investigator-name">INVESTIGATOR 13</h3>
-                        <div class="investigator-id">ID: CIB-013 | CLEARANCE: OMEGA</div>
-                        <p class="investigator-description">Description unknown. <span class="spooky">WARNING:</span> Handles extremely dangerous supernatural entities.</p>
-                        <div class="investigator-status spooky">STATUS: CLASSIFIED</div>
-                    </div>
-                </div>
+                </a>
             </div>
 
             <!-- Investigator 66 -->
