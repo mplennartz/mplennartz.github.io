@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - Deep Freeze</title>
+    <link rel="stylesheet" href="../../css/cursed-theme.css">
+    <link rel="stylesheet" href="../../css/retro-style.css">
+    <style>
+        /* Story-specific styling */
+        .case-header {
+            background-color: var(--bg-box);
+            border: 3px solid var(--border-warning);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .case-number {
+            color: var(--text-warning);
+            font-family: var(--font-mono);
+            font-size: 24px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .case-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: var(--glow-green);
+        }
+        
+        .classification {
+            background-color: var(--text-warning);
+            color: var(--bg-primary);
+            padding: 5px 15px;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        
+        .story-content {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .story-section {
+            margin: 25px 0;
+        }
+        
+        .section-header {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 18px;
+            border-bottom: 1px solid var(--border-primary);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .evidence-box {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-primary);
+            padding: 15px;
+            margin: 15px 0;
+            font-family: var(--font-mono);
+            font-size: 13px;
+        }
+        
+        .witness-statement {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-accent);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .timestamp {
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+        }
+        
+        .warning-box {
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--text-warning);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .classified-doc {
+            background-color: var(--bg-primary);
+            border: 2px solid var(--text-warning);
+            padding: 15px;
+            margin: 20px 0;
+            font-family: var(--font-mono);
+            font-size: 12px;
+        }
+        
+        .redacted {
+            background-color: var(--text-warning);
+            color: var(--text-warning);
+            padding: 2px 4px;
+        }
+        
+        .casualty-list {
+            margin-left: 20px;
+            line-height: 1.8;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title"><a href="../../home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+        </div>
+
+        <!-- Case Header -->
+        <div class="case-header">
+            <h1 class="case-number">CASE FILE #CIB-217</h1>
+            <h2 class="case-title">DEEP FREEZE</h2>
+            <div class="classification">CLASSIFIED - CRITICAL THREAT</div>
+            <p class="timestamp">Date Opened: March 25, 1999 | Last Updated: March 29, 1999 | Status: CLOSED - COMPROMISED</p>
+        </div>
+
+        <!-- Investigation Details Table -->
+        <div class="content-section">
+            <table class="retro-table">
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Lead Investigator</td>
+                    <td><span class="terminal-font">Investigator 66</span></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>Site Polaris Research Facility, Pituffik Space Base, Greenland</td>
+                </tr>
+                <tr>
+                    <td>Phenomenon Type</td>
+                    <td>Government Psychological Experiment / Loyalty Test / Mass Casualty Incident</td>
+                </tr>
+                <tr>
+                    <td>Threat Level</td>
+                    <td><span class="spooky">CRITICAL - INTERNAL GOVERNMENT THREAT</span></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><span class="atmospheric">CLOSED - TEAM INTEGRITY VERIFIED</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Story Content -->
+        <div class="story-content">
+            <div class="story-section">
+                <h3 class="section-header">📋 INITIAL BRIEFING</h3>
+                <p>On March 25, 1999, immediately following the successful resolution of the Stillwater Estate case, the Bureau team was summoned for emergency deployment. The notification came directly from headquarters: <span class="spooky">Pituffik Space Base in Greenland had lost all communication with Site Polaris</span>, a remote research facility, during a severe polar storm.</p>
+                
+                <p>The briefing was sparse on details. Vital systems had gone unresponsive. All personnel had gone silent. The team's mission parameters were straightforward: restore contact, secure any sensitive data, and extract survivors if necessary.</p>
+
+                <div class="evidence-box">
+                    <strong>INITIAL MISSION PARAMETERS:</strong><br>
+                    <strong>Deployment Location:</strong> Pituffik Space Base, Greenland<br>
+                    <strong>Target Site:</strong> Site Polaris (single-structure research facility)<br>
+                    <strong>Mission Objectives:</strong><br>
+                    1. Restore communication with Site Polaris<br>
+                    2. Secure classified data and server core<br>
+                    3. Extract survivors if present<br>
+                    <strong>Intelligence Provided:</strong> MINIMAL - No information on facility purpose or research activities<br>
+                    <strong>Supervising Officers:</strong> David Han (Air Force) and Maren Torres (DoD Communications Technician)
+                </div>
+
+                <p>The team boarded a federal transport aircraft bound for the Arctic. What they were told was a rescue mission would prove to be something far more sinister.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🛬 ARRIVAL AT PITUFFIK</h3>
+                <p>Upon landing at Pituffik Space Base, the team was met by David Han (Air Force) and Maren Torres (Department of Defense). Han explained that contact with Site Polaris had been lost several days prior. An all-terrain vehicle was waiting to transport the team as far as conditions would allow.</p>
+
+                <p>Torres, wearing a DoD communications patch, emphasized the priority: <span class="atmospheric">"Secure the server core and data. Washington will want that data."</span> Neither officer could - or would - provide information about what experiments the Site Polaris team had been conducting.</p>
+
+                <p><strong>Investigator 89's Initial Research:</strong> Before departure, Investigator 89 accessed Pituffik's personnel and logistics systems, uncovering several concerning anomalies:</p>
+
+                <div class="evidence-box">
+                    <strong>PRE-MISSION INTELLIGENCE FINDINGS:</strong><br>
+                    <strong>Recent Personnel Movement:</strong> 20 temporary research staff arrived 48 hours before communication loss<br>
+                    <strong>Supply Anomalies:</strong> Recent requisitions for HVAC and aerosol-rated filters under "general maintenance"<br>
+                    <strong>Historical Pattern:</strong> Site Polaris structure long-standing, but minimal resupply traffic until recent activity surge<br>
+                    <strong>Facility Status:</strong> Purpose of research facility deliberately obscured from base personnel records
+                </div>
+
+                <p>Most concerning was the personnel manifest for the 20 temporary researchers. Their backgrounds were wildly diverse - spanning NIH, FBI, Coast Guard, Department of Justice, CDC, Treasury, USDA, military police, diplomatic security, FAA, federal housing, NOAA, academic research, DARPA contractors, postal inspection, USGS, IRS, federal parks, and court administration.</p>
+
+                <p><span class="spooky">This was not a coherent research team. This was a deliberate collection of federal employees from unrelated agencies.</span></p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">❄️ SITE POLARIS - INITIAL ENTRY</h3>
+                <p>The all-terrain vehicle delivered the team to the isolated structure housing Site Polaris. The facility appeared intact from the exterior, but ominously silent. The entrance doors were closed but unlocked.</p>
+
+                <p>The team entered cautiously through the vehicle bay. What they found inside would reveal the true nature of their mission.</p>
+
+                <div class="evidence-box">
+                    <strong>CASUALTY DISCOVERY LOG - VEHICLE BAY:</strong><br>
+                    <strong>Victim #1:</strong> Officer Rebecca Yost (Federal Corrections)<br>
+                    <strong>Cause of Death:</strong> Asphyxiation - deep bruising around neck consistent with manual strangulation<br>
+                    <strong>Note:</strong> Service weapon missing from holster<br>
+                    <br>
+                    <strong>Victim #2:</strong> Matthew Cole (FAA Inspector)<br>
+                    <strong>Cause of Death:</strong> Blunt force trauma and penetrating wounds<br>
+                    <br>
+                    <strong>Estimated Time of Death:</strong> Both victims died within 48 hours of team's arrival (analysis by Investigator 13)
+                </div>
+
+                <p>As the team began documenting the scene, Investigator 13 discovered additional casualties in an adjacent utility room. Two more bodies lay near the back of the space - but standing near them was <span class="spooky">a man holding a crowbar and bloody knife, attempting to pry a power coupling from the generator.</span></p>
+
+                <p>When Investigator 13 called out, the man turned and charged with a scream. The team was forced into combat, subduing the attacker. He was identified as Aiden McCall, Treasury Auditor. Investigator 13 stabilized his injuries.</p>
+
+                <div class="evidence-box">
+                    <strong>ADDITIONAL CASUALTIES - UTILITY ROOM:</strong><br>
+                    <strong>Victim #3:</strong> Leon Ward (IRS Collections Agent) - No visible trauma<br>
+                    <strong>Victim #4:</strong> Dr. Jonas Hale (CDC Behavioral Analyst) - Beaten with heavy metal object<br>
+                    <br>
+                    <strong>Attacker (Subdued):</strong> Aiden McCall (Treasury Auditor) - Armed with crowbar and knife, attempting to disable facility power
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">💻 SECURITY ACCESS & DIGITAL INVESTIGATION</h3>
+                <p>While Investigators 66 and 89 worked to access the facility's computer systems, Investigators 13 and 07 continued sweeping the vehicle bay area. Investigator 66 successfully gained access to the security network, obtaining a complete site layout and establishing an uplink to external networks.</p>
+
+                <p>Based on the evidence accumulating - the diverse federal backgrounds of the "researchers," the suspicious timing, the violence throughout the facility - Investigator 89 began forming a hypothesis: <span class="atmospheric">This was not a research accident. This was a deliberately orchestrated scenario.</span></p>
+
+                <div class="evidence-box">
+                    <strong>COMPUTER SYSTEM ACCESS - INITIAL FINDINGS:</strong><br>
+                    <strong>Facility Map:</strong> Complete layout obtained<br>
+                    <strong>External Communications:</strong> Network uplink established<br>
+                    <strong>Security Cameras:</strong> Active and streaming<br>
+                    <strong>HVAC System:</strong> Engineering work orders show restricted access to outside contractors<br>
+                    <strong>Preliminary Assessment:</strong> Evidence consistent with controlled human behavioral experiment
+                </div>
+
+                <p>As Investigator 89 dug deeper into the system logs, Investigators 13 and 07 heard movement behind a locked door at the far end of the bay.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">⚔️ VIOLENT ENCOUNTERS</h3>
+                <p>When Investigator 13 called for the person behind the door to reveal themselves, the door suddenly opened. A woman emerged, frantic and insisting that Investigator 13 must be <span class="spooky">"contaminated"</span> and needed immediate decontamination in the medical quarantine bay.</p>
+
+                <p>At the same moment, Investigator 07 spotted a second woman approaching with a knife, clearly in a psychotic state. The knife-wielding woman charged, and simultaneously the first woman attacked Investigator 13 with a scalpel.</p>
+
+                <p>The team engaged both attackers, incapacitating them with non-lethal force. They were identified as Park Ranger Mara Steele (knife) and Postal Inspector Patricia Hsu (scalpel).</p>
+
+                <p>During the sweep of the medical bay area, Investigator 42 discovered two more bodies:</p>
+
+                <div class="evidence-box">
+                    <strong>MEDICAL BAY AREA CASUALTIES:</strong><br>
+                    <strong>Victim #5:</strong> Samuel Keener (DoJ Antitrust Lawyer) - Crushed to death<br>
+                    <strong>Victim #6:</strong> Connor Bell (USGS Surveyor) - Beaten to death<br>
+                    <br>
+                    <strong>Attackers (Subdued):</strong><br>
+                    - Park Ranger Mara Steele<br>
+                    - Postal Inspector Patricia Hsu<br>
+                    Both exhibiting severe paranoid and aggressive behavior
+                </div>
+
+                <p>As Investigator 89 finished examining computer records and moved to rejoin the team, he was suddenly attacked from behind by a man in military uniform. A second woman joined the assault. The team quickly responded, subduing both attackers: Lt. Alan Devereux (Coast Guard) and Special Agent Kira Boyd (FBI).</p>
+
+                <p>The pattern was unmistakable: <span class="spooky">The temporary "researchers" had been driven to homicidal violence against each other.</span></p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🎭 THE ASSEMBLY HALL</h3>
+                <p>Continuing through the facility, the team entered an assembly hall. Two more bodies were discovered:</p>
+
+                <div class="evidence-box">
+                    <strong>ASSEMBLY HALL CASUALTIES:</strong><br>
+                    <strong>Victim #7:</strong> Dr. Valerie Ng (NIH Researcher) - Multiple traumatic injuries, found near stage<br>
+                    <strong>Victim #8:</strong> Dr. Priya Deshmukh (USDA Food Scientist) - No visible trauma, found in seating area
+                </div>
+
+                <p>A computer terminal in the assembly hall was active with the login cursor flashing. Investigator 89 successfully accessed the system but found it contained only standard facility scheduling - nothing that explained the catastrophe.</p>
+
+                <p>The team proceeded toward the server room, their priority objective. The route passed through barracks and tunnel sections. In one barracks room, they found Diana Collier (Diplomatic Security) deceased.</p>
+
+                <p>As they approached a tunnel junction, they encountered a man frantically working on the security camera system, muttering about <span class="atmospheric">"fixing the cameras"</span> so <span class="spooky">"they won't see you and kill you."</span></p>
+
+                <p>When questioned, the man - NOAA Technician Luis Tran - insisted that people watching through the cameras would kill anyone they saw. He appeared hyper-focused but not immediately violent. The team decided to continue to the server room and return for him.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🖥️ THE SERVER ROOM</h3>
+                <p>The server room door was locked. After breaching the lock, Investigator 42 entered first. Immediately, a man wielding a hammer attacked Investigator 42's service dog, Titan. The man appeared to be defending the computer terminal.</p>
+
+                <p>The team engaged. A single shot from Investigator 07's rifle ended the threat - but the bullet ricocheted and damaged a section of the server array, complicating data recovery. The attacker was Dr. Tomoko Ishida, a DARPA contractor.</p>
+
+                <div class="evidence-box">
+                    <strong>SERVER ROOM INCIDENT:</strong><br>
+                    <strong>Victim #9:</strong> Dr. Tomoko Ishida (DARPA Contractor) - Killed while defending server terminal<br>
+                    <strong>Collateral Damage:</strong> Partial server damage from ricochet<br>
+                    <strong>K-9 Status:</strong> Investigator 42's service dog injured but stable
+                </div>
+
+                <p>Investigator 89 immediately began working on data extraction from the damaged servers while the rest of the team continued sweeping the facility.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🔍 GATHERING THE SURVIVORS</h3>
+                <p>In a room adjacent to the server room, Investigators 07 and 66 discovered Norma Ruiz (Federal Housing Regulator) obsessively shredding stacks of blank paper. She was fixated on her task and difficult to engage, but once she exhausted her paper supply, they convinced her to accompany them to the medical bay where other subdued individuals were being secured.</p>
+
+                <p>Investigator 13, who had been monitoring Luis Tran (the NOAA technician working on cameras), observed Investigator 66 escorting Ruiz past. Investigator 13 attempted to convince Tran to come along as well, but Tran insisted he couldn't leave because <span class="spooky">"Neil will see them through the cameras."</span></p>
+
+                <p>Investigator 66 employed a clever tactic - offering Tran a cell phone and claiming it would provide "protection from the cameras." Tran accepted the phone and agreed to go to the medical bay.</p>
+
+                <p>Investigators 13 and 66 then encountered another locked door. Behind it was Neil Garrison (Federal Court Clerk), who absolutely refused to emerge despite all attempts at persuasion.</p>
+
+                <p>In the facility's mess hall, Investigator 42 and Titan encountered Sgt. Peter Thorne (Army MP), who attacked on sight. Investigator 42 and Titan subdued him quickly.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🚨 THE TRUTH REVEALED</h3>
+                <p>While the team secured survivors throughout the facility, Investigator 89 made breakthrough discoveries in the server room that revealed the horrifying truth about Site Polaris.</p>
+
+                <div class="evidence-box">
+                    <strong>SERVER DATA ANALYSIS - CRITICAL FINDINGS:</strong><br>
+                    <br>
+                    <strong>HVAC SYSTEM:</strong><br>
+                    - Scheduled automated tasks corresponding to incident timeline<br>
+                    - Tasks programmed remotely from off-site location<br>
+                    - Aerosol delivery system modifications by outside contractors<br>
+                    <br>
+                    <strong>HYPOTHESIS:</strong> Aerosolized chemical or biological agent delivered through HVAC to induce violent psychosis
+                </div>
+
+                <p>The HVAC findings confirmed the team's suspicions, but Investigator 89 needed access to the security room to uncover the full scope of the operation. That meant getting past Neil Garrison, who had barricaded himself inside.</p>
+
+                <p>Investigator 07 breached the door, and the team quickly incapacitated Garrison. Investigator 89 accessed the security terminal and discovered the final, damning pieces of evidence:</p>
+
+                <div class="classified-doc">
+                    <strong>CLASSIFIED - SIFU OPERATION PARAMETERS</strong><br>
+                    <br>
+                    <strong>SURVEILLANCE NETWORK:</strong><br>
+                    All security camera feeds streaming to Pituffik Space Base<br>
+                    Receiving Terminal: DoD Communications - <span class="spooky">Maren Torres</span><br>
+                    <br>
+                    <strong>PERSONNEL SELECTION CRITERIA:</strong><br>
+                    All 20 "temporary researchers" selected based on single criterion:<br>
+                    <span class="spooky">Each individual had exposed government secrets or acts of corruption within their respective federal agencies</span><br>
+                    Classification: EXPENDABLE SECURITY THREATS<br>
+                    <br>
+                    <strong>BUREAU TEAM EVALUATION:</strong><br>
+                    Active checklist tracking investigation team behavior and decisions<br>
+                    Rubric measuring: <span class="atmospheric">LOYALTY TO GOVERNMENT AUTHORITY</span><br>
+                    <br>
+                    <strong>OPERATION DESIGNATION:</strong><br>
+                    SIFU (Signals Intelligence Forensics Unit) Loyalty Stress-Test<br>
+                    <br>
+                    <strong>CONCLUSION:</strong> Site Polaris incident was <span class="spooky">deliberately orchestrated human experiment</span> serving dual purpose:<br>
+                    1. Eliminate federal employees who exposed internal corruption<br>
+                    2. Test Bureau investigation team loyalty under extreme conditions
+                </div>
+
+                <p>The team had not been sent to rescue anyone. They had been sent into a manufactured crisis. The 20 federal employees had been deliberately exposed to a psychosis-inducing agent and left to kill each other - all while being monitored to see how the Bureau team would respond.</p>
+
+                <p>Every action the team took had been observed and evaluated. Every decision had been scored against a rubric measuring their willingness to follow orders, secure government data, and maintain operational secrecy.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">📊 CASUALTY SUMMARY</h3>
+                <p>Of the 20 federal employees sent to Site Polaris, the final accounting was devastating:</p>
+
+                <div class="evidence-box">
+                    <strong>SITE POLARIS PERSONNEL - FINAL STATUS:</strong><br>
+                    <br>
+                    <strong>DECEASED (9):</strong><br>
+                    - Officer Rebecca Yost (Federal Corrections) - Strangled<br>
+                    - Matthew Cole (FAA Inspector) - Blunt trauma and penetrating wounds<br>
+                    - Leon Ward (IRS Collections) - Cause undetermined<br>
+                    - Dr. Jonas Hale (CDC Behavioral Analyst) - Beaten with metal object<br>
+                    - Samuel Keener (DoJ Antitrust Lawyer) - Crushed<br>
+                    - Connor Bell (USGS Surveyor) - Beaten to death<br>
+                    - Dr. Valerie Ng (NIH Researcher) - Multiple traumatic injuries<br>
+                    - Dr. Priya Deshmukh (USDA Food Scientist) - Cause undetermined<br>
+                    - Dr. Tomoko Ishida (DARPA Contractor) - Killed by team during defense of server room<br>
+                    <br>
+                    <strong>INCAPACITATED/SECURED (10):</strong><br>
+                    - Aiden McCall (Treasury Auditor)<br>
+                    - Mara Steele (Park Ranger)<br>
+                    - Patricia Hsu (Postal Inspector)<br>
+                    - Lt. Alan Devereux (Coast Guard)<br>
+                    - Special Agent Kira Boyd (FBI)<br>
+                    - Norma Ruiz (Federal Housing Regulator)<br>
+                    - Luis Tran (NOAA Technician)<br>
+                    - Neil Garrison (Federal Court Clerk)<br>
+                    - Sgt. Peter Thorne (Army MP)<br>
+                    - Diana Collier (Diplomatic Security) - Found deceased<br>
+                    <br>
+                    <strong>TOTAL CASUALTIES:</strong> 10 confirmed dead (including Diana Collier)<br>
+                    <strong>SURVIVORS:</strong> 10 individuals subdued by investigation team
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">⚖️ AFTERMATH & EVALUATION</h3>
+                <p>The team was immediately recalled to Pituffik Space Base. Upon arrival, they were debriefed by David Han and Maren Torres - the same officers who had sent them into Site Polaris.</p>
+
+                <p>The team was informed directly: <span class="atmospheric">"You were being tested. You passed."</span></p>
+
+                <p>No explanation was offered for the 10 federal employees who died. No accountability was mentioned for the psychological torture inflicted on the survivors. No discussion was permitted regarding the ethics of the operation.</p>
+
+                <div class="evidence-box">
+                    <strong>OFFICIAL OPERATION OUTCOME:</strong><br>
+                    <strong>Team Evaluation:</strong> PASSED LOYALTY ASSESSMENT<br>
+                    <strong>Casualties:</strong> 10 federal employees dead, 10 psychologically damaged<br>
+                    <strong>Accountability:</strong> NONE<br>
+                    <strong>Investigation:</strong> NONE<br>
+                    <strong>Team Status:</strong> Cleared for continued operations
+                </div>
+
+                <p>The Bureau team was transported back to their home office with full knowledge of what had occurred: <span class="spooky">They had been used as unwitting participants in a government operation that deliberately killed federal whistleblowers while simultaneously testing the Bureau's loyalty.</span></p>
+
+                <p>The team had completed their mission objectives. They had secured the data. They had extracted survivors. They had demonstrated competence under extreme conditions.</p>
+
+                <p>But the true mission had been to determine whether the Bureau would ask questions about what they found - or whether they would simply follow orders.</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🔒 CASE CLASSIFICATION</h3>
+                
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ OPERATIONAL SECURITY NOTICE ⚠️</strong></p>
+                    <p>This case file represents the Bureau's first documented encounter with <span class="atmospheric">SIFU (Signals Intelligence Forensics Unit)</span>, a covert government entity conducting loyalty assessments on federal investigation teams.</p>
+                    <p>The Site Polaris incident was not a rescue mission. It was <span class="spooky">a manufactured crisis designed to eliminate government whistleblowers while simultaneously testing Bureau compliance.</span></p>
+                    <p>All personnel involved have been cleared for continued operations. No further investigation has been authorized.</p>
+                </div>
+
+                <div class="evidence-box">
+                    <strong>FINAL CASE STATUS:</strong> CLOSED - TEAM INTEGRITY VERIFIED<br>
+                    <strong>THREAT LEVEL:</strong> CRITICAL - INTERNAL GOVERNMENT SURVEILLANCE<br>
+                    <strong>ENTITY RESPONSIBLE:</strong> SIFU (Signals Intelligence Forensics Unit)<br>
+                    <strong>GOVERNMENT AWARENESS:</strong> FULL - Operation conducted with official authorization<br>
+                    <strong>CIVILIAN CASUALTIES:</strong> 10 federal employees deceased<br>
+                    <strong>ACCOUNTABILITY MEASURES:</strong> None implemented<br>
+                    <strong>ONGOING MONITORING:</strong> Bureau team now confirmed as under government observation<br>
+                    <strong>CLEARANCE REQUIRED FOR ACCESS:</strong> Level 5 - Director Authorization Only
+                </div>
+
+                <p>The Deep Freeze case serves as proof that the Bureau operates under constant surveillance by elements within the federal government. The team passed their loyalty test - but at what cost to their autonomy and integrity?</p>
+
+                <p>Site Polaris remains operational. The HVAC system has been documented but not dismantled. SIFU continues to function with apparent impunity.</p>
+
+                <p class="spooky">The Bureau knows it is being watched. The question is: what will they do with that knowledge?</p>
+            </div>
+        </div>
+
+        <!-- Related Cases -->
+        <div class="content-section">
+            <h2 class="section-title">🔗 RELATED INVESTIGATIONS</h2>
+            <ul>
+                <li><a href="usb-conspiracy.html">The USB Drive Conspiracy</a></li>
+                <li><a href="bermuda-wifi.html">Bermuda Triangle WiFi Dead Zone</a></li>
+                <li><a href="../../investigators.html">More cases by Investigator 66</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-nav">
+            <a href="../../stories.html" class="nav-button">← BACK TO CASE FILES</a>
+            <a href="../../home.html" class="nav-button">MAIN ARCHIVES</a>
+            <a href="usb-conspiracy.html" class="nav-button">NEXT CASE →</a>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 Cursed Investigations Bureau | Established Never</p>
+            <p class="small-print">This case file is classified fiction created for entertainment purposes only.</p>
+        </div>
+    </div>
+
+    <script src="../../js/retro-effects.js"></script>
+</body>
+</html>
