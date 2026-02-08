@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - Circuit Breaker</title>
+    <link rel="stylesheet" href="../../css/cursed-theme.css">
+    <link rel="stylesheet" href="../../css/retro-style.css">
+    <style>
+        /* Story-specific styling */
+        .case-header {
+            background-color: var(--bg-box);
+            border: 3px solid var(--border-warning);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .case-number {
+            color: var(--text-warning);
+            font-family: var(--font-mono);
+            font-size: 24px;
+            margin: 0;
+            font-weight: bold;
+        }
+        
+        .case-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: var(--glow-green);
+        }
+        
+        .classification {
+            background-color: var(--text-warning);
+            color: var(--bg-primary);
+            padding: 5px 15px;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        
+        .story-content {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        
+        .story-section {
+            margin: 25px 0;
+        }
+        
+        .section-header {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 18px;
+            border-bottom: 1px solid var(--border-primary);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        
+        .evidence-box {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-primary);
+            padding: 15px;
+            margin: 15px 0;
+            font-family: var(--font-mono);
+            font-size: 13px;
+        }
+        
+        .witness-statement {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-accent);
+            padding: 15px;
+            margin: 15px 0;
+            font-style: italic;
+        }
+        
+        .timestamp {
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+        }
+        
+        .warning-box {
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--text-warning);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title"><a href="../../home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+        </div>
+
+        <!-- Case Header -->
+        <div class="case-header">
+            <h1 class="case-number">CASE FILE #CIB-224</h1>
+            <h2 class="case-title">CIRCUIT BREAKER</h2>
+            <div class="classification">CLASSIFIED - HIGH THREAT</div>
+            <p class="timestamp">Date Opened: [PENDING] | Last Updated: [PENDING]</p>
+        </div>
+
+        <!-- Investigation Details Table -->
+        <div class="content-section">
+            <table class="retro-table">
+                <tr>
+                    <th>Field</th>
+                    <th>Details</th>
+                </tr>
+                <tr>
+                    <td>Lead Investigator</td>
+                    <td><span class="terminal-font">[ASSIGNMENT PENDING]</span></td>
+                </tr>
+                <tr>
+                    <td>Location</td>
+                    <td>[REDACTED - CORPORATE FACILITY]</td>
+                </tr>
+                <tr>
+                    <td>Phenomenon Type</td>
+                    <td>SUSPICIOUS DEATH / POTENTIAL CORPORATE SABOTAGE</td>
+                </tr>
+                <tr>
+                    <td>Threat Level</td>
+                    <td><span class="spooky">HIGH - ACTIVE INVESTIGATION</span></td>
+                </tr>
+                <tr>
+                    <td>Status</td>
+                    <td><span class="atmospheric">CASE OPEN - EVIDENCE GATHERING</span></td>
+                </tr>
+            </table>
+        </div>
+
+        <!-- Story Content -->
+        <div class="story-content">
+            <div class="story-section">
+                <h3 class="section-header">📋 INITIAL REPORT</h3>
+                <p>An executive has been found dead in a locked office at an undisclosed corporate facility. Initial reports suggest the office was sealed from the inside with no signs of forced entry or exit. Local authorities have requested Bureau assistance due to unusual circumstances surrounding the discovery.</p>
+                
+                <p>The Bureau team is being brought in to sort through conflicting witness accounts, examine the facility's security systems, and determine whether this was an accident, corporate sabotage, or something more sinister.</p>
+                
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ PRELIMINARY INVESTIGATION ALERT ⚠️</strong></p>
+                    <p>This case file is currently in the evidence-gathering phase. Multiple witnesses have provided contradictory statements regarding the victim's final movements and the state of the locked office.</p>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🔍 KNOWN EVIDENCE</h3>
+                
+                <div class="evidence-box">
+                    <strong>SCENE CHARACTERISTICS:</strong><br>
+                    - Office locked from inside<br>
+                    - No forced entry or exit detected<br>
+                    - Executive found deceased at desk<br>
+                    - Conflicting witness testimonies<br>
+                    <br>
+                    <strong>ITEMS REQUIRING FURTHER ANALYSIS:</strong><br>
+                    - Security footage from facility<br>
+                    - Building access logs<br>
+                    - Executive's final communications<br>
+                    - Facility electrical systems
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">👁️ WITNESS ACCOUNTS</h3>
+                
+                <p><span class="atmospheric">Multiple individuals have been interviewed. Accounts vary significantly regarding:</span></p>
+                <ul>
+                    <li>The victim's state of mind in the days before death</li>
+                    <li>Who had access to the locked office</li>
+                    <li>Unusual occurrences at the facility in recent weeks</li>
+                    <li>The nature of the executive's work projects</li>
+                </ul>
+                
+                <div class="evidence-box">
+                    <strong>INVESTIGATIVE PRIORITY:</strong><br>
+                    Reconcile contradictory witness statements and establish definitive timeline of events leading to discovery of body.
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">⚠️ CURRENT STATUS</h3>
+                <p>Bureau team deployment is imminent. Full investigative resources have been authorized. This case has been flagged for potential supernatural involvement due to the impossibility of the locked room scenario and witness reports of <span class="spooky">unusual electrical phenomena</span> in the facility.</p>
+                
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ INVESTIGATION ONGOING ⚠️</strong></p>
+                    <p>This case file will be updated as the investigation progresses. All personnel with information regarding this incident should contact Bureau headquarters immediately through secure channels.</p>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">📊 PRELIMINARY ASSESSMENT</h3>
+                
+                <div class="evidence-box">
+                    <strong>CASE STATUS:</strong> OPEN - ACTIVE INVESTIGATION<br>
+                    <strong>THREAT LEVEL:</strong> HIGH<br>
+                    <strong>TEAM ASSIGNMENT:</strong> PENDING<br>
+                    <strong>CLEARANCE REQUIRED:</strong> LEVEL 3 OR HIGHER<br>
+                    <strong>INVESTIGATION TYPE:</strong> LOCKED ROOM MYSTERY / SUSPICIOUS DEATH
+                </div>
+                
+                <p class="atmospheric">The Bureau takes all reports of impossible circumstances seriously. Whether this proves to be corporate malfeasance, sophisticated murder, or genuine supernatural phenomena remains to be determined.</p>
+            </div>
+        </div>
+
+        <!-- Related Cases -->
+        <div class="content-section">
+            <h2 class="section-title">🔗 RELATED INVESTIGATIONS</h2>
+            <ul>
+                <li><a href="deep-freeze.html">Deep Freeze - Government Loyalty Testing</a></li>
+                <li><a href="usb-conspiracy.html">The USB Drive Conspiracy</a></li>
+                <li><a href="../../investigators.html">View All Active Investigations</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-nav">
+            <a href="../../stories.html" class="nav-button">← BACK TO CASE FILES</a>
+            <a href="../../home.html" class="nav-button">MAIN ARCHIVES</a>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 Cursed Investigations Bureau | Established Never</p>
+            <p class="small-print">This case file is classified fiction created for entertainment purposes only.</p>
+        </div>
+    </div>
+
+    <script src="../../js/retro-effects.js"></script>
+</body>
+</html>
