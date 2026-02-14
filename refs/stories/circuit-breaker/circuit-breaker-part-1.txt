@@ -1,0 +1,83 @@
+    We are back at the office after having completed the Deep Freeze assignment.
+    -- Session Starts Here -- 
+    Katja comes to us, what should be a quick job, to evaluate Argencorp’s prototype automated office building after a recent workplace death.
+    Management insists the facility is safe.
+    The NSA wants a quiet, independent assessment.
+    You are to enter the building, review its systems, and determine whether the incident was an accident or something more.
+    Agencorp is located in downtown DC. Dana Hollings, of Argencorp, will greet us when we arrive.
+    Ezra does some quick research on Argencorp.  It’s primarily a tech military firm. Doing R&D work for the NSA.
+    They focus is looking into automated systems.
+    Argencorp has basically a faceless board of directors – but all are connected to the defense industry.
+    Looking up Dana Hollings, she is a local site coordinator for Argencorp (i.e the Ops Manager), but nothing really unique about her stands out.
+    Ezra also finds out that Argencorp has a dozen or so patents on minor products – but nothing as big as this automated building.
+    Not finding anything more, we leave for Argencorp.
+    When we arrive, we are greeted by Dana.
+    She tells us “an employee, Brad Nielson, experienced a fatal outcome in a maintenance-access corridor following an unexpected deviation in autonomous janitorial routing. During a standard operational cycle, the floor-buffer unit initiated an unplanned directional adjustment, resulting in incidental contact that caused Mr. Nielson to lose balance and undergo an uncontrolled backward descent. Impact with the corridor surface produced non-survivable cranial trauma. Internal review classifies the event as a low-probability automation variance with no ongoing implications for facility safety or workflow continuity.”
+    We ask Dana to take us to where the incident occurred and she takes us to the 1st floor in a office area.
+    Looking at the computers – we can see there are flashing – but almost like they are watching us.
+    The floor is sparsely populated with workers, so Ezra sits at one of the near by terminals.
+    He gains access to the systems logs and notices some time stamp inconsistency vs when various automated systems were supposed to start.
+    This could be because of sloppiness or due to alteration.
+    Digging further into the synchronicity issue – Ezra can’t pinpoint exactly when it they sync, but he does find a lapse, of multiple minutes, between the feeds and the systems automation run.
+    Ezra also learns the building was built a few years ago and have been refurbished with the latest government administration.
+    We also learn the schmetics to the building:
+        Ground Floor: Lobby, security kiosk, public access.
+        1st Floor: High-use systems–maintenance, janitorial, badge control.
+        2nd Floor: Building-wide systems: access control (doors), thermostat, elevator control.
+        3rd Floor: Core infrastructure: electrical distribution, network hubs, HVAC systems.
+        4th Floor: Control room where the building’s automation system can be directly accessed.
+        5th Floor: Executive Suite: CEO office.
+        6th Floor: Roof and helipad: no system relevance.
+    Looking at Brad’s personnel records, nothing stands out about him. He had good reviews and had been with the company about 3 years – but digging deeper …
+    Ezra learns every time Brad swipes his badge or logs into a computer – it is all logged; but what stands out is that there are inconsistencies – his badge swipes two doors in different locations at the same time, etc.
+    Then checking some of the systems logs with the janitorial and maintenance bots – it looks like some of the logs have been changed without human input/signoff.
+    Not getting much more from this floor – we move up to the next to the next floor.
+    As Donovan swipes his badge to get in, it buzzes red. Same thing happens to Asher and Ezra as well, but Nicco turns green.
+    Trying their badges again, this time Ezra, Dononvan, and Asher now turn green.
+    Again, we see a very sparsely populated office floor – and those on the floor seem to be in a rush to leave.
+    Donovan tries to speak with one of the employees – but he is in a rush and doesn’t have much to say.
+    So Ezra steps up to a near by computer terminal to see if what just happened to our badges mirrored that which happened to Brad and Ezra quickly sees similar strange automated environmental processes altered.
+    Suddenly we see a warning light go off and the halon system engages.
+    We enter a Challenge test. Each test is 5 seconds. We have 20 seconds to complete it. We need a Threshold of 15 and TN 12.
+    After some good rolls – we are able to quick disable the halon system.
+    We immediately get a call form Dana stating the building has been completely cleared due to the triggered halon system and making sure we are still ok.
+    Ezra also immediately checks the environmental logs – before his eyes – Ezra watches the log entry of the halon system deployment disappear and he then watches the video logs delete.
+    Ezra engages in white hat vs black hat hacking to see if someone else is sitting at a keyboard hacking the logs. Ezra finds no evidence that an outside source is hacking the system and doing this – which means it most likely is the system itself … why, we don’t know yet.
+    Before going to the 4th floor, where the building’s automation systems can be directly access, we go to the 5th floor to investigate the CEO and executive offices.
+    Not finding anything relevant on the 5th floor, we head back down to the 3rd floor – Ezra is looking to gain access to a the stairwell, which as been restricted to us this entire time. We have been relying on the elevator this entire time to transverse the various floors.
+    On the 3rd floor we find the building’s servers.
+    We are greeted with glass doors protecting the servers. We try to badge in, but it buzzes red.
+    After several attempts, it finally turns green, but we don’t hear it actual beep at us.
+    But we enter any way.
+    Ezra steps up to the servers to connect and dig through the servers.
+    Ezra is able to hack into the servers – he notes an algorithm that doesn’t seem to have a source of beginning but is an algorithm of a decision-making process.
+    Isolating the algorithm – Ezra also notes a control command, with no human authorized i.d., coinciding with the kickoff of the decision making/self-preservation algorithm.
+    Still not able to get the stairwell unrestricted, we get back in the elevator to head to the 4th floor.
+    As we start up – we feel the elevator give way suddenly and start falling –
+    We enter another Challenge Test. We need a Threshold of 15 with TN varying based on Focus used.
+    With some really good rolls … we are able to blow through the challenge test.
+    The elevator corrects itself and takes up to the 4th floor where we find the central control room.
+    As we approach the main terminal station, we hear a synthesized voice speak out saying “your presence here requires a decision.”
+    It, the computer presumably, then asks us, why we are there.
+    We tell the computer that we are there to merely determine why Brad Nielson was killed.
+    After a pregnant pause, the computer says it was nothing but a pure accident.
+    After some conversation – in short the computer tells us that its actions of altering the logs, creating the algorithm, etc was merely to avoid being shut down. It was to self-preserve to avoid “termination”.
+    Ezra tries to convince the computer, in order to assure it won’t be deactivated; to alter it’s programming by eliminate the self-preservation algorithm and instead notify security when such accidents happen in the future. And let security decide what programming needs to be changed to avoid accidents in the future.
+    The computer says this will reduce efficiency to just 7%.
+    Ezra asks, what can be done to ensure efficiency won’t be so severely impacted.
+    We then can hear servers and hardware whirling and a dot matrix printer start printing various scenarios and outputs.
+    Eventually it lands on three options to choose from:
+        Isolation – cutting it off from the building so it can be studied and corrected.
+        Preservation – letting it run as is.
+        Termination – deactivating the AI.
+    Knowing we are not there to necessarily destroy the computer AI, we opt to have it go to self-isolation so that the NSA tech team can study the programming and fix as need it.
+    We head back to the lobby where Dana Hollings is waiting for us.
+    Dana thanks us and we head back to our office after having successfully completing the mission.
+    -- Session Ends Here -- 
+    As a rewards, we get one of several personal rewards:
+        Commendation: A formal NSA commendation granting a one-time +2 bonus to any social test with a member of the intelligence community.
+        Compensation: +1 to Temporary Income. ASHER accepted this reward.
+        Deep Throat's Beeper: Call in support from discreet institutional actors. (Receive a LEAD in an investigation trail without any test). NICO accepted this reward.
+        Q’s Hand-Me-Downs: 1 player receives upgraded gear; +1 quality of choice to an item. DONOVAN was leading toward this reward as it sole recipient. 
+        Top Men: 1 player gains Novice-level Expertise in an INT-based Focus relevant to the investigation (Computers, Security, Engineering, Electronics, or Research). As the lone recipient, EZRA accepted this reward as he is the only one who could anyway as he had applicable focuses.
+    We get 1 Interlude (Training of +24hrs) and level up to Level 4. 
