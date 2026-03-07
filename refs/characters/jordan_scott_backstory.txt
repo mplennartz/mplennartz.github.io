@@ -1,0 +1,58 @@
+Concept: Former undercover cop that hopes to solve the mystery of what happened to her partner after a strange incident.  Recruited as a CURSED investigator.
+
+
+Abilities: 12 Advancements; no ability below 0, no ability can be greater than 3.
+
+
+Social Class: Lower
+
+Background: Urban
+
+    Ability: +1 Dexterity
+    Focus: Constitution (Stamina)
+    Talent: Freerunning
+    Benefit: Communication (Deception)
+
+Profession: Investigator
+
+    Focus: Communication (Investigation)
+    Talent: Observation
+    Health: 15+CON
+    Resources: 4
+
+Drive: Penitent
+
+    Quality: Humility.  You have fallen low and learned from it, so you're not quick to judge or to accept accolades.
+    Downfall: Guilt.  Your misdeeds sometimes haunt you and you feel any new missteps heavily.
+    Talent: Living on the Fringe
+    Improvement: Health
+
+Starting Specialization:  Agent
+
+
+Level 2:  5 Fortune, advanced Willpower, took Pistols as a focus and the expert degree in Living on the Fringe.
+
+Level 3:  4 Fortune, advanced Constitution, took Security as a focus and novice degree in Burglary. 
+
+Level 4:  7 Fortune, advanced Dexterity, took Acrobatics as a focus and expert degree in Freerunning.  Advanced Specialization Agent to expert degree.
+
+
+Background Story
+
+Jordan Scott was a seasoned undercover cop with a talent for reading people and making them believe exactly what she wanted them to. She had worked dangerous cases before, slipping into roles with ease, but nothing could have prepared her for what happened that night. She and her partner, Ethan Cole, were sent to infiltrate a warehouse where a major drug deal was supposed to go down. But the moment they stepped inside, everything unraveled.
+
+What should have been a routine bust turned into a waking nightmare—strange technology, unnatural phenomena, and a sense of wrongness that defied explanation. In the chaos, Ethan vanished, and Jordan barely escaped with her life. The official report listed Ethan as dead, but Jordan couldn’t shake the feeling that there was more to the story, that he might still be alive, somehow.
+
+After the incident, Jordan was plagued by relentless nightmares and a need for answers that her department wanted to ignore. When her obsession made her a liability, they pushed her out, leaving her adrift with nothing but questions and a growing distrust of the system she once served. Then CURSED came knocking. A consulting firm specializing in the unusual, the unexplained, and the dangerous, they offered her a second chance—not just to chase the truth, but to finally uncover what really happened that night.
+
+Jordan is closer than ever to the answers she’s been chasing. But she’s learned the hard way—getting too close can cost you everything.
+
+Origin:  Newark, NJ
+
+Age:  29
+
+Height:  5' 7"
+
+Weight:  140 lbs.
+
+Jordan's brown hair is kept in a short, wavy bob that frames her face. A lock of white hair serves as a reminder of the trauma she’s endured. Her grey eyes constantly observe the world around her with an air of quiet intensity. There’s a sharpness to her features, but it's tempered by an underlying exhaustion, as though the weight of her past follows her wherever she goes. She moves with the confidence of someone who’s been through the worst and is determined to keep pushing forward.

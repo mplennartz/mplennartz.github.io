@@ -1,0 +1,53 @@
+Record your choices using the fields below. When you're done designing your character, write a few paragraphs of background story to synthesize the character you've created into a holistic person distinct from yourself with their own beliefs, motivations, prejudices, values, priorities, etc. How you came to work for/were recruited by CURSED would be a helpful additional narrative detail.
+
+
+Concept: 
+
+Abilities: 12 Advancements; no ability below 0, no ability can be greater than 3.
+Social Class: Upper Class
+
+Background: Academic
+
+    Ability: +1 to Intelligence
+    Focus: Intelligence (Cryptography)
+    Talent: Bookworm - with GM approval, from Cthulhu Awakens
+    Benefit: Intelligence (Research)
+
+Profession: Scholar
+
+    Focus: Intelligence (Computers)
+    Talent: Expertise (Computers, Hacking)
+    Health: 15 + Con (staring Con of 2)
+    Resources: 6 + 1 from Social Class one higher than Profession level. 
+
+Drive: Judge
+
+    Quality: Discernment
+    Downfall: Aloofness
+    Talent: Knowledge
+    Improvement: +2 to Resources
+
+Background Story
+
+In the family homes, estates, and hallowed halls of education of New England's academic elite, the name Cason resonates with a legacy of erudition and a penchant for delving into the occult's enigmatic depths. Ezra Cason, an erudite gentleman of just 30 years of age, is the scion of the illustrious Cason family, esteemed for their generations-long dedication to scholarly pursuits in the realms of the occult and esoteric knowledge.
+
+Ezra's childhood started in town of Fiddler's Green, WV where the family home estate is - though his parents were often going to the New England area as they were well respected academicians. His upbringing was unlike that of his peers, steeped in an atmosphere where the mystique of the arcane permeated every corner of the ancestral manor. From an early age, he found himself entranced by the forbidden allure of ancient tomes, cryptic manuscripts, and esoteric artifacts that adorned the family's opulent library. He often lingered near the adults during the various and many parties his family would host - listening to the stories, theories, and tales of the occult.  Many close family friends of the Cason - the whose who of New England's academic elite - attended these parties - the MacInneses, Harrisons, Watkins, Femmers and many, many others.
+
+Though Ezra grew up upper class, the generational Cason estate, stood as a bastion of knowledge, a place where learning and studying were given the highest priority.
+
+Guided by his family's rich heritage, Ezra embarked on a scholarly journey.  He pursued his education at Brown University receiving Bachelors of Science degree in Computers and Cryptography.  He immersed himself in his studies.  Ezra went on to receive his PhD in Computer Science from Miskatonic University in Arkham, Massachusetts. 
+
+Ezra's academic pursuits, however, were not confined to the walls of academia alone. Fueled by an insatiable thirst for forbidden knowledge, he embarked on wonderous expeditions to distant lands, from the shadowed catacombs beneath European cities to remote corners of Asia where his sharp research skills were incredibly useful.  His travels brought him face-to-face with arcane texts, hidden relics, ciphers and much more, helping broaden his understanding of the world around him.
+
+Now, in his early thirties and standing as a beacon of great scholarship, Ezra is a distinguished adjunct professor at both Miskatonic and Brown University; as well as, a highly sought after guest lecturer on the researching and hacking techniques. Now fully recognized within the esteemed lineage of the Cason family, and his mind a repository of immense wisdom, Ezra was recently working with a small group of paranormal investigators in the Miskatonic area; however, that crew was short lived.  This is when his old Brown College dorm roommate, and long time friend Bertram "Bertie" Wooster, reach out to Ezra.  Bertie and Ezra have worked on many projects in the past.  Bertie recently joined up with a small start up investigation company, C.U.R.S.E.D., and knowing Ezra would have some useful skill for this new group, reached out and asked Ezra to join.  Ezra jumped at this opportunity as he was wanting to get back his core knowledge of computers and cryptography.   
+
+
+SOCIAL CLASS: Upper Class -  Upper class characters sit at a society’s summit, where they rarely need to worry about resources, except of course when they want more. Their concerns are often focused on the responsibilities and privileges associated with their status. Some are born into privilege, inheriting wealth and opportunity, while others worked their way into the elite. In some societies, it’s almost impossible to work your way to upper class status, and even if you do, you might get less respect compared to hereditary “old money” peers.
+
+PROFESSION: Scholar - Knowledge and understanding are your fields, focused on a specific area of interest. Whereas the expert profession tends to be about applied knowledge, you focus on knowledge for knowledge’s sake. You might work in a university, or have an amateur obsession. You look to gain greater understanding of your field and, in so doing, perhaps expand the world's understanding as well.
+
+DRIVE: Judge - Life is all about making decisions and exercising good judgment. You believe in finding out as much as you can about things so you can make informed and carefully considered judgements about them. Your quality is discernment, paying close attention to details and information. Your downfall is aloofness, a tendency to distance yourself from the world around you to remain objective.
+
+QUALITY: Discernment - paying close attention to details and information.
+
+DOWNFALL: Aloofness - a tendency to distance yourself from the world around you to remain objective.

@@ -7,34 +7,6 @@
     <link rel="stylesheet" href="../css/cursed-theme.css">
     <link rel="stylesheet" href="../css/retro-style.css">
     <style>
-        /* CSS Variables - Fallback in case external CSS fails to load */
-        :root {
-            --bg-primary: #000000;
-            --bg-secondary: #0a0a0a;
-            --bg-tertiary: #1a1a1a;
-            --bg-box: #111111;
-            
-            --text-primary: #00ff00;
-            --text-secondary: #33ff33;
-            --text-white: #ffffff;
-            --text-gray: #cccccc;
-            --text-accent: #ffff00;
-            --text-warning: #ff0000;
-            --text-dim: #999999;
-            
-            --border-primary: #333333;
-            --border-bright: #00ff00;
-            --border-warning: #ff0000;
-            
-            --glow-green: 0 0 10px var(--text-primary);
-            --glow-red: 0 0 10px var(--text-warning);
-            --glow-yellow: 0 0 8px var(--text-accent);
-            
-            --font-primary: 'MS Sans Serif', Arial, sans-serif;
-            --font-mono: 'Courier New', 'Lucida Console', monospace;
-            --font-retro: 'Times New Roman', serif;
-        }
-        
         /* Character-specific styling */
         .character-header {
             background-color: var(--bg-box);
@@ -58,16 +30,6 @@
             font-size: 28px;
             margin: 10px 0;
             text-shadow: var(--glow-green);
-        }
-        
-        .clearance-level {
-            background-color: var(--text-warning);
-            color: var(--bg-primary);
-            padding: 5px 15px;
-            font-family: var(--font-mono);
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px 0;
         }
         
         .character-content {
@@ -128,13 +90,6 @@
             margin: 30px 0;
             flex-wrap: wrap;
             gap: 10px;
-            align-items: center;
-        }
-        
-        .footer-nav .nav-button {
-            flex: 1;
-            min-width: 200px;
-            text-align: center;
         }
         
         .character-photo {
@@ -146,36 +101,6 @@
             max-width: 200px;
             border: 2px solid var(--border-primary);
             box-shadow: var(--glow-green);
-            display: block;
-            margin: 0 auto;
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .stat-box {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-primary);
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .stat-value {
-            color: var(--text-primary);
-            font-size: 24px;
-            font-weight: bold;
-            font-family: var(--font-mono);
-        }
-        
-        .stat-label {
-            color: var(--text-accent);
-            font-size: 12px;
-            text-transform: uppercase;
-            margin-top: 5px;
         }
 
         /* Classified/Decryption specific styles */
@@ -240,7 +165,6 @@
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            color: var(--text-white);
         }
         
         .decryption-text {
@@ -451,7 +375,7 @@
         }
         
         .blink {
-            animation: blink 1s linear infinite;
+            animation: blink 1s infinite;
         }
         
         @keyframes blink {
@@ -504,10 +428,6 @@
             color: var(--text-accent);
         }
         
-        .terminal-font {
-            font-family: var(--font-mono);
-        }
-        
         /* Basic page styling to ensure dark theme */
         body {
             background-color: var(--bg-primary);
@@ -534,6 +454,34 @@
             color: var(--text-primary);
             text-shadow: var(--glow-green);
         }
+        
+        /* CSS Variables - Fallback in case external CSS fails to load */
+        :root {
+            --bg-primary: #000000;
+            --bg-secondary: #0a0a0a;
+            --bg-tertiary: #1a1a1a;
+            --bg-box: #111111;
+            
+            --text-primary: #00ff00;
+            --text-secondary: #33ff33;
+            --text-white: #ffffff;
+            --text-gray: #cccccc;
+            --text-accent: #ffff00;
+            --text-warning: #ff0000;
+            --text-dim: #999999;
+            
+            --border-primary: #333333;
+            --border-bright: #00ff00;
+            --border-warning: #ff0000;
+            
+            --glow-green: 0 0 10px var(--text-primary);
+            --glow-red: 0 0 10px var(--text-warning);
+            --glow-yellow: 0 0 8px var(--text-accent);
+            
+            --font-primary: 'MS Sans Serif', Arial, sans-serif;
+            --font-mono: 'Courier New', 'Lucida Console', monospace;
+            --font-retro: 'Times New Roman', serif;
+        }
     </style>
 </head>
 <body class="homepage">
@@ -551,8 +499,7 @@
                 <span id="classifiedName" class="redacted-text"></span>
                 <span id="decryptedName" style="display: none;">NICO RYLAN</span>
             </h2>
-            <div class="clearance-level">CLEARANCE LEVEL: OMEGA</div>
-            <p class="timestamp">First Contact: 1998-03-15 | Last Seen: 1998-12-15</p>
+            <p class="timestamp">First Contact: 1998-03-15</p>
         </div>
 
         <!-- Decrypt Button -->
@@ -590,7 +537,19 @@
                         <td><span class="terminal-font">"DOC"</span></td>
                     </tr>
                     <tr>
+                        <td>Alias</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
                         <td>Real Name</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Origin</td>
                         <td><span class="redacted-text"></span></td>
                     </tr>
                     <tr>
@@ -616,23 +575,19 @@
                 </table>
             </div>
 
-            <!-- Classified Stats -->
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">Medical Expertise</div>
+            <!-- Classified Field Capabilities -->
+            <div class="content-section">
+                <h2 class="section-title">FIELD CAPABILITIES</h2>
+                <div class="profile-box">
+                    <strong>PRIMARY SKILLS:</strong><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">Forensic Skills</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">Analytical Mind</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">Field Experience</div>
+                <div class="profile-box">
+                    <strong>SPECIALIZATION:</strong> <span class="redacted-text"></span><br>
+                    <strong>TRAINING:</strong> <span class="redacted-text"></span>
                 </div>
             </div>
 
@@ -649,7 +604,7 @@
                     <div class="quote-box">
                         <strong><span class="redacted-text"></span>:</strong><br>
                         "<span class="redacted-text"></span> <span class="redacted-text"></span> <span class="redacted-text"></span>"
-                        <div class="timestamp">Recorded: 1998-11-23 14:30</div>
+                        <div class="timestamp">Recorded: [Date and Time]</div>
                     </div>
                 </div>
 
@@ -670,7 +625,7 @@
                     <p><span class="redacted-text"></span> <span class="redacted-text"></span> <span class="redacted-text"></span></p>
                     
                     <div class="status-box">
-                        <p class="spooky"><strong>⚠️ ACTIVE INVESTIGATION ⚠️</strong></p>
+                        <p class="spooky"><strong>⚠️ ACTIVE FIELD OPERATIONS ⚠️</strong></p>
                         <p><span class="redacted-text"></span> <span class="redacted-text"></span></p>
                     </div>
                 </div>
@@ -683,8 +638,8 @@
             <div class="character-photo">
                 <div class="character-image-placeholder">
                     <div class="placeholder-text">
-                        <strong>DR. NICO RYLAN</strong><br>
-                        Medical Analysis Specialist<br>
+                        <strong>NICO RYLAN</strong><br>
+                        Combat Medic / Field Operative<br>
                         <span class="terminal-font">CIB-013</span><br><br>
                         [PHOTO PLACEHOLDER]<br>
                         Add your character image here
@@ -705,12 +660,24 @@
                         <td><span class="terminal-font">"DOC"</span></td>
                     </tr>
                     <tr>
+                        <td>Alias</td>
+                        <td>N/A</td>
+                    </tr>
+                    <tr>
                         <td>Real Name</td>
-                        <td>Dr. Nico Rylan, MD</td>
+                        <td>Dr. Nico Rylan</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>40s</td>
+                    </tr>
+                    <tr>
+                        <td>Origin</td>
+                        <td>Not specified</td>
                     </tr>
                     <tr>
                         <td>Species/Type</td>
-                        <td>Human - Medical Professional</td>
+                        <td>Human - Combat Medic / Field Operative</td>
                     </tr>
                     <tr>
                         <td>Threat Level</td>
@@ -718,36 +685,32 @@
                     </tr>
                     <tr>
                         <td>Status</td>
-                        <td><span class="atmospheric">ACTIVE - MEDICAL INVESTIGATIONS</span></td>
+                        <td><span class="atmospheric">ACTIVE - FIELD MEDICAL OPERATIONS</span></td>
                     </tr>
                     <tr>
                         <td>Known Locations</td>
-                        <td>Bureau Medical Lab, Field Investigation Sites, Morgue Facilities</td>
+                        <td>Bureau Medical Lab, Field Investigation Sites, Anomalous Incident Zones</td>
                     </tr>
                     <tr>
                         <td>First Encounter</td>
-                        <td>Recruited from County Medical Examiner's Office after demonstrating exceptional analytical skills</td>
+                        <td>Recruited following medical discharge from the U.S. Air Force after a classified supernatural incident destroyed his Pararescue unit; joined CURSED seeking answers about anomalous phenomena</td>
                     </tr>
                 </table>
             </div>
 
-            <!-- Character Stats -->
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-value">9/10</div>
-                    <div class="stat-label">Medical Expertise</div>
+            <!-- Field Capabilities -->
+            <div class="content-section">
+                <h2 class="section-title">FIELD CAPABILITIES</h2>
+                <div class="profile-box">
+                    <strong>PRIMARY SKILLS:</strong><br>
+                    &bull; Combat Medicine: Trauma surgery, field triage, and emergency care in hostile or anomalous environments<br>
+                    &bull; Search &amp; Rescue: High-risk extraction in remote or supernaturally compromised zones<br>
+                    &bull; Tactical Operations: Pararescue-trained movement, firearms proficiency, and operational awareness<br>
+                    &bull; Anomalous Incident Analysis: Pattern recognition across supernatural case files; driven by personal experience
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value">8/10</div>
-                    <div class="stat-label">Forensic Skills</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">9/10</div>
-                    <div class="stat-label">Analytical Mind</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">6/10</div>
-                    <div class="stat-label">Field Experience</div>
+                <div class="profile-box">
+                    <strong>SPECIALIZATION:</strong> Special Forces<br>
+                    <strong>TRAINING:</strong> USAF Pararescue (PJ); maroon beret; wilderness rescue experience
                 </div>
             </div>
 
@@ -755,77 +718,93 @@
             <div class="character-content">
                 <div class="character-section">
                     <h3 class="section-header">📋 BACKGROUND DOSSIER</h3>
-                    <p>Dr. Nico Rylan is a board-certified medical examiner with over 15 years of experience in forensic pathology. Born and raised in a family of medical professionals, Nico developed an early fascination with the intersection of medicine and justice.</p>
+                    <p>From a young age, Nico Rylan stood out—not for loud ambition or flash, but for his quiet sharpness and an unwavering instinct to help. He was the kind of kid who asked questions others hadn't considered, who patched up scrapes on the schoolyard before the nurse even arrived. His quick mind made school a relatively smooth path, and his natural aptitude in the sciences caught the attention of a military outreach program scouting for potential candidates in medicine.</p>
                     
-                    <p>After completing medical school with honors, Nico specialized in forensic medicine and worked for several years as a county medical examiner. It was during this time that the Bureau took notice of Nico's exceptional analytical skills and ability to remain calm under pressure when dealing with unusual medical cases.</p>
+                    <p>Though he excelled academically, Nico never felt comfortable indoors for long. The call of open air, dirt trails, and unpredictable weather always tugged at him stronger than any lab bench or lecture hall. During his early college years, he volunteered with wilderness rescue teams—balancing trauma rotations with nights in the field helping lost hikers or flood victims. It was there he found a kind of purpose that no hospital could offer.</p>
+                    
+                    <p>It was the convergence of mind, muscle, and mission that led him straight into the Air Force's elite Pararescue program. The PJs promised everything Nico sought—high-intensity medicine, relentless physical challenge, and the opportunity to save lives where few others could reach. He thrived in the brutal training pipeline, earning the maroon beret and quickly building a reputation for staying calm under pressure, especially when others hesitated. Whether fast-roping into hostile terrain or performing field surgery in blackout conditions, Nico was at his best when things were at their worst.</p>
+                    
+                    <p>By his late 30s, he was one of the more seasoned medics in his unit—trusted, respected, and often leaned on for the toughest extractions. He wasn't chasing promotion or glory. He was chasing the feeling of making the impossible a little more survivable for someone else. That, more than anything, was what kept him going… until the night that changed everything.</p>
+                    
+                    <p>His final mission was supposed to be a high-stakes but routine extraction. A special forces team had gone dark deep in hostile terrain during an unsanctioned op. Their last garbled transmission described an attack—by something that didn't make tactical sense. No weapons fire, no clear engagement—just screams and the phrase, <span class="spooky">"It's not human."</span></p>
+                    
+                    <p>Nico's team arrived to a nightmare. Only one operator remained, barely clinging to life. His wounds weren't ballistic or bladed—they looked torn, shredded, almost like massive claws had done the work. As they attempted extraction, the Black Hawk came under assault from an <span class="spooky">unseen force</span>. It wasn't mechanical failure—it was violence. Something invisible but powerful lashed out, downing the bird a mile from the pickup zone.</p>
+                    
+                    <p>Nico had been in the rear, stabilizing the soldier. The crash shattered his back, cracked several ribs, and left him with internal bleeding and severe nerve damage. Most of the crew survived the impact—but not the aftermath. As darkness closed in, Nico heard screams outside the wreckage—some defiant, some terrified. Then nothing.</p>
+                    
+                    <p>He awoke in a military hospital days later. Only he and the special forces operator—now dead—were found when a second team arrived. No enemy bodies, no signs of engagement—just blood trails, bullet casings, and shredded trees.</p>
+                    
+                    <p>Everything about the incident was locked behind layers of classification. The military called it an <span class="terminal-font">"environmental anomaly"</span> and sealed the file. Nico was left with scars, steel rods in his spine, and more questions than answers.</p>
+                    
+                    <p>During his 18-month recovery, he spiraled into obsession. He dug through unofficial reports, fringe forums, black site leaks. The deeper he went, the more he found—other cases, other creatures, unexplainable phenomena buried beneath layers of bureaucracy and fear. It wasn't just about what attacked his team—it was about what else is out there.</p>
+                    
+                    <p>Eventually, the Air Force gave him a medical discharge and a tidy severance. He took neither as a full goodbye. With a cane in one hand and classified trauma in the other, Nico pivoted—joining a private consulting firm that investigates anomalous incidents, cold cases, and paranormal events.</p>
+                    
+                    <p>To most, he's a quietly intense professional with a <span class="atmospheric">clinical demeanor</span>. But behind his calm is a relentless need to understand—and maybe one day find—the entity that stole his team and nearly his life.</p>
                 </div>
 
                 <div class="character-section">
                     <h3 class="section-header">👁️ WITNESS ACCOUNTS</h3>
                     
                     <div class="quote-box">
-                        <strong>Dr. Sarah Chen, Former Colleague:</strong><br>
-                        "Nico has this uncanny ability to see patterns in medical evidence that others miss. When we had that case with the <span class="spooky">unexplained tissue degradation</span>, Nico was the only one who noticed the microscopic anomalies that eventually led us to the truth."
-                        <div class="timestamp">Recorded: 1998-11-23 14:30</div>
+                        <strong>[WITNESS NAME TBD]:</strong><br>
+                        "[QUOTE TBD - Should reference Nico's medical expertise or calm under pressure]"
+                        <div class="timestamp">Recorded: [DATE TBD]</div>
                     </div>
                     
                     <div class="quote-box">
-                        <strong>Investigator Jordan Scott, Lead Investigator:</strong><br>
-                        "Having Nico on a case is like having a medical encyclopedia with legs. The way they can piece together cause of death from seemingly unrelated evidence is <span class="atmospheric">nothing short of supernatural</span>."
-                        <div class="timestamp">Recorded: 1998-12-01 09:15</div>
+                        <strong>[WITNESS NAME TBD]:</strong><br>
+                        "[QUOTE TBD - Should reference field operations or analytical skills]"
+                        <div class="timestamp">Recorded: [DATE TBD]</div>
                     </div>
                 </div>
 
                 <div class="character-section">
                     <h3 class="section-header">🔍 BUREAU OBSERVATIONS</h3>
-                    <p>Nico has proven to be an invaluable asset to the Bureau's investigation team, particularly in cases involving unexplained deaths, medical anomalies, and supernatural phenomena that manifest through physical symptoms.</p>
+                    <p>Nico has proven to be an invaluable asset in field medical operations, particularly in cases involving anomalous injuries, unexplained trauma, and supernatural encounters requiring immediate triage. His unique combination of elite military medical training and firsthand experience with the paranormal makes him exceptionally effective in high-risk field situations.</p>
                     
                     <div class="profile-box">
                         <strong>BEHAVIORAL ANALYSIS - ENTRY #013-001</strong><br>
-                        Subject demonstrates exceptional attention to detail and analytical thinking.<br>
-                        Maintains professional composure even in highly stressful supernatural situations.<br>
-                        Shows particular interest in cases involving medical mysteries and unexplained pathologies.<br>
-                        Prefers to work methodically and thoroughly rather than rushing to conclusions.
+                        &bull; Subject demonstrates exceptional composure under extreme duress; remains clinically focused when others panic<br>
+                        &bull; Carries physical reminders of his encounter (spinal injury, cane) that fuel rather than hinder his drive<br>
+                        &bull; Shows a methodical, evidence-based approach to the paranormal—treats the unexplained as a problem to be diagnosed<br>
+                        &bull; Displays a quiet protectiveness toward teammates; will put himself in harm's way without hesitation<br>
+                        &bull; Prone to obsessive research spirals when a case echoes his own experience
                     </div>
-                    
-                    <p>Nico's medical expertise has been crucial in several high-profile cases, including the <span class="spooky">Trailer Park Mass Hysteria Incident</span> and the <span class="atmospheric">Digital Consciousness Transfer Case</span>.</p>
                 </div>
 
                 <div class="character-section">
-                    <h3 class="section-header">🏥 MEDICAL SPECIALIZATIONS</h3>
-                    <p>Nico's primary areas of expertise include forensic pathology, toxicology analysis, and the identification of medical anomalies that may indicate supernatural involvement.</p>
+                    <h3 class="section-header">📂 FIELD RECORD</h3>
+                    <p>Notable case contributions across CURSED investigations:</p>
                     
                     <div class="profile-box">
-                        <strong>MEDICAL EXPERTISE AREAS:</strong><br>
-                        • Forensic Pathology and Autopsy Procedures<br>
-                        • Toxicology and Chemical Analysis<br>
-                        • Medical Evidence Interpretation<br>
-                        • Cause of Death Determination<br>
-                        • Supernatural Medical Phenomenon Analysis
+                        <strong>NOTABLE CASE CONTRIBUTIONS:</strong><br><br>
+                        <strong>Deep Freeze (Pituffik Space Base):</strong> Performed forensic examinations on multiple casualties (Yost, Cole); stabilized hostile subject Aiden McCall after team subdued him; fought alongside Asher against two armed attackers (Hsu with scalpel, Steele with knife)<br><br>
+                        <strong>Tales from the Trailer Park (Muleshoe, TX):</strong> Determined bite marks on the victim were post-mortem — blood was drained after death — a finding central to the vampire investigation; identified persons of interest at the funeral (fidgety man with powdery skin and glassy eyes); searched Ronnie's room and found comics about a vampire superhero<br><br>
+                        <strong>Circuit Breaker (Argencorp):</strong> Only investigator whose badge was approved on first swipe — the building's AI appeared to favor him; managed medical response during halon gas deployment (identified 20-second window to unconsciousness)<br><br>
+                        <strong>False Light (Wilkes County, NC):</strong> Determined hiker deaths occurred within the last 48 hours; discovered his own autopsy report among victim files — a major spore-induced hallucination<br><br>
+                        <strong>Whispers at Stillwater (Stillwater Estate, WV):</strong> Uncovered the history of Elias Par through interviews with William Cason; helped locate the sealed root cellar
                     </div>
-                    
-                    <p>Nico maintains a small but well-equipped medical laboratory at Bureau headquarters and is often called upon to analyze evidence from field investigations.</p>
                 </div>
 
                 <div class="character-section">
                     <h3 class="section-header">⚠️ CURRENT STATUS</h3>
-                    <p>Nico is currently active and involved in several ongoing investigations, including the analysis of medical evidence from recent cryptid encounters and the examination of victims from supernatural incidents.</p>
+                    <p>Active field medic and investigator. Ongoing personal research into classified incident. Physical condition stable but limited by spinal injury.</p>
                     
                     <div class="status-box">
-                        <p class="spooky"><strong>⚠️ ACTIVE INVESTIGATION ⚠️</strong></p>
-                        <p>Currently analyzing tissue samples from the <span class="atmospheric">Wild at Heart</span> cryptid case. Preliminary findings suggest unusual cellular mutations that require further study.</p>
+                        <p class="spooky"><strong>⚠️ ACTIVE FIELD OPERATIONS ⚠️</strong></p>
+                        <p>Currently serving as primary field medic and investigator. Maintains ongoing personal research into the classified incident that ended his military career. Physical condition stable but limited by spinal injury.</p>
                     </div>
                 </div>
 
                 <div class="character-section">
                     <h3 class="section-header">📊 CHARACTER ASSESSMENT</h3>
-                    <p>Nico Rylan represents one of the Bureau's most valuable assets - a medical professional with the analytical skills and temperament necessary to handle the unique challenges of supernatural investigation.</p>
+                    <p>Nico Rylan represents one of the Bureau's most uniquely qualified assets—a combat-hardened medic whose firsthand encounter with the supernatural gives him perspective that cannot be taught. His clinical precision, physical resilience, and personal stake in understanding the unknown make him indispensable.</p>
                     
                     <div class="profile-box">
                         <strong>BUREAU ASSESSMENT:</strong> ESSENTIAL PERSONNEL<br>
                         <strong>THREAT LEVEL:</strong> LOW THREAT - VALUABLE ASSET<br>
                         <strong>MONITORING STATUS:</strong> ACTIVE MONITORING<br>
-                        <strong>CLEARANCE REQUIRED:</strong> OMEGA LEVEL<br>
                         <strong>NEXT REVIEW:</strong> 1999-01-15
                     </div>
                 </div>
@@ -835,10 +814,11 @@
             <div class="content-section">
                 <h2 class="section-title">🔗 RELATED INVESTIGATIONS</h2>
                 <ul>
-                    <li><a href="../stories/cryptid-sightings/wild-at-heart.html">Wild at Heart - Cryptid Encounter</a></li>
-                    <li><a href="../stories/ghost-stories/tales-from-the-trailer-park.html">Tales from the Trailer Park - Mass Hysteria</a></li>
-                    <li><a href="../stories/ghost-stories/vanishing-forum-post.html">Vanishing Forum Post - Digital Consciousness</a></li>
-                    <li><a href="../investigators.html">More cases by Investigator 13</a></li>
+                    <li><a href="../stories/conspiracy-files/deep-freeze.html">Deep Freeze</a></li>
+                    <li><a href="../stories/ghost-stories/tales-from-the-trailer-park.html">Tales from the Trailer Park</a></li>
+                    <li><a href="../stories/conspiracy-files/circuit-breaker.html">Circuit Breaker</a></li>
+                    <li><a href="../stories/ghost-stories/false-light.html">False Light</a></li>
+                    <li><a href="../stories/ghost-stories/whispers-at-stillwater.html">Whispers at Stillwater</a></li>
                 </ul>
             </div>
         </div>
@@ -868,7 +848,6 @@
 
     <script src="../js/retro-effects.js"></script>
     <script>
-        // Decryption functionality
         document.addEventListener('DOMContentLoaded', function() {
             const decryptBtn = document.getElementById('decryptBtn');
             const classifiedContent = document.getElementById('classifiedContent');
@@ -881,20 +860,18 @@
             
             let isDecrypted = false;
             
-                         decryptBtn.addEventListener('click', function() {
-                 if (isDecrypted) {
-                     // Re-encrypt
-                     classifiedContent.style.display = 'block';
-                     decryptedContent.style.display = 'none';
-                     classifiedName.style.display = 'inline';
-                     decryptedName.style.display = 'none';
-                     decryptBtn.textContent = '🔓 DECRYPT CLASSIFIED FILE';
-                     isDecrypted = false;
-                 } else {
-                     // Decrypt
-                     startDecryption();
-                 }
-             });
+            decryptBtn.addEventListener('click', function() {
+                if (isDecrypted) {
+                    classifiedContent.style.display = 'block';
+                    decryptedContent.style.display = 'none';
+                    classifiedName.style.display = 'inline';
+                    decryptedName.style.display = 'none';
+                    decryptBtn.textContent = '🔓 DECRYPT CLASSIFIED FILE';
+                    isDecrypted = false;
+                } else {
+                    startDecryption();
+                }
+            });
             
             function startDecryption() {
                 decryptBtn.disabled = true;
@@ -921,17 +898,16 @@
                     } else {
                         clearInterval(interval);
                         
-                                                 // Complete decryption
-                         setTimeout(() => {
-                             decryptionOverlay.style.display = 'none';
-                             classifiedContent.style.display = 'none';
-                             decryptedContent.style.display = 'block';
-                             classifiedName.style.display = 'none';
-                             decryptedName.style.display = 'inline';
-                             decryptBtn.textContent = '🔒 RE-ENCRYPT FILE';
-                             decryptBtn.disabled = false;
-                             isDecrypted = true;
-                         }, 1000);
+                        setTimeout(() => {
+                            decryptionOverlay.style.display = 'none';
+                            classifiedContent.style.display = 'none';
+                            decryptedContent.style.display = 'block';
+                            classifiedName.style.display = 'none';
+                            decryptedName.style.display = 'inline';
+                            decryptBtn.textContent = '🔒 RE-ENCRYPT FILE';
+                            decryptBtn.disabled = false;
+                            isDecrypted = true;
+                        }, 1000);
                     }
                 }, 800);
             }

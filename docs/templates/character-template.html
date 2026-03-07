@@ -32,16 +32,6 @@
             text-shadow: var(--glow-green);
         }
         
-        .clearance-level {
-            background-color: var(--text-warning);
-            color: var(--bg-primary);
-            padding: 5px 15px;
-            font-family: var(--font-mono);
-            font-weight: bold;
-            display: inline-block;
-            margin: 10px 0;
-        }
-        
         .character-content {
             background-color: var(--bg-box);
             border: 1px solid var(--border-primary);
@@ -111,34 +101,6 @@
             max-width: 200px;
             border: 2px solid var(--border-primary);
             box-shadow: var(--glow-green);
-        }
-        
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 15px;
-            margin: 20px 0;
-        }
-        
-        .stat-box {
-            background-color: var(--bg-secondary);
-            border: 1px solid var(--border-primary);
-            padding: 15px;
-            text-align: center;
-        }
-        
-        .stat-value {
-            color: var(--text-primary);
-            font-size: 24px;
-            font-weight: bold;
-            font-family: var(--font-mono);
-        }
-        
-        .stat-label {
-            color: var(--text-accent);
-            font-size: 12px;
-            text-transform: uppercase;
-            margin-top: 5px;
         }
 
         /* Classified/Decryption specific styles */
@@ -537,8 +499,7 @@
                 <span id="classifiedName" class="redacted-text"></span>
                 <span id="decryptedName" style="display: none;">[CHARACTER NAME]</span>
             </h2>
-            <div class="clearance-level">CLEARANCE LEVEL: [LEVEL]</div>
-            <p class="timestamp">First Contact: [DATE] | Last Seen: [UPDATE-DATE]</p>
+            <p class="timestamp">First Contact: [DATE]</p>
         </div>
 
         <!-- Decrypt Button -->
@@ -576,7 +537,19 @@
                         <td><span class="terminal-font">[CODE NAME]</span></td>
                     </tr>
                     <tr>
+                        <td>Alias</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
                         <td>Real Name</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td><span class="redacted-text"></span></td>
+                    </tr>
+                    <tr>
+                        <td>Origin</td>
                         <td><span class="redacted-text"></span></td>
                     </tr>
                     <tr>
@@ -602,23 +575,19 @@
                 </table>
             </div>
 
-            <!-- Classified Stats -->
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">[STAT LABEL]</div>
+            <!-- Classified Field Capabilities -->
+            <div class="content-section">
+                <h2 class="section-title">FIELD CAPABILITIES</h2>
+                <div class="profile-box">
+                    <strong>PRIMARY SKILLS:</strong><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span><br>
+                    <span class="redacted-text"></span> <span class="redacted-text"></span>
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">[STAT LABEL]</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">[STAT LABEL]</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value"><span class="redacted-text"></span></div>
-                    <div class="stat-label">[STAT LABEL]</div>
+                <div class="profile-box">
+                    <strong>SPECIALIZATION:</strong> <span class="redacted-text"></span><br>
+                    <strong>TRAINING:</strong> <span class="redacted-text"></span>
                 </div>
             </div>
 
@@ -691,8 +660,20 @@
                         <td><span class="terminal-font">[CODE NAME]</span></td>
                     </tr>
                     <tr>
+                        <td>Alias</td>
+                        <td>[ALIAS OR N/A]</td>
+                    </tr>
+                    <tr>
                         <td>Real Name</td>
                         <td>[REAL NAME]</td>
+                    </tr>
+                    <tr>
+                        <td>Age</td>
+                        <td>[AGE]</td>
+                    </tr>
+                    <tr>
+                        <td>Origin</td>
+                        <td>[ORIGIN]</td>
                     </tr>
                     <tr>
                         <td>Species/Type</td>
@@ -717,23 +698,19 @@
                 </table>
             </div>
 
-            <!-- Character Stats -->
-            <div class="stats-grid">
-                <div class="stat-box">
-                    <div class="stat-value">[VALUE]</div>
-                    <div class="stat-label">[STAT LABEL]</div>
+            <!-- Field Capabilities -->
+            <div class="content-section">
+                <h2 class="section-title">FIELD CAPABILITIES</h2>
+                <div class="profile-box">
+                    <strong>PRIMARY SKILLS:</strong><br>
+                    &bull; [SKILL AREA 1]: [Brief description of capability]<br>
+                    &bull; [SKILL AREA 2]: [Brief description of capability]<br>
+                    &bull; [SKILL AREA 3]: [Brief description of capability]<br>
+                    &bull; [SKILL AREA 4]: [Brief description of capability]
                 </div>
-                <div class="stat-box">
-                    <div class="stat-value">[VALUE]</div>
-                    <div class="stat-label">[STAT LABEL]</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">[VALUE]</div>
-                    <div class="stat-label">[STAT LABEL]</div>
-                </div>
-                <div class="stat-box">
-                    <div class="stat-value">[VALUE]</div>
-                    <div class="stat-label">[STAT LABEL]</div>
+                <div class="profile-box">
+                    <strong>SPECIALIZATION:</strong> [SPECIALIZATION NAME]<br>
+                    <strong>TRAINING:</strong> [Notable training or background, e.g. "USMC Force Recon, Marine Raiders"]
                 </div>
             </div>
 
@@ -807,7 +784,6 @@
                         <strong>BUREAU ASSESSMENT:</strong> [ASSESSMENT]<br>
                         <strong>THREAT LEVEL:</strong> [LEVEL]<br>
                         <strong>MONITORING STATUS:</strong> [STATUS]<br>
-                        <strong>CLEARANCE REQUIRED:</strong> [CLEARANCE LEVEL]<br>
                         <strong>NEXT REVIEW:</strong> [DATE]
                     </div>
                 </div>
@@ -850,7 +826,6 @@
 
     <script src="../js/retro-effects.js"></script>
     <script>
-        // Decryption functionality
         document.addEventListener('DOMContentLoaded', function() {
             const decryptBtn = document.getElementById('decryptBtn');
             const classifiedContent = document.getElementById('classifiedContent');
@@ -865,7 +840,6 @@
             
             decryptBtn.addEventListener('click', function() {
                 if (isDecrypted) {
-                    // Re-encrypt
                     classifiedContent.style.display = 'block';
                     decryptedContent.style.display = 'none';
                     classifiedName.style.display = 'inline';
@@ -873,7 +847,6 @@
                     decryptBtn.textContent = '🔓 DECRYPT CLASSIFIED FILE';
                     isDecrypted = false;
                 } else {
-                    // Decrypt
                     startDecryption();
                 }
             });
@@ -903,7 +876,6 @@
                     } else {
                         clearInterval(interval);
                         
-                        // Complete decryption
                         setTimeout(() => {
                             decryptionOverlay.style.display = 'none';
                             classifiedContent.style.display = 'none';
@@ -924,7 +896,7 @@
 
 <!--
 TEMPLATE INSTRUCTIONS:
-1. Copy this file to your character location (e.g., characters/investigator-13.html)
+1. Copy this file to your character location (e.g., characters/investigator-07.html)
 2. Replace all [BRACKETED] placeholders with your content
 3. Update file paths (../) if needed based on your directory depth
 4. Add/remove witness accounts and profile boxes as needed
@@ -937,27 +909,26 @@ TEMPLATE INSTRUCTIONS:
    - .terminal-font for monospace text
    - .blink for blinking animation
 
+PROFILE TABLE FIELDS:
+- [CODE NAME]: From the investigator MD file (e.g. "GHOST", "DOC")
+- [ALIAS OR N/A]: Character alias if applicable (e.g. "Dogfather"), otherwise "N/A"
+- [REAL NAME]: Full name from the MD file
+- [AGE]: Character's age (e.g. "29", "Early 30s", "40s")
+- [ORIGIN]: Birthplace/hometown (e.g. "Newark, New Jersey")
+
+FIELD CAPABILITIES:
+- Pull from the "Specializations" section of the investigator MD file
+- Each skill area should be a brief, descriptive phrase -- no numeric ratings
+- SPECIALIZATION: The character's RPG specialization (e.g. "Gunfighter", "Agent", "Special Forces")
+- TRAINING: Notable military service, education, or professional background
+
 SUGGESTED AGENT NUMBERS:
-- Human Agents: CIB-A001 to CIB-A099
-- Supernatural Entities: CIB-S001 to CIB-S099  
-- Cryptids: CIB-C001 to CIB-C099
-- Other Beings: CIB-O001+
-
-CLEARANCE LEVELS:
-- LEVEL 1 (Green) - Basic access
-- LEVEL 2 (Yellow) - Restricted access
-- LEVEL 3 (Red) - Top secret access
-- LEVEL 4 (Red with glow) - Eyes only access
-
-STAT SUGGESTIONS:
-- Threat Level, Intelligence, Strength, Speed
-- Supernatural Power, Stealth, Charisma, Sanity
-- Or create custom stats relevant to your character
+- Human Agents: CIB-001 to CIB-099
 
 DECRYPTION FEATURES:
 - Click "DECRYPT CLASSIFIED FILE" to reveal full information
 - Click "RE-ENCRYPT FILE" to hide information again
-- Cool decryption overlay with progress bar and status messages
-- Redacted text appears as black bars in classified view
+- Decryption overlay with progress bar and status messages
+- Redacted text appears as red bars in classified view
 - Silhouette placeholder for classified photo
 -->

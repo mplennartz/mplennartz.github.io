@@ -8,20 +8,25 @@ This document maps the characters from `List_of_investigators.txt` to the existi
 
 | Investigator Number | Character Name | Specialization | Current Status |
 |-------------------|----------------|----------------|----------------|
-| **Investigator 07** | **Asher Khalid** | Field Operations / Interpersonal Relations | Active |
+| **Investigator 07** | **Asher Khalid** | Combat / Tactical Field Operations | Active |
+| **Investigator 13** | **Nico Rylan** | Combat Medicine / Search & Rescue | Active |
 | **Investigator 23** | **Victoria Quinn** | [SPECIALIZATION TBD] | [STATUS TBD] |
-| **Investigator 42** | **Donovan "Dogfather" Cross** | [SPECIALIZATION TBD] | [STATUS TBD] |
-| **Investigator 89** | **Ezra Cason, PhD** | Occult Studies / Academic Research | Active |
-| **Investigator 13** | **Nico Rylan** | Medical Analysis / Forensic Medicine | Active |
-| **Investigator 66** | **Jordan Scott** | Lead Investigator / Case Management | Active |
-| **Investigator 51** | **Bertram "Bertie" Wooster** | Forensic Analysis / Evidence Processing | Active |
+| **Investigator 42** | **Donovan "Dogfather" Cross** | Command & Leadership / K9 Operations | Active |
+| **Investigator 51** | **Bertram "Bertie" Wooster** | Forensic Analysis / Evidence Processing | Supporting Character (formerly main) |
+| **Investigator 66** | **Jordan Scott** | Undercover Operations / Investigation | Active |
+| **Investigator 89** | **Ezra Cason, PhD** | Cryptography & Hacking / Occult Research | Active |
 
 ### Character Backgrounds for Story Development
 
 #### Asher Khalid (Investigator 07)
-- **Background**: Skilled field operative with strong interpersonal abilities. Shows aptitude for undercover work and witness relations.
-- **Specialization**: Field Operations / Interpersonal Relations
-- **Story Potential**: Romance subplots, undercover operations, witness interviews, team coordination
+- **Background**: Egyptian-American, born at Fort Drum NY, raised in Corpus Christi TX. USMC veteran — Force Recon then Marine Raiders, deployed to Iraq and Afghanistan. Investigated the disappearance of his friend Ethan Cole with Jordan Scott, which led to CURSED recruitment.
+- **Specialization**: Combat / Tactical Field Operations / Gunfighter
+- **Story Potential**: Combat encounters, tactical operations, improvised solutions, the Ethan Cole disappearance thread, family/heritage, partnership with Jordan
+
+#### Nico Rylan (Investigator 13)
+- **Background**: Former Air Force Pararescue (PJ) medic. Survived a classified supernatural incident that destroyed his unit and downed his Black Hawk. Medical discharge after 18-month recovery (spinal injury). Joined CURSED seeking answers about anomalous phenomena.
+- **Specialization**: Combat Medicine / Search & Rescue / Anomalous Incident Analysis
+- **Story Potential**: Field medical emergencies, supernatural entity encounters, recovery/trauma arcs, the classified incident, search and rescue operations
 
 #### Victoria Quinn (Investigator 23)
 - **Background**: [BACKGROUND TBD]
@@ -29,46 +34,42 @@ This document maps the characters from `List_of_investigators.txt` to the existi
 - **Story Potential**: [STORY POTENTIAL TBD]
 
 #### Donovan "Dogfather" Cross (Investigator 42)
-- **Background**: [BACKGROUND TBD]
-- **Specialization**: [SPECIALIZATION TBD]
-- **Story Potential**: [STORY POTENTIAL TBD]
-
-#### Ezra Cason, PhD (Investigator 89)
-- **Background**: Academic with PhD-level education. Specializes in occult studies and historical research.
-- **Specialization**: Occult Studies / Academic Research
-- **Story Potential**: Occult investigations, historical research, library studies, symbolic analysis
-
-#### Nico Rylan (Investigator 13)
-- **Background**: Medical professional with forensic expertise. Skilled in autopsy analysis and medical evidence interpretation.
-- **Specialization**: Medical Analysis / Forensic Medicine
-- **Story Potential**: Autopsy scenes, medical investigations, cause of death analysis, medical evidence
-
-#### Jordan Scott (Investigator 66)
-- **Background**: Experienced lead investigator with strong case management skills. Often takes charge of complex multi-person investigations.
-- **Specialization**: Lead Investigator / Case Management
-- **Story Potential**: Team leadership, case coordination, major investigations, strategy planning
+- **Background**: Born in London, England (dual US/UK citizenship). Age 43. Billionaire tech mogul, government special agent, and elite K9 trainer. Aristocratic upbringing, transitioned from executive to command role.
+- **Specialization**: Command & Leadership / K9 Operations / Social Influence
+- **Story Potential**: K9 deployments, command decisions, tech/government connections, the isolation of leadership, high-society navigation
+- **Note**: Full narrative backstory pending from player
 
 #### Bertram "Bertie" Wooster (Investigator 51)
-- **Background**: Forensic specialist with expertise in evidence analysis and laboratory processing.
+- **Background**: Long-time friend and Brown University roommate of Ezra Cason. Joined CURSED and recruited Ezra. Previously a main character, now a supporting role.
 - **Specialization**: Forensic Analysis / Evidence Processing
-- **Story Potential**: Evidence analysis, laboratory scenes, forensic investigations, chemical analysis
+- **Story Potential**: Supporting role in Ezra-centric stories, recruitment history, shared projects with Ezra
+- **Note**: No longer a main character; referenced in Ezra's backstory as his recruiter to CURSED
 
-### Usage Guidelines
+#### Jordan Scott (Investigator 66)
+- **Background**: Former undercover cop from Newark, NJ. Age 29. Partner Ethan Cole vanished during a supernatural incident at a warehouse drug bust. Pushed out of her department, recruited by CURSED. Carries visible trauma (white streak in hair).
+- **Specialization**: Undercover Operations / Investigation / Urban Mobility
+- **Story Potential**: Undercover infiltration, the Ethan Cole disappearance, guilt/redemption arcs, partnership with Asher, urban pursuit/freerunning
 
-1. **Story Attribution**: When creating new stories, assign them to the appropriate investigator based on the story's theme and content.
+#### Ezra Cason, PhD (Investigator 89)
+- **Background**: Scion of the Cason family (Fiddler's Green, WV), generational academics with deep occult ties. BS from Brown (Computers & Cryptography), PhD from Miskatonic (Computer Science). Adjunct professor at both. Recruited by Bertie Wooster.
+- **Specialization**: Cryptography & Hacking / Occult Research / Academic Analysis
+- **Story Potential**: Encrypted communications, digital forensics, occult investigations, academic world, Cason family legacy, Miskatonic connections
 
-2. **Character Development**: Use these character backgrounds to develop consistent investigator personalities and expertise areas.
+### Specialization Matching
 
-3. **Cross-Investigator Stories**: Stories can involve multiple investigators when appropriate (e.g., a digital haunting that also involves government cover-up).
+When creating stories, match the story's theme to the appropriate investigator:
 
-4. **Specialization Matching**: Ensure stories match the investigator's area of expertise:
-   - **Field Operations/Interpersonal** → Asher Khalid (07)
-   - **[STORY TYPE TBD]** → Victoria Quinn (23)
-   - **[STORY TYPE TBD]** → Donovan Cross (42)
-   - **Medical Analysis/Forensic Medicine** → Nico Rylan (13)
-   - **Lead Investigation/Case Management** → Jordan Scott (66)
-   - **Forensic Analysis/Evidence Processing** → Bertram Wooster (51)
-   - **Occult Studies/Academic Research** → Ezra Cason (89)
+- **Tactical Combat / Field Operations** → Asher Khalid (07)
+- **Medical Emergencies / Anomalous Entities** → Nico Rylan (13)
+- **[STORY TYPE TBD]** → Victoria Quinn (23)
+- **Command / K9 / Strategic Operations** → Donovan Cross (42)
+- **Undercover / Investigation / Urban Ops** → Jordan Scott (66)
+- **Cryptography / Hacking / Occult Research** → Ezra Cason (89)
+
+### Shared Story Threads
+
+- **The Ethan Cole Disappearance**: Connects Asher Khalid (07) and Jordan Scott (66) — both were involved in investigating Ethan Cole's vanishing, which led to their CURSED recruitment
+- **Bertie Wooster Connection**: Connects Ezra Cason (89) to CURSED's early formation — Bertie recruited Ezra as one of his first acts with the organization
 
 ### Future Development
 
@@ -82,4 +83,4 @@ This mapping can be used to:
 ---
 
 *Last Updated: December 15, 1998*
-*For use in story generation and content development* 
+*For use in story generation and content development*

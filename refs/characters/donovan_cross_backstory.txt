@@ -1,0 +1,42 @@
+Record your choices using the fields below. When you're done designing your character, write a few paragraphs of background story to synthesize the character you've created into a holistic person distinct from yourself with their own beliefs, motivations, prejudices, values, priorities, etc. How you came to work for/were recruited by CURSED would be a helpful additional narrative detail.
+
+
+Concept: 
+
+Abilities: 12 Advancements; no ability below 0, no ability can be greater than 3.
+Social Class: Upper Class
+
+Background: Aristocratic
+
+    Ability: +1 Communication
+    Focus: Communication (Etiquette)
+    Talent: Animal Training Novice (Was Affluent (+2 Resources))
+    Benefit: Communication Focus: Animal Handling (was +2 Resources, But I am poor now)
+
+Profession: Commander Was (Executive)
+
+    Focus: Communication (Leadership)
+    Talent: Command
+    Health: 20+Con (15+Con)
+    Base Resources: 6 (8)
+
+Drive: Leader
+
+    Quality: Your quality is responsibility. You make decisions and live with the outcome.
+    Downfall: Your downfall is isolation, the distance imposed by your role as leader, which can affect relationships and how close you can be with people under your command.
+    Talent: Inspire
+    Improvement: +5 Health
+
+
+Background Story
+
+
+Name: Donovan Alexander Cross
+
+Alias: “Dogfather”
+
+Occupation: Billionaire Tech Mogul | Government Special Agent | Elite K9 Trainer
+
+Age: 43
+
+Birthplace: London, England (Dual Citizenship with USA)

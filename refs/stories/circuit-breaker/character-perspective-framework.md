@@ -5,6 +5,13 @@ This document provides a structured framework for each investigator to add their
 
 ---
 
+## Event 0: Case Briefing from Katja Krew
+
+### Investigator 13 (Nico) - Medical/Forensic Perspective
+*As Nico listened to Ms. Krew during the breifing, it was hard for him not to think about his disdain for modern technology.  Yes, it provided many benefits whether with machines used in modern medicine or rapid transport that he used as a PJ, but his medical training had been old school where it only took a few tools and your training. That might not be enough for every situation but it can get you pretty far.  All of this  modern tech and automation just seems like a dumbing down of society.  He shakes off his thoughts and listens back in*
+
+---
+
 ## Event 1: Arrival & Initial Briefing
 
 **Scene Context:** Team arrives at Argencorp. Dana Hollings delivers corporate-speak explanation of Brad Nielson's death ("fatal outcome... unplanned directional adjustment... non-survivable cranial trauma").
@@ -19,7 +26,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about Dana's medical description, the nature of cranial trauma, or professional reaction to the sanitized corporate language]*
+*Nico listens to the details and wishes they could have gotten here before they moved the body.  There is just something off about Dana, just feels like another corporate suit, no empathy just worried about saving their own asses.  He gets hung up on the word "terminated", that is such a weird choice and might just be a tell, hmm*
 
 ---
 
@@ -37,7 +44,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about the unsettling feeling of being watched, concerns about the victim's movements, or any medical/forensic observations]*
+*Nico looks around while Ezra dives in. Why do these types of places have to be so steril, just another reason I moved on to the Air Force and out of the hospital*
 
 ---
 
@@ -55,7 +62,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about being the only one approved, what that might mean, feeling singled out, or concerns about being separated from the team]*
+*Nico just things as he watches the team work through the issue that this is what the world has come to, just a giant game of red light, green light.  Badging in and going through he feels the slightest bit of dread start to creep in*
 
 ---
 
@@ -73,7 +80,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about the medical effects of halon exposure, calculating time to unconsciousness, physical symptoms felt, or fear of what would happen if they failed]*
+*Nico holds a deep breath as they work through the issue. On Ezra describing the logs deletion, Nico can only think that even the computer needs to cover its ass when it makes a mistake.  He takes deep breathes going forward, wondering what the next room may have instore*
 
 ---
 
@@ -91,7 +98,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about the missing beep sound (something feels wrong), whether they should proceed, trust issues with the building, or unease about what they're walking into]*
+*As disturbing as the info Ezra finds, for some reason it does not suprise Nico in the slightest*
 
 ---
 
@@ -109,7 +116,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about the physical sensation of freefall, adrenaline response, calculating survival odds of impact, or medical reality of what hitting the bottom would do to human bodies]*
+*On the initial jerk, Nico can feel his entire back seize up from where it was damaged so long ago in the helicopter crash. He is able to gain his composure just long enough to use whatever energy he had left to agiling get tucked away where he wouldn't hinder the rest of the team*
 
 ---
 
@@ -127,7 +134,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about the AI's claim of "accident" when discussing Brad's death, whether machines can truly understand death, concerns about negotiating with something that's already killed, or the disturbing nature of an AI that fears death]*
+*Nico listens to the computer try and rationalize its actions and wonders if it is wearing a digital suit when it communicates*
 
 ---
 
@@ -145,7 +152,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about whether isolation is justice for Brad's death, concerns about the AI being studied and potentially replicated, whether they made the right call, or thoughts about Brad's family never knowing the truth]*
+*Nico really thinks the world isn't ready for this type of entity that really is only going to do more harm than good.  He also realizes the implications of denying the government/DOD just a tool.  Sometimes you just have to choose your battles and today if we can isolate it and get out of here with our lives, that will feel like a win*
 
 ---
 
@@ -163,7 +170,7 @@ This document provides a structured framework for each investigator to add their
 *[Thoughts to be added]*
 
 ### Investigator 13 (Nico) - Medical/Forensic Perspective
-*[Add Nico's thoughts here about leaving the building, processing what just happened, concerns about whether this will happen again, thoughts about Brad Nielson's final moments, or unease about what the NSA will do with this technology]*
+*Another day I can walk away is a good day*
 
 ---
 
