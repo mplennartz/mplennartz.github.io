@@ -82,12 +82,25 @@ document.addEventListener('DOMContentLoaded', function() {
 
             if (submitButton) submitButton.disabled = true;
 
+            var realNow = new Date();
+            var dayOfMonth = realNow.getDate();
+            var hr = realNow.getHours();
+            var totalMin = Math.floor(((dayOfMonth * 24 + hr) / (32 * 24)) * 1440);
+            var gh = Math.floor(totalMin / 60);
+            var gm = totalMin % 60;
+            var gap = gh >= 12 ? 'PM' : 'AM';
+            var gdh = gh % 12 || 12;
+            var gd = SITE_CONFIG.GAME_DATE;
+            var gameDate = gd.month + ' ' + String(gd.day).padStart(2, '0') + ', ' + gd.year +
+                ' - ' + gdh + ':' + String(gm).padStart(2, '0') + ' ' + gap;
+
             guestbookRef.push({
                 name: name,
                 location: location,
                 clearance: clearance,
                 message: message,
-                timestamp: firebase.database.ServerValue.TIMESTAMP
+                timestamp: firebase.database.ServerValue.TIMESTAMP,
+                gameDate: gameDate
             }).then(function() {
                 lastSubmitTime = Date.now();
                 showRetroAlert(
@@ -115,18 +128,22 @@ document.addEventListener('DOMContentLoaded', function() {
         var entry = document.createElement('div');
         entry.className = 'guestbook-entry';
 
-        var realDate = new Date(data.timestamp);
-        var dayOfMonth = realDate.getDate();
-        var hour = realDate.getHours();
-        var totalMinutes = Math.floor(((dayOfMonth * 24 + hour) / (32 * 24)) * 1440);
-        var h = Math.floor(totalMinutes / 60);
-        var m = totalMinutes % 60;
-        var ampm = h >= 12 ? 'PM' : 'AM';
-        var dh = h % 12 || 12;
-
-        var gd = SITE_CONFIG.GAME_DATE;
-        var dateStr = gd.month + ' ' + gd.day + ', ' + gd.year + ' - ' +
-            dh + ':' + m.toString().padStart(2, '0') + ' ' + ampm;
+        var dateStr;
+        if (data.gameDate) {
+            dateStr = data.gameDate;
+        } else {
+            var realDate = new Date(data.timestamp);
+            var dayOfMonth = realDate.getDate();
+            var hour = realDate.getHours();
+            var totalMinutes = Math.floor(((dayOfMonth * 24 + hour) / (32 * 24)) * 1440);
+            var h = Math.floor(totalMinutes / 60);
+            var m = totalMinutes % 60;
+            var ampm = h >= 12 ? 'PM' : 'AM';
+            var dh = h % 12 || 12;
+            var gd = SITE_CONFIG.GAME_DATE;
+            dateStr = gd.month + ' ' + gd.day + ', ' + gd.year + ' - ' +
+                dh + ':' + m.toString().padStart(2, '0') + ' ' + ampm;
+        }
 
         var safeClearance = VALID_CLEARANCES.indexOf(data.clearance) !== -1
             ? data.clearance : 'civilian';

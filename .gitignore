@@ -1,6 +1,9 @@
 # Firebase config (contains API key — injected at deploy time via GitHub Actions)
 docs/js/firebase-config.js
 
+# Setup docs (not part of the site)
+FIREBASE-SETUP.md
+
 # Environment files
 .env
 .env.*
