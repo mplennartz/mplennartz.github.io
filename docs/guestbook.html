@@ -17,6 +17,7 @@
                 <span class="terminal-font">VISITORS: 005464</span> 
                 <span class="blink">●</span>
             </div>
+            <div class="last-updated"></div>
         </div>
 
         <!-- Navigation Bar -->
@@ -69,10 +70,14 @@
                         <td class="form-label">Message:</td>
                         <td><textarea name="message" class="form-textarea" placeholder="Share your experience, theory, or message..." maxlength="500"></textarea></td>
                     </tr>
+                    <tr style="position: absolute; left: -9999px;" aria-hidden="true">
+                        <td class="form-label">Website:</td>
+                        <td><input type="text" name="website_url" class="form-input" tabindex="-1" autocomplete="off"></td>
+                    </tr>
                     <tr>
                         <td></td>
                         <td>
-                            <button type="submit" class="submit-button" disabled>SUBMIT MESSAGE</button>
+                            <button type="submit" class="submit-button">SUBMIT MESSAGE</button>
                             <button type="reset" class="reset-button">CLEAR FORM</button>
                         </td>
                     </tr>
@@ -83,8 +88,13 @@
         <!-- Existing Messages -->
         <div class="content-section">
             <h3 class="subsection-title">RECENT MESSAGES</h3>
+            <div class="guestbook-entries" id="firebaseEntries">
+                <p class="terminal-font" style="text-align: center; color: var(--text-secondary);">LOADING TRANSMISSIONS<span class="blink">...</span></p>
+            </div>
+
+            <h4 class="subsection-title" style="margin-top: 20px; border-top: 1px dashed var(--border-primary); padding-top: 15px;">ARCHIVED TRANSMISSIONS [PRE-1999]</h4>
             <div class="guestbook-entries" id="guestbookEntries">
-                
+
                 <!-- Sample Entry 1 -->
                 <div class="guestbook-entry">
                     <div class="entry-header">
@@ -164,6 +174,9 @@
         </div>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.14.0/firebase-database-compat.js"></script>
+    <script src="js/site-config.js"></script>
     <script src="js/retro-effects.js"></script>
     <script src="js/guestbook.js"></script>
 </body>

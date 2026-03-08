@@ -35,26 +35,28 @@ document.addEventListener('DOMContentLoaded', function() {
     // Check for random blink pauses every 5 seconds
     setInterval(addRandomBlink, 5000);
     
-    // Simulate "last updated" timestamp changes (very rarely)
+    // Set .last-updated text from site config on page load
+    const lastUpdatedEl = document.querySelector('.last-updated');
+    if (lastUpdatedEl && typeof SITE_CONFIG !== 'undefined') {
+        const gd = SITE_CONFIG.GAME_DATE;
+        lastUpdatedEl.textContent = `Last Updated: ${gd.month} ${String(gd.day).padStart(2, '0')}, ${gd.year}`;
+    }
+
+    // Simulate "last updated" timestamp glitches (very rarely)
     function maybeUpdateTimestamp() {
-        if (Math.random() < 0.01) { // 1% chance every minute
+        if (Math.random() < 0.01) {
             const timestamp = document.querySelector('.last-updated');
-            if (timestamp) {
-                const now = new Date();
-                const options = { 
-                    year: 'numeric', 
-                    month: 'long', 
-                    day: 'numeric',
-                    hour: '2-digit',
-                    minute: '2-digit'
-                };
-                // Keep the 1998 year for authenticity
-                const dateStr = now.toLocaleDateString('en-US', options);
-                timestamp.textContent = `Last Updated: ${dateStr.replace(now.getFullYear(), '1998')}`;
+            if (timestamp && typeof SITE_CONFIG !== 'undefined') {
+                const gd = SITE_CONFIG.GAME_DATE;
+                const h = Math.floor(Math.random() * 24);
+                const m = Math.floor(Math.random() * 60);
+                const ampm = h >= 12 ? 'PM' : 'AM';
+                const dh = h % 12 || 12;
+                timestamp.textContent = `Last Updated: ${gd.month} ${String(gd.day).padStart(2, '0')}, ${gd.year} at ${dh}:${String(m).padStart(2, '0')} ${ampm}`;
             }
         }
     }
-    
+
     // Check for timestamp updates every minute
     setInterval(maybeUpdateTimestamp, 60000);
     
