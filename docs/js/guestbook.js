@@ -2,15 +2,7 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
-    firebase.initializeApp({
-        apiKey: "AIzaSyD8ZKOKTS_2wnipOHGHkcP1WOFxJ-u9G68",
-        authDomain: "cursed-game-guestbook.firebaseapp.com",
-        databaseURL: "https://cursed-game-guestbook-default-rtdb.firebaseio.com",
-        projectId: "cursed-game-guestbook",
-        storageBucket: "cursed-game-guestbook.firebasestorage.app",
-        messagingSenderId: "707245963190",
-        appId: "1:707245963190:web:2799ff4018247b61893317"
-    });
+    firebase.initializeApp(FIREBASE_CONFIG);
 
     var db = firebase.database();
     var guestbookRef = db.ref('guestbook');

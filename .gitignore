@@ -1,0 +1,17 @@
+# Firebase config (contains API key — injected at deploy time via GitHub Actions)
+docs/js/firebase-config.js
+
+# Environment files
+.env
+.env.*
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE / Editor
+.idea/
+*.swp
+*.swo
+*~
