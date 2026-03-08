@@ -86,6 +86,10 @@
   color: var(--text-accent);
 }
 
+.terminal-font {
+  font-family: var(--font-mono);
+}
+
 .last-updated {
   color: var(--text-dim);
   font-size: 11px;
