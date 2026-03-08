@@ -87,7 +87,8 @@
 }
 
 .terminal-font {
-  font-family: var(--font-mono);
+  font-family: var(--font-primary);
+  font-weight: bold;
 }
 
 .last-updated {
