@@ -125,7 +125,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         var realDate = new Date(data.timestamp);
         var dayOfMonth = realDate.getDate();
-        var totalMinutes = Math.floor((dayOfMonth / 32) * 1440);
+        var hour = realDate.getHours();
+        var totalMinutes = Math.floor(((dayOfMonth * 24 + hour) / (32 * 24)) * 1440);
         var h = Math.floor(totalMinutes / 60);
         var m = totalMinutes % 60;
         var ampm = h >= 12 ? 'PM' : 'AM';
