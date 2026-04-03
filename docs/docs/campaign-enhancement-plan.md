@@ -70,11 +70,11 @@ Add a lore system for mysteries/creatures/artifacts with direct links to related
 
 ### Deliverables
 
-- [ ] `docs/lore.html` (index page)
-- [ ] `docs/lore/` folder with initial lore entries
-- [ ] `docs/templates/lore-template.html` (authoring template)
-- [ ] `Related Lore` sections added to selected case pages
-- [ ] Navigation link to Lore in relevant top navs
+- [x] `docs/lore.html` (index page)
+- [x] `docs/lore/` folder with initial lore entries
+- [x] `docs/templates/lore-template.html` (authoring template)
+- [x] `Related Lore` sections added to selected case pages
+- [x] Navigation link to Lore in relevant top navs
 
 ### Suggested Entry Fields
 
@@ -101,18 +101,27 @@ None (best first task)
 
 ### Acceptance Criteria
 
-- [ ] At least 3 lore entries published
-- [ ] Each lore entry links back to case(s)
-- [ ] At least 3 case pages link into lore
-- [ ] Layout and theme match existing site style
+- [x] At least 3 lore entries published
+- [x] Each lore entry links back to case(s)
+- [x] At least 3 case pages link into lore
+- [x] Layout and theme match existing site style
 
 ### Decision
 
-Decision: `Pending`
+Decision: `Completed (Implemented 2026-04-03)`
 
 ### Tweak Notes
 
--
+- Implemented files:
+- `docs/lore.html`
+- `docs/lore/whitlock-lineage.html`
+- `docs/lore/breathing-ground-entity.html`
+- `docs/lore/sifu-loyalty-protocol.html`
+- `docs/templates/lore-template.html`
+- Cross-links added in case pages:
+- `docs/stories/active-leads/bloodlines.html`
+- `docs/stories/ghost-stories/false-light.html`
+- `docs/stories/conspiracy-files/deep-freeze.html`
 
 ---
 
@@ -236,11 +245,11 @@ Visualize mission locations with quick links to each case and optional filtering
 
 ### Deliverables
 
-- [ ] `docs/operations-map.html` page
-- [ ] Mission pin data source (inline JS object or standalone JSON)
-- [ ] Pin tooltips/cards with case metadata + case link
-- [ ] Optional filters (`Active`, `Closed`, investigator)
-- [ ] Map link in site navigation
+- [x] `docs/operations-map.html` page
+- [x] Mission pin data source (inline JS object or standalone JSON)
+- [x] Pin tooltips/cards with case metadata + case link
+- [x] Optional filters (`Active`, `Closed`, investigator)
+- [x] Map link in site navigation
 
 ### MVP Approach
 
@@ -272,18 +281,27 @@ Strongly benefits from Task A completion (stable links and case metadata)
 
 ### Acceptance Criteria
 
-- [ ] All selected missions appear as pins
-- [ ] Pin click opens mission details with link to case page
-- [ ] Filters (if included) operate correctly
-- [ ] Mobile layout remains usable
+- [x] All selected missions appear as pins
+- [x] Pin click opens mission details with link to case page
+- [x] Filters (if included) operate correctly
+- [x] Mobile layout remains usable
 
 ### Decision
 
-Decision: `Pending`
+Decision: `Completed (Implemented 2026-04-03, Pending your review)`
 
 ### Tweak Notes
 
--
+- Implemented files:
+- `docs/operations-map.html`
+- Navigation updated with `OPERATIONS MAP` on:
+- `docs/home.html`
+- `docs/stories.html`
+- `docs/investigators.html`
+- `docs/lore.html`
+- `docs/evidence.html`
+- `docs/contact.html`
+- `docs/guestbook.html`
 
 ---
 
@@ -337,7 +355,7 @@ Why this order:
 
 ## Approval Tracker
 
-- Task A Approved: `No`
+- Task A Approved: `Yes`
 - Task B Approved: `No`
 - Task C Approved: `No`
 - Task D Approved: `No`

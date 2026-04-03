@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - Operations Map</title>
+    <link rel="stylesheet" href="css/cursed-theme.css">
+    <link rel="stylesheet" href="css/retro-style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="">
+    <style>
+        .controls {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            align-items: center;
+            margin: 15px 0;
+        }
+
+        .control-label {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 13px;
+        }
+
+        .control-select {
+            background-color: var(--bg-secondary);
+            color: var(--text-primary);
+            border: 2px inset var(--border-bright);
+            padding: 6px 8px;
+            font-family: var(--font-mono);
+            font-size: 12px;
+        }
+
+        .map-shell {
+            background-color: var(--bg-box);
+            border: 2px solid var(--border-primary);
+            padding: 15px;
+            margin: 20px 0;
+        }
+
+        .map-canvas {
+            position: relative;
+            width: 100%;
+            min-height: 500px;
+            border: 2px inset var(--border-bright);
+            overflow: hidden;
+            z-index: 0;
+        }
+
+        .leaflet-container {
+            background: var(--bg-secondary);
+            color: var(--text-white);
+            font-family: var(--font-primary);
+        }
+
+        .mission-pin {
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            border: 2px solid var(--bg-primary);
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35);
+        }
+
+        .mission-pin.active {
+            box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.35), 0 0 8px var(--text-warning);
+        }
+
+        .mission-pin.pin-active {
+            background-color: var(--text-warning);
+        }
+
+        .mission-pin.pin-closed {
+            background-color: var(--text-primary);
+        }
+
+        .leaflet-popup-content-wrapper,
+        .leaflet-popup-tip {
+            background: var(--bg-box);
+            color: var(--text-white);
+            border: 1px solid var(--border-primary);
+        }
+
+        .leaflet-popup-content a {
+            color: var(--text-accent);
+        }
+
+        .map-details {
+            margin-top: 15px;
+            padding: 15px;
+            background-color: var(--bg-secondary);
+            border: 1px solid var(--border-primary);
+            min-height: 120px;
+        }
+
+        .details-title {
+            margin: 0 0 8px 0;
+            color: var(--text-warning);
+            font-family: var(--font-retro);
+            font-size: 18px;
+        }
+
+        .details-meta {
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+            margin-bottom: 10px;
+        }
+
+        .details-copy {
+            color: var(--text-white);
+            margin: 8px 0 12px;
+        }
+
+        .legend {
+            display: flex;
+            gap: 14px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+            font-size: 11px;
+            color: var(--text-dim);
+        }
+
+        .legend-chip {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .legend-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <div class="site-header">
+            <h1 class="site-title"><a href="home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 005464</span>
+                <span class="blink">●</span>
+            </div>
+            <div class="last-updated"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="home.html" class="nav-button">HOME</a>
+                <a href="investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="stories.html" class="nav-button">CASE FILES</a>
+                <a href="operations-map.html" class="nav-button active">OPERATIONS MAP</a>
+                <a href="lore.html" class="nav-button">LORE CODEX</a>
+                <a href="evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="contact.html" class="nav-button">CONTACT</a>
+                <a href="guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <div class="content-section">
+            <h2 class="section-title">🗺️ CAMPAIGN OPERATIONS MAP 🗺️</h2>
+            <p>
+                Track mission movement by location, status, and lead investigator.
+                Select a pin to open the associated case file.
+            </p>
+            <div class="marquee">
+                <div class="marquee-text">*** FIELD NOTICE: Coordinates are operational approximations for archive indexing *** Active leads may update between sessions ***</div>
+            </div>
+
+            <div class="controls">
+                <label class="control-label" for="statusFilter">STATUS:</label>
+                <select id="statusFilter" class="control-select">
+                    <option value="all">ALL</option>
+                    <option value="active">ACTIVE</option>
+                    <option value="closed">CLOSED</option>
+                </select>
+
+                <label class="control-label" for="investigatorFilter">INVESTIGATOR:</label>
+                <select id="investigatorFilter" class="control-select">
+                    <option value="all">ALL</option>
+                    <option value="07">07</option>
+                    <option value="13">13</option>
+                    <option value="23">23</option>
+                    <option value="42">42</option>
+                    <option value="51">51</option>
+                    <option value="66">66</option>
+                    <option value="89">89</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="map-shell">
+            <div class="map-canvas" id="mapCanvas">
+            </div>
+
+            <div class="map-details" id="mapDetails">
+                <h3 class="details-title">Select a Mission Pin</h3>
+                <p class="details-copy">Choose any pin to view mission details and jump to the case file.</p>
+            </div>
+
+            <div class="legend">
+                <span class="legend-chip"><span class="legend-dot" style="background-color: var(--text-warning);"></span> Active</span>
+                <span class="legend-chip"><span class="legend-dot" style="background-color: var(--text-primary);"></span> Closed</span>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">📌 QUICK MISSION INDEX</h2>
+            <p class="small-print">Pin coordinates are for visual context only. Canon details remain in case files.</p>
+            <ul id="missionList"></ul>
+        </div>
+
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 The Redacted Truth | Established Never |
+               <span class="terminal-font">Best viewed with Netscape Navigator 4.0</span></p>
+            <p class="small-print">This site is a work of fiction created for entertainment purposes only.</p>
+            <a href="stories.html" class="nav-button">← RETURN TO CASE FILES</a>
+        </div>
+    </div>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/retro-effects.js"></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
+    <script>
+        const missions = [
+            {
+                id: "CIB-308",
+                title: "Bloodlines",
+                status: "active",
+                date: "04/05/99",
+                location: "Groveton, PA",
+                investigators: ["66", "07", "13", "42", "89"],
+                lat: 41.26,
+                lng: -76.95,
+                href: "stories/active-leads/bloodlines.html",
+                summary: "Active homicide corridor investigation tied to Whitlock property continuity."
+            },
+            {
+                id: "CIB-217",
+                title: "Deep Freeze",
+                status: "closed",
+                date: "03/25/99",
+                location: "Pituffik Space Base, Greenland",
+                investigators: ["66", "07", "13", "42", "89", "51"],
+                lat: 76.53,
+                lng: -68.70,
+                href: "stories/conspiracy-files/deep-freeze.html",
+                summary: "Site Polaris incident exposed SIFU loyalty stress-test protocol."
+            },
+            {
+                id: "CIB-224",
+                title: "Circuit Breaker",
+                status: "closed",
+                date: "03/30/99",
+                location: "Argencorp Facility, DC",
+                investigators: ["89", "13", "42", "66"],
+                lat: 38.90,
+                lng: -77.04,
+                href: "stories/conspiracy-files/circuit-breaker.html",
+                summary: "Autonomous building AI incident with lethal environmental controls."
+            },
+            {
+                id: "CIB-015",
+                title: "False Light",
+                status: "closed",
+                date: "01/18/99",
+                location: "Wilkes County, NC",
+                investigators: ["66", "07", "13", "51", "89"],
+                lat: 36.15,
+                lng: -81.16,
+                href: "stories/ghost-stories/false-light.html",
+                summary: "Reality-distorting fungal phenomenon with shared hallucinations."
+            },
+            {
+                id: "CIB-023",
+                title: "Whispers at Stillwater",
+                status: "closed",
+                date: "03/15/99",
+                location: "Fiddler's Green, WV",
+                investigators: ["89", "13", "66", "07"],
+                lat: 38.42,
+                lng: -81.58,
+                href: "stories/ghost-stories/whispers-at-stillwater.html",
+                summary: "Hybrid entity event at the Cason estate resolved through ritual banishment."
+            },
+            {
+                id: "CIB-008",
+                title: "Tales from the Trailer Park",
+                status: "resolved",
+                date: "12/15/98",
+                location: "Muleshoe, TX",
+                investigators: ["66", "13", "42"],
+                lat: 34.23,
+                lng: -102.72,
+                href: "stories/ghost-stories/tales-from-the-trailer-park.html",
+                summary: "Blood-drain pattern case de-escalated via non-violent resolution."
+            },
+            {
+                id: "CIB-089",
+                title: "Wild at Heart",
+                status: "resolved",
+                date: "12/12/98",
+                location: "Pine Barrens, NJ",
+                investigators: ["66", "23"],
+                lat: 39.80,
+                lng: -74.50,
+                href: "stories/cryptid-sightings/wild-at-heart.html",
+                summary: "Feral humanoid encounter and containment outcome in Pine Barrens."
+            },
+            {
+                id: "CIB-031",
+                title: "Nessie's Webcam Appearance",
+                status: "closed",
+                date: "09/12/98",
+                location: "Loch Ness, Scotland",
+                investigators: ["66"],
+                lat: 57.32,
+                lng: -4.44,
+                href: "stories/cryptid-sightings/nessie-webcam.html",
+                summary: "Remote visual anomaly captured from live webcam feed."
+            }
+        ];
+
+        const mapCanvas = document.getElementById("mapCanvas");
+        const details = document.getElementById("mapDetails");
+        const missionList = document.getElementById("missionList");
+        const statusFilter = document.getElementById("statusFilter");
+        const investigatorFilter = document.getElementById("investigatorFilter");
+        const map = L.map(mapCanvas, {
+            zoomControl: true,
+            scrollWheelZoom: true
+        });
+
+        L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
+            maxZoom: 19,
+            attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+        }).addTo(map);
+
+        const markerLayer = L.layerGroup().addTo(map);
+
+        let selectedId = null;
+        const markerByMissionId = {};
+
+        function statusClass(status) {
+            if (status === "active") return "pin-active";
+            return "pin-closed";
+        }
+
+        function statusLabel(status) {
+            if (status === "active") return "ACTIVE";
+            return "CLOSED";
+        }
+
+        function markerHtml(mission, isSelected) {
+            return `<div class="mission-pin ${statusClass(mission.status)}${isSelected ? " active" : ""}"></div>`;
+        }
+
+        function rebuildMarkers(visible) {
+            markerLayer.clearLayers();
+            Object.keys(markerByMissionId).forEach((key) => delete markerByMissionId[key]);
+
+            visible.forEach((mission) => {
+                const icon = L.divIcon({
+                    className: "",
+                    html: markerHtml(mission, mission.id === selectedId),
+                    iconSize: [14, 14],
+                    iconAnchor: [7, 7]
+                });
+
+                const marker = L.marker([mission.lat, mission.lng], { icon }).addTo(markerLayer);
+                marker.bindPopup(`<strong>${mission.id} - ${mission.title}</strong><br>${mission.location}<br><a href="${mission.href}">Open case file</a>`);
+                marker.on("click", () => {
+                    selectedId = mission.id;
+                    renderPins(true);
+                });
+
+                markerByMissionId[mission.id] = marker;
+            });
+        }
+
+        function filteredMissions() {
+            const status = statusFilter.value;
+            const investigator = investigatorFilter.value;
+            return missions.filter((mission) => {
+                const normalizedStatus = mission.status === "active" ? "active" : "closed";
+                const statusOk = status === "all" || normalizedStatus === status;
+                const investigatorOk = investigator === "all" || mission.investigators.includes(investigator);
+                return statusOk && investigatorOk;
+            });
+        }
+
+        function renderDetails(mission) {
+            if (!mission) {
+                details.innerHTML = "<h3 class=\"details-title\">No Mission Selected</h3><p class=\"details-copy\">Choose any visible pin to view mission details.</p>";
+                return;
+            }
+
+            details.innerHTML = `
+                <h3 class="details-title">${mission.title}</h3>
+                <div class="details-meta">Case ${mission.id} | ${mission.date} | ${mission.location} | ${statusLabel(mission.status)}</div>
+                <p class="details-copy">${mission.summary}</p>
+                <a class="nav-button" href="${mission.href}">OPEN CASE FILE</a>
+            `;
+        }
+
+        function renderMissionList(visible) {
+            missionList.innerHTML = "";
+            visible.forEach((mission) => {
+                const item = document.createElement("li");
+                item.innerHTML = `<a href="${mission.href}">${mission.id} - ${mission.title}</a> (${mission.location}, ${mission.date})`;
+                missionList.appendChild(item);
+            });
+        }
+
+        function renderPins(preserveView) {
+            const visible = filteredMissions();
+
+            if (!visible.find((m) => m.id === selectedId)) {
+                selectedId = visible.length ? visible[0].id : null;
+            }
+
+            renderMissionList(visible);
+            renderDetails(visible.find((m) => m.id === selectedId) || null);
+            rebuildMarkers(visible);
+
+            if (!preserveView) {
+                if (visible.length > 0) {
+                    const bounds = L.latLngBounds(visible.map((mission) => [mission.lat, mission.lng]));
+                    map.fitBounds(bounds.pad(0.35));
+                } else {
+                    map.setView([45, -35], 3);
+                }
+            }
+        }
+
+        statusFilter.addEventListener("change", () => renderPins(false));
+        investigatorFilter.addEventListener("change", () => renderPins(false));
+        map.setView([45, -35], 3);
+        renderPins(false);
+    </script>
+</body>
+</html>

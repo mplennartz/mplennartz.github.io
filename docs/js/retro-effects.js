@@ -2,6 +2,42 @@
 // Simulating classic 1998 web features
 
 document.addEventListener('DOMContentLoaded', function() {
+    function ensureGlobalNavLinks() {
+        const navLinks = document.querySelector('.nav-links');
+        if (!navLinks) return;
+
+        const storiesLink = navLinks.querySelector('a[href$="stories.html"]');
+        if (!storiesLink) return;
+
+        const caseHref = storiesLink.getAttribute('href') || '';
+        const basePath = caseHref.slice(0, caseHref.length - 'stories.html'.length);
+        const operationsHref = basePath + 'operations-map.html';
+        const loreHref = basePath + 'lore.html';
+
+        const existingOperations = navLinks.querySelector(`a[href="${operationsHref}"]`);
+        const existingLore = navLinks.querySelector(`a[href="${loreHref}"]`);
+
+        if (!existingOperations) {
+            const operationsLink = document.createElement('a');
+            operationsLink.href = operationsHref;
+            operationsLink.className = 'nav-button';
+            operationsLink.textContent = 'OPERATIONS MAP';
+            storiesLink.insertAdjacentElement('afterend', operationsLink);
+        }
+
+        if (!existingLore) {
+            const updatedOpsLink = navLinks.querySelector(`a[href="${operationsHref}"]`);
+            const insertAfter = updatedOpsLink || storiesLink;
+            const loreLink = document.createElement('a');
+            loreLink.href = loreHref;
+            loreLink.className = 'nav-button';
+            loreLink.textContent = 'LORE CODEX';
+            insertAfter.insertAdjacentElement('afterend', loreLink);
+        }
+    }
+
+    ensureGlobalNavLinks();
+
     
     // Update visitor counter with random increments
     function updateVisitorCounter() {
