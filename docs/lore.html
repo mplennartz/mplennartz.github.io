@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - Lore Codex</title>
+    <link rel="stylesheet" href="css/cursed-theme.css">
+    <link rel="stylesheet" href="css/retro-style.css">
+    <style>
+        .lore-category {
+            margin: 30px 0;
+        }
+
+        .category-header {
+            background: linear-gradient(90deg, var(--bg-secondary), var(--bg-box), var(--bg-secondary));
+            border: 2px outset var(--border-primary);
+            padding: 15px;
+            margin-bottom: 15px;
+        }
+
+        .category-title {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 20px;
+            margin: 0 0 5px 0;
+        }
+
+        .category-description {
+            color: var(--text-white);
+            font-size: 14px;
+            font-style: italic;
+        }
+
+        .lore-list {
+            display: grid;
+            gap: 15px;
+        }
+
+        .lore-card {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .lore-card:hover {
+            border-color: var(--border-bright);
+            box-shadow: 0 0 10px rgba(0, 255, 0, 0.2);
+        }
+
+        .lore-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .lore-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 16px;
+            margin: 0;
+            text-decoration: none;
+        }
+
+        .lore-title:hover {
+            text-shadow: var(--glow-green);
+        }
+
+        .lore-meta {
+            font-family: var(--font-mono);
+            font-size: 11px;
+            color: var(--text-dim);
+            text-align: right;
+        }
+
+        .lore-description {
+            color: var(--text-white);
+            font-size: 14px;
+            line-height: 1.4;
+            margin: 10px 0;
+        }
+
+        .lore-tags {
+            display: flex;
+            gap: 5px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .lore-tag {
+            background-color: var(--bg-secondary);
+            color: var(--text-accent);
+            font-size: 10px;
+            padding: 2px 6px;
+            border: 1px solid var(--border-primary);
+            font-family: var(--font-mono);
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <div class="site-header">
+            <h1 class="site-title"><a href="home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 005464</span>
+                <span class="blink">●</span>
+            </div>
+            <div class="last-updated"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="home.html" class="nav-button">HOME</a>
+                <a href="investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="stories.html" class="nav-button">CASE FILES</a>
+                <a href="lore.html" class="nav-button active">LORE CODEX</a>
+                <a href="evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="contact.html" class="nav-button">CONTACT</a>
+                <a href="guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <div class="content-section">
+            <h2 class="section-title">📚 FIELD LORE CODEX 📚</h2>
+            <p>
+                This codex catalogs mysteries, entities, and hostile protocols identified across Bureau case files.
+                Entries are updated as investigations evolve and facts are confirmed.
+            </p>
+            <div class="marquee">
+                <div class="marquee-text">*** LORE WARNING: Some entries contain incomplete or contradictory field data *** Open questions remain active until closure is confirmed ***</div>
+            </div>
+        </div>
+
+        <div class="lore-category">
+            <div class="category-header">
+                <h3 class="category-title">🕯️ ACTIVE MYSTERIES</h3>
+                <p class="category-description">Ongoing phenomena with unresolved origin, motive, or full casualty mapping</p>
+            </div>
+            <div class="lore-list">
+                <div class="lore-card">
+                    <div class="lore-header">
+                        <a href="lore/whitlock-lineage.html" class="lore-title">The Whitlock Continuity Pattern</a>
+                        <div class="lore-meta">
+                            Codex ID: LORE-MYS-308<br>
+                            Status: <span class="blink" style="color: var(--text-warning);">ACTIVE</span>
+                        </div>
+                    </div>
+                    <p class="lore-description">
+                        Multi-generational land continuity and deformity records linked to the Groveton homicide corridor.
+                        Connection to present-day killings remains unresolved.
+                    </p>
+                    <div class="lore-tags">
+                        <span class="lore-tag">MYSTERY</span>
+                        <span class="lore-tag">BLOODLINES</span>
+                        <span class="lore-tag">FAMILY LINE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lore-category">
+            <div class="category-header">
+                <h3 class="category-title">🧬 HOSTILE ENTITIES / PHENOMENA</h3>
+                <p class="category-description">Biological, supernatural, or hybrid forces capable of mass psychological and physical harm</p>
+            </div>
+            <div class="lore-list">
+                <div class="lore-card">
+                    <div class="lore-header">
+                        <a href="lore/breathing-ground-entity.html" class="lore-title">Breathing Ground Fungal Intelligence</a>
+                        <div class="lore-meta">
+                            Codex ID: LORE-ENT-015<br>
+                            Status: <span style="color: var(--text-warning);">DORMANT / UNKNOWN</span>
+                        </div>
+                    </div>
+                    <p class="lore-description">
+                        Wilkes County anomaly with hallucinogenic spread, temporal distortion, and selective organic decomposition.
+                        Containment remains unverified.
+                    </p>
+                    <div class="lore-tags">
+                        <span class="lore-tag">ENTITY</span>
+                        <span class="lore-tag">FUNGAL NETWORK</span>
+                        <span class="lore-tag">REALITY DISTORTION</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lore-category">
+            <div class="category-header">
+                <h3 class="category-title">🏛️ COVERT PROGRAMS & PROTOCOLS</h3>
+                <p class="category-description">Government-level systems and units influencing Bureau operations from behind official channels</p>
+            </div>
+            <div class="lore-list">
+                <div class="lore-card">
+                    <div class="lore-header">
+                        <a href="lore/sifu-loyalty-protocol.html" class="lore-title">SIFU Loyalty Stress-Test Protocol</a>
+                        <div class="lore-meta">
+                            Codex ID: LORE-PRO-217<br>
+                            Status: <span style="color: var(--text-warning);">CONFIRMED ACTIVE</span>
+                        </div>
+                    </div>
+                    <p class="lore-description">
+                        Documented covert program using engineered crisis scenarios to eliminate whistleblowers and assess Bureau compliance.
+                    </p>
+                    <div class="lore-tags">
+                        <span class="lore-tag">PROTOCOL</span>
+                        <span class="lore-tag">SIFU</span>
+                        <span class="lore-tag">DEEP FREEZE</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">🔗 LORE ACCESS NOTICE</h2>
+            <p class="warning-text">
+                <strong>ARCHIVE WARNING:</strong> Codex entries include partial evidence, witness conflict, and unresolved intelligence.
+                Treat all "unknown" sections as active leads.
+            </p>
+        </div>
+
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 The Redacted Truth | Established Never |
+               <span class="terminal-font">Best viewed with Netscape Navigator 4.0</span></p>
+            <p class="small-print">This site is a work of fiction created for entertainment purposes only.</p>
+            <a href="home.html" class="nav-button">← RETURN TO MAIN ARCHIVES</a>
+        </div>
+    </div>
+
+    <script src="js/site-config.js"></script>
+    <script src="js/retro-effects.js"></script>
+</body>
+</html>
