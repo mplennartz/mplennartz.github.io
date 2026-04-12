@@ -119,7 +119,7 @@ Decision: `Completed (Implemented 2026-04-03)`
 - `docs/lore/sifu-loyalty-protocol.html`
 - `docs/templates/lore-template.html`
 - Cross-links added in case pages:
-- `docs/stories/active-leads/bloodlines.html`
+- `docs/stories/ghost-stories/bloodlines.html`
 - `docs/stories/ghost-stories/false-light.html`
 - `docs/stories/conspiracy-files/deep-freeze.html`
 

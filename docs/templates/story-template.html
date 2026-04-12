@@ -101,6 +101,17 @@
             flex-wrap: wrap;
             gap: 10px;
         }
+
+        .redacted {
+            background-color: var(--text-warning);
+            color: var(--text-warning);
+            padding: 2px 4px;
+        }
+
+        .unknown-field {
+            color: var(--text-dim);
+            font-style: italic;
+        }
     </style>
 </head>
 <body class="homepage">
@@ -122,6 +133,8 @@
                 <a href="../../home.html" class="nav-button">HOME</a>
                 <a href="../../investigators.html" class="nav-button">INVESTIGATORS</a>
                 <a href="../../stories.html" class="nav-button">CASE FILES</a>
+                <a href="../../operations-map.html" class="nav-button">OPERATIONS MAP</a>
+                <a href="../../lore.html" class="nav-button">LORE CODEX</a>
                 <a href="../../evidence.html" class="nav-button">EVIDENCE</a>
                 <a href="../../contact.html" class="nav-button">CONTACT</a>
                 <a href="../../guestbook.html" class="nav-button">GUESTBOOK</a>
@@ -133,7 +146,7 @@
             <h1 class="case-number">CASE FILE #[CASE-NUMBER]</h1>
             <h2 class="case-title">[STORY TITLE]</h2>
             <div class="classification">CLASSIFIED - [THREAT LEVEL]</div>
-            <p class="timestamp">Date Opened: [DATE] | Last Updated: [UPDATE-DATE]</p>
+            <p class="timestamp">Date Opened: [DATE] | Last Updated: [UPDATE-DATE] | Status: [CASE-STATUS-LINE]</p>
         </div>
 
         <!-- Investigation Details Table -->
@@ -145,7 +158,7 @@
                 </tr>
                 <tr>
                     <td>Lead Investigator</td>
-                    <td><span class="terminal-font">[INVESTIGATOR NAME]</span></td>
+                    <td><span class="terminal-font">Investigator [NN]</span></td>
                 </tr>
                 <tr>
                     <td>Location</td>
@@ -247,7 +260,7 @@
             <ul>
                 <li><a href="[LINK]">[Related Case Title]</a></li>
                 <li><a href="[LINK]">[Related Case Title]</a></li>
-                <li><a href="../../investigators.html">More cases by [Investigator Name]</a></li>
+                <li><a href="../../investigators.html">Investigator profiles (see Investigator [NN])</a></li>
             </ul>
         </div>
 
@@ -261,8 +274,9 @@
         <!-- Footer -->
         <hr>
         <div class="footer-disclaimer">
-            <p>© 1998 Cursed Investigations Bureau | Established Never</p>
-            <p class="small-print">This case file is classified fiction created for entertainment purposes only.</p>
+            <p>© 1998 The Redacted Truth | Established Never |
+               <span class="terminal-font">Best viewed with Netscape Navigator 4.0</span></p>
+            <p class="small-print">This site is a work of fiction created for entertainment purposes only.</p>
         </div>
     </div>
 
@@ -273,27 +287,27 @@
 
 <!--
 TEMPLATE INSTRUCTIONS:
-1. Copy this file to your story location (e.g., stories/ghost-stories/new-story.html)
-2. Replace all [BRACKETED] placeholders with your content
-3. Update file paths (../) if needed based on your directory depth
+1. Copy this file to docs/stories/<category>/ (e.g. stories/ghost-stories/new-story.html)
+2. Replace all [BRACKETED] placeholders with your content; Lead Investigator uses Investigator [NN] only (two-digit id from refs/characters/investigator_character_mapping.md)
+3. From docs/stories/<category>/, CSS/JS stay ../../css/ and ../../js/; adjust only if you change folder depth
 4. Add/remove witness statements and evidence boxes as needed
-5. Customize section headers for your story type
-6. Update navigation links to point to actual files
-7. Choose appropriate CSS classes:
-   - .spooky for red/scary text
-   - .atmospheric for green glowing text
-   - .highlight for yellow background text
-   - .terminal-font for monospace text
-   - .blink for blinking animation
+5. Customize section headers for your story type; use .redacted / .unknown-field for withheld or uncertain facts
+6. Update Related Investigations and footer-nav links (NEXT CASE →) to real targets
+7. CSS utility classes:
+   - .spooky — emphasis / danger tone
+   - .atmospheric — green glow emphasis
+   - .highlight — yellow highlight
+   - .terminal-font — monospace
+   - .blink — blinking marker
+   - .redacted — black-bar style redaction
+   - .unknown-field — dim italic unknowns
 
 SUGGESTED CASE NUMBERS:
 - Ghost Stories: CIB-001 to CIB-099
-- Cryptid Sightings: CIB-100 to CIB-199  
+- Cryptid Sightings: CIB-100 to CIB-199
 - Conspiracy Files: CIB-200 to CIB-299
 - Other Phenomena: CIB-300+
 
-THREAT LEVELS:
-- LOW THREAT (green)
-- MEDIUM THREAT (yellow)
-- HIGH THREAT (red)
+THREAT LEVELS (classification line):
+- LOW THREAT | MEDIUM THREAT | HIGH THREAT
 --> 
