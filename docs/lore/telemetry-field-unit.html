@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - Bureau Field Telemetry Unit</title>
+    <link rel="stylesheet" href="../css/cursed-theme.css">
+    <link rel="stylesheet" href="../css/retro-style.css">
+    <style>
+        .lore-header {
+            background-color: var(--bg-box);
+            border: 3px solid var(--border-warning);
+            padding: 20px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .lore-id {
+            color: var(--text-warning);
+            font-family: var(--font-mono);
+            font-size: 24px;
+            margin: 0;
+            font-weight: bold;
+        }
+        .lore-title {
+            color: var(--text-primary);
+            font-family: var(--font-retro);
+            font-size: 28px;
+            margin: 10px 0;
+            text-shadow: var(--glow-green);
+        }
+        .classification {
+            background-color: var(--text-warning);
+            color: var(--bg-primary);
+            padding: 5px 15px;
+            font-family: var(--font-mono);
+            font-weight: bold;
+            display: inline-block;
+            margin: 10px 0;
+        }
+        .lore-content {
+            background-color: var(--bg-box);
+            border: 1px solid var(--border-primary);
+            padding: 20px;
+            margin: 20px 0;
+            line-height: 1.6;
+        }
+        .lore-section { margin: 25px 0; }
+        .section-header {
+            color: var(--text-accent);
+            font-family: var(--font-retro);
+            font-size: 18px;
+            border-bottom: 1px solid var(--border-primary);
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+        }
+        .evidence-box {
+            background-color: var(--bg-secondary);
+            border-left: 4px solid var(--text-primary);
+            padding: 15px;
+            margin: 15px 0;
+            font-family: var(--font-mono);
+            font-size: 13px;
+        }
+        .warning-box {
+            background-color: var(--bg-secondary);
+            border: 2px solid var(--text-warning);
+            padding: 15px;
+            margin: 20px 0;
+            text-align: center;
+        }
+        .timestamp {
+            color: var(--text-dim);
+            font-family: var(--font-mono);
+            font-size: 11px;
+        }
+        .footer-nav {
+            display: flex;
+            justify-content: space-between;
+            margin: 30px 0;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .unknown-field {
+            color: var(--text-dim);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <div class="site-header">
+            <h1 class="site-title"><a href="../home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 005464</span>
+                <span class="blink">●</span>
+            </div>
+            <div class="last-updated"></div>
+        </div>
+
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="../home.html" class="nav-button">HOME</a>
+                <a href="../investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="../stories.html" class="nav-button">CASE FILES</a>
+                <a href="../operations-map.html" class="nav-button">OPERATIONS MAP</a>
+                <a href="../lore.html" class="nav-button active">LORE CODEX</a>
+                <a href="../evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="../contact.html" class="nav-button">CONTACT</a>
+                <a href="../guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <div class="lore-header">
+            <h1 class="lore-id">CODEX #LORE-ART-225</h1>
+            <h2 class="lore-title">BUREAU FIELD TELEMETRY UNIT (CLASS T)</h2>
+            <div class="classification">ANOMALOUS ARTIFACT - FIELD RECOVERY</div>
+            <p class="timestamp">First Logged: 04/22/99 | Last Updated: 04/22/99 | Status: WITH DISPLACED TEAM</p>
+        </div>
+
+        <div class="content-section">
+            <table class="retro-table">
+                <tr><th>Field</th><th>Details</th></tr>
+                <tr><td>Type</td><td>Handheld Telemetry / Unknown Manufacturer</td></tr>
+                <tr><td>First Seen</td><td>Case #CIB-225, NeXstep reactor control suite</td></tr>
+                <tr><td>Associated Cases</td><td>CIB-225 (Clockwork Horizon)</td></tr>
+                <tr><td>Threat Profile</td><td><span class="spooky">Unknown — possible displacement vector or monitoring key</span></td></tr>
+                <tr><td>Current Status</td><td><span class="atmospheric">RECOVERED POST-DISPLACEMENT — NOT IN BUREAU CUSTODY</span></td></tr>
+            </table>
+        </div>
+
+        <div class="lore-content">
+            <div class="lore-section">
+                <h3 class="section-header">📖 OVERVIEW</h3>
+                <p>
+                    Bureau Field Telemetry Unit (Class T) is the working designation for a compact handheld instrument observed on a desk
+                    inside Argencorp's concealed NeXstep reactor control suite. Field descriptors compared its form factor to legacy science-fiction
+                    survey tools; internal shorthand: <span class="terminal-font">"tricorder-class."</span> The same device class was found at
+                    Investigator 89's feet after the <a href="nexstep-displacement-event.html">NeXstep Displacement Event</a>, implying it either
+                    traveled with the team or was seeded at the arrival point.
+                </p>
+            </div>
+
+            <div class="lore-section">
+                <h3 class="section-header">✅ KNOWN FACTS</h3>
+                <div class="evidence-box">
+                    <strong>CONFIRMED:</strong><br>
+                    - Present in reactor control room prior to fail-safe breach and flash event.<br>
+                    - No Argencorp inventory sticker or export-control marking visible in field notes.<br>
+                    - Recovered in displacement environment by Investigator 89 — chain of custody not established.<br>
+                    - Manufacturer, power source, and RF signature: <span class="unknown-field">unlogged</span>.<br>
+                    - No Bureau requisition record matches device class.
+                </div>
+            </div>
+
+            <div class="lore-section">
+                <h3 class="section-header">❓ OPEN QUESTIONS</h3>
+                <div class="evidence-box">
+                    <strong>UNRESOLVED:</strong><br>
+                    - Argencorp prototype vs. foreign technology vs. anomalous construct<br>
+                    - Whether device initiated, stabilized, or merely recorded displacement<br>
+                    - Intended operator (K. Vance shell, Hale faction, or unknown third party)<br>
+                    - Safe-handling protocol if unit returns to Bureau custody
+                </div>
+            </div>
+
+            <div class="lore-section">
+                <h3 class="section-header">🧭 EVIDENCE TRAIL</h3>
+                <p>
+                    Device noted during first entry to reactor control suite. Team contained during lockdown; reactor chamber opened.
+                    Post-flash recovery in non-local woodland. Device remains with field team pending recontact.
+                </p>
+            </div>
+
+            <div class="lore-section">
+                <h3 class="section-header">⚠️ BUREAU ADVISORY</h3>
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ ARTIFACT HANDLING ⚠️</strong></p>
+                    <p>
+                        Assume active emission or tracking until proven otherwise. If recovered, route to sealed annex only—no standard evidence locker.
+                        Do not power on without Faraday containment per Directive 12-C.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="content-section">
+            <h2 class="section-title">🔗 RELATED FILES</h2>
+            <ul>
+                <li><a href="../stories/active-leads/clockwork-horizon.html">Case #CIB-225 — Clockwork Horizon</a></li>
+                <li><a href="nexstep-displacement-event.html">Codex #LORE-MYS-225 — NeXstep Displacement Event</a></li>
+                <li><a href="../evidence.html#tech-evidence">Evidence Vault — EVIDENCE-225-TEL</a></li>
+                <li><a href="../lore.html">Return to Lore Codex Index</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-nav">
+            <a href="../lore.html" class="nav-button">← BACK TO LORE CODEX</a>
+            <a href="../stories/active-leads/clockwork-horizon.html" class="nav-button">OPEN CASE FILE</a>
+            <a href="../home.html" class="nav-button">MAIN ARCHIVES</a>
+        </div>
+
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 Cursed Investigations Bureau | Established Never</p>
+            <p class="small-print">This lore file is classified fiction created for entertainment purposes only.</p>
+        </div>
+    </div>
+
+    <script src="../js/site-config.js"></script>
+    <script src="../js/retro-effects.js"></script>
+</body>
+</html>

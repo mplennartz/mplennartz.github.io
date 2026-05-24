@@ -1,0 +1,40 @@
+-- Session Starts Here --
+We pick back up on Argen Corp’s NexStep Redmond, WA facility.
+We have learned that the restricted Level 3 lab had been accessed at regular intervals after hours, with a valid badge, though the name attached to the badge, K. Vance, seems to be a false identity.
+We had learned two technicians, we spoke with early, stated the badge owner was reassigned to reactor support by an operations supervisor identified as “K. Vance” on shift rosters, but no personnel file exists under that name. Shift logs show orders from “K. Vance” accepted across lab, reactor, and security teams without challenge.
+We go to Level 3 and we Chief Security Hale introduces us to Dr. Lila Chin – head of the quantum computing project.
+We begin to ask Dr. Chen questions:
+
+    How many people have access to the lab – about 12 or so she says.
+    Could it be possible that any one with access to the lab or on her team would be apt to steal the components for gain – she says no, they have all been well vetted by federal agencies.
+    While talking about personnel and getting the security clearances the lad team needs to get – seems to take a pot shot at Hale.
+    Jordan is able to perceive that Dr. Chen is quite dedicated to her work.
+
+Asher, using her Security awareness, scans the room and can tell it is quite locked down – it would take some social infiltration to gain access.
+Ezra gets Hale to give him access to the nearest terminal and learns that the missing components are quantum processing cores – rated for cooling and radiation shielding. By inference, this confirms reactor power draw scale.
+Also checking the badge swipe history, it wasn’t used anywhere else in the building.
+Glancing over at a nearby terminal, Ezra notices a image of some conduit lines leading to a sealed room that doesn’t appear on the building layout maps.
+While Ezra is noticing this, Nico looks around the room and notices something isn’t adding up with the conduit lines and “quantum” computing. The inputs don’t seem to match the expectation of actual output.
+Hale seems to be able to hear or discern Ezra’s and Nico’s learnings and walks over and swipes his badge – which opens a hidden door – revealing a hallway.
+Hale says the room was originally meant for a diesel generator – but Hale didn’t realize the room was operational.  He states he thought the room was still under construction.
+We ask Hale who else knows of this room and he says himself, Chen, Chen’s crew and maybe another 10 people.
+Hale leads us down the hallway and we reach a room that says “reactor control”.
+Hale himself seems surprised, and when Jordan asks what’s behind the door, Hale says “I don’t know, let’s find out.”
+Hale opens the door and we step inside see many and large computer monitors and work stations. On a desk near these computers we see what looks like a “star trek tricorder” – so some kind of mysterious device.
+Hale makes a hasty retreating stating he doesn’t know anything about this, but says he needs to go bark up some trees. He says he will send another associate to help continue to guide/accompany us through the facility; as he leaves he shuts the door.   
+With Hale gone, Ezra immediately sits at one of the terminals and starts looking through the system.
+Looking at different test logs, etc – Ezra notices time stamp gaps, dupe entries with same process id’s, jumps in the data, time stamp wise – all this correlates to what is being monitored (i.e. the reactor) – seems these things occur with the reactor is operational.
+Ezra also notices some of the encrypted logs contain time commands for maintenance logs, camera logs/images, planned systems purge at certain times on a “dead man switch” (i.e. these things are sitting ready to happen at the flip of a switch so to speak).
+While Ezra is working on the computer, Bertie (guest player playing the character) finds a clip board with some monetary logs – showing misappropriation of funds of the “reactor”. He surmizes someone in Argencorp is using the id of K Vance to use DoD fund and pay for an off the books project using this quantum computer project as a cover.
+While Ezra and Bertie work, Nico has some sort of flashback and appears to start having a panic attack.
+Nico makes for the door, but it is locked. While we are in the control room, alarms start going off and Hale comes over comms and says he  trying to override the alarm, but can’t seem to gain access.
+ We then see another door open and behind it we see the reactor core chamber – it is pulsing.
+It almost seems as if the computer systems wants us to go into the chamber.
+Ezra notices on one monitor flashing red letters stating “fail safes deactivated”.
+As a light begins to glow brighter from the top of the reactor, humming intensifies, the air seems to pulse – Ezra steps to a computer to see if he can shut the machine down.
+There is a bright flash and everything goes black …..
+We start to wake up to the sound of a forest, but the woods are off, wetter; and the sounds are off.
+Ezra notices a “tricorder” looking device near his feet.
+Then suddenly as we begin to get our bearings, we hear a growl and rumble – we and see – a T-Rex!
+As a reward we get - +1 Cursed and Undeterred (1 SP): Once per game session you can get as many SP as your Relationship rating to perform any stunt that would be in-character when it comes to helping other members of Cursed Investigations. You choose this after you see if you succeed on a test.
+-- Session Ends Here -- 
