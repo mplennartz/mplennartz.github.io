@@ -26,13 +26,13 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Validate required fields
         if (!name || !email || !security || !incident || !location || !date || !urgency || !message) {
-            showRetroAlert('TRANSMISSION ERROR', 'All fields are required for secure transmission.\\n\\nPlease complete all sections before submitting.');
+            showRetroAlert('TRANSMISSION ERROR', 'All fields are required for secure transmission.\n\nPlease complete all sections before submitting.');
             return;
         }
         
         // Validate email format
         if (!isValidEmail(email)) {
-            showRetroAlert('EMAIL FORMAT ERROR', 'Invalid email address format detected.\\n\\nPlease enter a valid email address for response purposes.');
+            showRetroAlert('EMAIL FORMAT ERROR', 'Invalid email address format detected.\n\nPlease enter a valid email address for response purposes.');
             return;
         }
         
@@ -42,12 +42,12 @@ document.addEventListener('DOMContentLoaded', function() {
         // Show processing animation
         showProcessingAnimation(() => {
             // Show success message with case number
-            const successMessage = `SECURE TRANSMISSION SUCCESSFUL\\n\\n` +
-                                 `Your report has been received and assigned case number: ${caseNumber}\\n\\n` +
-                                 `Security Level: ${security.toUpperCase()}\\n` +
-                                 `Incident Type: ${incident}\\n` +
-                                 `Urgency: ${urgency.toUpperCase()}\\n\\n` +
-                                 `A member of our investigative team will contact you within 24-72 hours.\\n\\n` +
+            const successMessage = `SECURE TRANSMISSION SUCCESSFUL\n\n` +
+                                 `Your report has been received and assigned case number: ${caseNumber}\n\n` +
+                                 `Security Level: ${security.toUpperCase()}\n` +
+                                 `Incident Type: ${incident}\n` +
+                                 `Urgency: ${urgency.toUpperCase()}\n\n` +
+                                 `A member of our investigative team will contact you within 24-72 hours.\n\n` +
                                  `REMEMBER: Trust no one. The truth is out there.`;
             
             showRetroAlert('TRANSMISSION COMPLETE', successMessage);

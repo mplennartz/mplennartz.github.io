@@ -2,14 +2,31 @@
 
 document.addEventListener('DOMContentLoaded', function() {
 
+    var guestbookForm = document.getElementById('guestbookForm');
+    var firebaseEntries = document.getElementById('firebaseEntries');
+    var submitButton = guestbookForm ? guestbookForm.querySelector('.submit-button') : null;
+
+    // firebase-config.js is injected at deploy time and absent on local clones
+    if (typeof firebase === 'undefined' || typeof FIREBASE_CONFIG === 'undefined') {
+        if (firebaseEntries) {
+            var offline = document.createElement('p');
+            offline.className = 'terminal-font';
+            offline.style.cssText = 'text-align: center; color: var(--text-secondary);';
+            offline.textContent = 'GUESTBOOK OFFLINE — SECURE CHANNEL UNAVAILABLE';
+            firebaseEntries.appendChild(offline);
+        }
+        if (submitButton) submitButton.disabled = true;
+        return;
+    }
+
     firebase.initializeApp(FIREBASE_CONFIG);
 
     var db = firebase.database();
     var guestbookRef = db.ref('guestbook');
 
-    var guestbookForm = document.getElementById('guestbookForm');
-    var firebaseEntries = document.getElementById('firebaseEntries');
-    var submitButton = guestbookForm ? guestbookForm.querySelector('.submit-button') : null;
+    var GAME_DATE = typeof SITE_CONFIG !== 'undefined'
+        ? SITE_CONFIG.GAME_DATE
+        : { year: 1999, month: 'Apr', day: 22 };
 
     var lastSubmitTime = 0;
     var COOLDOWN_MS = 30000;
@@ -90,7 +107,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var gm = totalMin % 60;
             var gap = gh >= 12 ? 'PM' : 'AM';
             var gdh = gh % 12 || 12;
-            var gd = SITE_CONFIG.GAME_DATE;
+            var gd = GAME_DATE;
             var gameDate = gd.month + ' ' + String(gd.day).padStart(2, '0') + ', ' + gd.year +
                 ' - ' + gdh + ':' + String(gm).padStart(2, '0') + ' ' + gap;
 
@@ -140,7 +157,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var m = totalMinutes % 60;
             var ampm = h >= 12 ? 'PM' : 'AM';
             var dh = h % 12 || 12;
-            var gd = SITE_CONFIG.GAME_DATE;
+            var gd = GAME_DATE;
             dateStr = gd.month + ' ' + gd.day + ', ' + gd.year + ' - ' +
                 dh + ':' + m.toString().padStart(2, '0') + ' ' + ampm;
         }
@@ -153,7 +170,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 '<span class="entry-name">' + escapeHtml(data.name) + '</span>' +
                 '<span class="entry-location">' + escapeHtml(data.location) + '</span>' +
                 '<span class="entry-clearance ' + safeClearance + '">' + safeClearance.toUpperCase() + '</span>' +
-                '<span class="entry-date">' + dateStr + '</span>' +
+                '<span class="entry-date">' + escapeHtml(dateStr) + '</span>' +
             '</div>' +
             '<div class="entry-message">' +
                 escapeHtml(data.message) +

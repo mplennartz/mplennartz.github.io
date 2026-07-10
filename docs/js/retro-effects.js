@@ -175,13 +175,3 @@ document.addEventListener('DOMContentLoaded', function() {
     ╚══════════════════════════════════════╝
     `);
 });
-
-// Global functions for retro compatibility
-function enterSite() {
-    window.location.href = 'home.html';
-}
-
-// Fake email protection (classic 90s style)
-function showEmail(user, domain) {
-    alert('Email: ' + user + '@' + domain);
-} 
