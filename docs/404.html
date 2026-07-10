@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - File Not Found</title>
+    <meta name="description" content="Error 404 - the requested document has been redacted or never existed.">
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="stylesheet" href="/css/cursed-theme.css">
+    <link rel="stylesheet" href="/css/retro-style.css">
+    <style>
+        .error-box {
+            background-color: var(--bg-box);
+            border: 3px solid var(--border-warning);
+            padding: 30px;
+            margin: 40px auto;
+            max-width: 550px;
+            text-align: center;
+        }
+        .error-code {
+            font-family: var(--font-mono);
+            font-size: 48px;
+            color: var(--text-warning);
+            text-shadow: var(--glow-red);
+            margin: 0 0 10px 0;
+        }
+        .error-redacted {
+            display: inline-block;
+            background-color: var(--text-primary);
+            color: var(--text-primary);
+            padding: 2px 8px;
+            user-select: none;
+        }
+        .error-actions {
+            margin-top: 25px;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title"><a href="/home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+            <div class="last-updated"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="/home.html" class="nav-button">HOME</a>
+                <a href="/investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="/stories.html" class="nav-button">CASE FILES</a>
+                <a href="/operations-map.html" class="nav-button">OPERATIONS MAP</a>
+                <a href="/lore.html" class="nav-button">LORE CODEX</a>
+                <a href="/evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="/contact.html" class="nav-button">CONTACT</a>
+                <a href="/guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <div class="error-box">
+            <p class="error-code">ERROR 404</p>
+            <h2 class="spooky">DOCUMENT REDACTED</h2>
+            <p class="terminal-font">
+                THE FILE YOU REQUESTED HAS BEEN
+                <span class="error-redacted">████████████</span>
+                BY ORDER OF <span class="error-redacted">██████████</span>.
+            </p>
+            <p>
+                Either this document never existed, or someone doesn't want you to see it.
+                <span class="atmospheric">Draw your own conclusions.</span>
+            </p>
+            <p class="terminal-font blink">CONNECTION MONITORED ●</p>
+            <div class="error-actions">
+                <a href="/home.html" class="nav-button">RETURN TO SAFETY</a>
+                <a href="/stories.html" class="nav-button">BROWSE DECLASSIFIED FILES</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/site-config.js"></script>
+    <script src="/js/retro-effects.js"></script>
+</body>
+</html>
