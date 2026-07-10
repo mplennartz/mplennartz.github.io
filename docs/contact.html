@@ -67,17 +67,17 @@
             <form class="contact-form" id="contactForm">
                 <table class="form-table">
                     <tr>
-                        <td class="form-label">Contact Name:</td>
-                        <td><input type="text" name="name" class="form-input" placeholder="Enter your name or alias..." required></td>
+                        <td class="form-label"><label for="contact-name">Contact Name:</label></td>
+                        <td><input type="text" name="name" id="contact-name" class="form-input" placeholder="Enter your name or alias..." required></td>
                     </tr>
                     <tr>
-                        <td class="form-label">Email Address:</td>
-                        <td><input type="email" name="email" class="form-input" placeholder="your.email@domain.com" required></td>
+                        <td class="form-label"><label for="contact-email">Email Address:</label></td>
+                        <td><input type="email" name="email" id="contact-email" class="form-input" placeholder="your.email@domain.com" required></td>
                     </tr>
                     <tr>
-                        <td class="form-label">Security Level:</td>
+                        <td class="form-label"><label for="contact-security">Security Level:</label></td>
                         <td>
-                            <select name="security" class="form-input" required>
+                            <select name="security" id="contact-security" class="form-input" required>
                                 <option value="">Select Classification...</option>
                                 <option value="public">Public Information</option>
                                 <option value="confidential">Confidential</option>
@@ -88,9 +88,9 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="form-label">Incident Type:</td>
+                        <td class="form-label"><label for="contact-incident">Incident Type:</label></td>
                         <td>
-                            <select name="incident" class="form-input" required>
+                            <select name="incident" id="contact-incident" class="form-input" required>
                                 <option value="">Select Type...</option>
                                 <option value="ghost">Paranormal/Ghost Activity</option>
                                 <option value="cryptid">Cryptid Sighting</option>
@@ -102,12 +102,12 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="form-label">Location:</td>
-                        <td><input type="text" name="location" class="form-input" placeholder="City, State/Country (or coordinates)" required></td>
+                        <td class="form-label"><label for="contact-location">Location:</label></td>
+                        <td><input type="text" name="location" id="contact-location" class="form-input" placeholder="City, State/Country (or coordinates)" required></td>
                     </tr>
                     <tr>
-                        <td class="form-label">Date of Incident:</td>
-                        <td><input type="date" name="date" class="form-input" required></td>
+                        <td class="form-label"><label for="contact-date">Date of Incident:</label></td>
+                        <td><input type="date" name="date" id="contact-date" class="form-input" required></td>
                     </tr>
                     <tr>
                         <td class="form-label">Urgency Level:</td>
@@ -119,8 +119,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="form-label">Message:</td>
-                        <td><textarea name="message" class="form-textarea" placeholder="Describe your encounter, evidence, or information in detail..." required></textarea></td>
+                        <td class="form-label"><label for="contact-message">Message:</label></td>
+                        <td><textarea name="message" id="contact-message" class="form-textarea" placeholder="Describe your encounter, evidence, or information in detail..." required></textarea></td>
                     </tr>
                     <tr>
                         <td></td>

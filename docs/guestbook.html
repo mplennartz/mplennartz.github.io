@@ -57,17 +57,17 @@
             <form class="guestbook-form" id="guestbookForm">
                 <table class="form-table">
                     <tr>
-                        <td class="form-label">Name:</td>
-                        <td><input type="text" name="name" class="form-input" placeholder="Enter your alias..." maxlength="50"></td>
+                        <td class="form-label"><label for="gb-name">Name:</label></td>
+                        <td><input type="text" name="name" id="gb-name" class="form-input" placeholder="Enter your alias..." maxlength="50"></td>
                     </tr>
                     <tr>
-                        <td class="form-label">Location:</td>
-                        <td><input type="text" name="location" class="form-input" placeholder="City, State/Country" maxlength="50"></td>
+                        <td class="form-label"><label for="gb-location">Location:</label></td>
+                        <td><input type="text" name="location" id="gb-location" class="form-input" placeholder="City, State/Country" maxlength="50"></td>
                     </tr>
                     <tr>
-                        <td class="form-label">Clearance Level:</td>
+                        <td class="form-label"><label for="gb-clearance">Clearance Level:</label></td>
                         <td>
-                            <select name="clearance" class="form-input">
+                            <select name="clearance" id="gb-clearance" class="form-input">
                                 <option value="civilian">Civilian</option>
                                 <option value="informant">Informant</option>
                                 <option value="investigator">Investigator</option>
@@ -76,8 +76,8 @@
                         </td>
                     </tr>
                     <tr>
-                        <td class="form-label">Message:</td>
-                        <td><textarea name="message" class="form-textarea" placeholder="Share your experience, theory, or message..." maxlength="500"></textarea></td>
+                        <td class="form-label"><label for="gb-message">Message:</label></td>
+                        <td><textarea name="message" id="gb-message" class="form-textarea" placeholder="Share your experience, theory, or message..." maxlength="500"></textarea></td>
                     </tr>
                     <tr style="position: absolute; left: -9999px;" aria-hidden="true">
                         <td class="form-label">Website:</td>

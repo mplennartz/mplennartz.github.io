@@ -257,8 +257,11 @@ document.addEventListener('DOMContentLoaded', function() {
         '@keyframes glow{0%,100%{box-shadow:none}50%{box-shadow:0 0 10px var(--text-warning)}}';
     document.head.appendChild(guestbookStyle);
 
+    var reducedMotion = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     setInterval(function() {
-        if (Math.random() < 0.1) {
+        if (!reducedMotion && Math.random() < 0.1) {
             var scanner = document.createElement('div');
             scanner.style.cssText =
                 'position:fixed;top:0;left:0;width:100%;height:2px;' +

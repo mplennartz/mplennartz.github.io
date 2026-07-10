@@ -145,8 +145,17 @@ a:hover {
   .container {
     padding: 10px;
   }
-  
+
   body {
     font-size: 12px;
   }
-} 
+}
+
+/* Accessibility: disable decorative motion for users who request it */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

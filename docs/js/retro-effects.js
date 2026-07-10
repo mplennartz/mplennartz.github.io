@@ -2,6 +2,9 @@
 // Simulating classic 1998 web features
 
 document.addEventListener('DOMContentLoaded', function() {
+    const REDUCED_MOTION = window.matchMedia &&
+        window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
     function ensureGlobalNavLinks() {
         const navLinks = document.querySelector('.nav-links');
         if (!navLinks) return;
@@ -69,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Check for random blink pauses every 5 seconds
-    setInterval(addRandomBlink, 5000);
+    if (!REDUCED_MOTION) setInterval(addRandomBlink, 5000);
     
     // Set .last-updated text from site config on page load
     const lastUpdatedEl = document.querySelector('.last-updated');
@@ -122,7 +125,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Update spooky effects every 100ms
-    setInterval(addSpookyEffects, 100);
+    if (!REDUCED_MOTION) setInterval(addSpookyEffects, 100);
     
     // Simulate occasional "connection issues" with marquee
     function simulateConnection() {
@@ -135,7 +138,7 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
     
-    setInterval(simulateConnection, 10000);
+    if (!REDUCED_MOTION) setInterval(simulateConnection, 10000);
     
     // Add typewriter effect to terminal elements on hover
     function addTypewriterEffect(element) {
@@ -153,7 +156,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     // Apply typewriter effect to terminal elements
-    document.querySelectorAll('.terminal-font').forEach(element => {
+    if (!REDUCED_MOTION) document.querySelectorAll('.terminal-font').forEach(element => {
         element.addEventListener('mouseenter', () => {
             if (!element.dataset.typed) {
                 element.dataset.typed = 'true';
