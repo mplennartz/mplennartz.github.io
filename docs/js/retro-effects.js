@@ -165,6 +165,44 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
     
+    // Konami code -> omega clearance file
+    const KONAMI = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown',
+                    'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight',
+                    'KeyB', 'KeyA'];
+    let konamiProgress = 0;
+
+    function omegaUnlock() {
+        // reuse the nav to find the path back to site root (index.html has
+        // no nav but sits at the root, so '' is correct there too)
+        const storiesLink = document.querySelector('.nav-links a[href$="stories.html"]');
+        const href = storiesLink ? storiesLink.getAttribute('href') : 'stories.html';
+        const basePath = href.slice(0, href.length - 'stories.html'.length);
+        const target = basePath + 'classified/omega-file.html';
+
+        if (REDUCED_MOTION) {
+            window.location.href = target;
+            return;
+        }
+        const overlay = document.createElement('div');
+        overlay.style.cssText =
+            'position:fixed;top:0;left:0;width:100%;height:100%;' +
+            'background:#000;color:var(--text-primary, #00ff00);z-index:99999;' +
+            'display:flex;justify-content:center;align-items:center;' +
+            'font-family:\'Courier New\',monospace;font-size:20px;text-align:center;';
+        overlay.textContent = '>> CLEARANCE OMEGA ACCEPTED — RETRIEVING FILE...';
+        document.body.appendChild(overlay);
+        setTimeout(() => { window.location.href = target; }, 1200);
+    }
+
+    document.addEventListener('keydown', function(e) {
+        konamiProgress = (e.code === KONAMI[konamiProgress]) ? konamiProgress + 1
+            : (e.code === KONAMI[0] ? 1 : 0);
+        if (konamiProgress === KONAMI.length) {
+            konamiProgress = 0;
+            omegaUnlock();
+        }
+    });
+
     // Console easter egg
     console.log(`
     ╔══════════════════════════════════════╗

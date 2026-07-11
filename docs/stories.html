@@ -178,6 +178,19 @@
             <div class="marquee">
                 <div class="marquee-text">*** BREAKING: New cases added weekly *** Some files contain GRAPHIC EVIDENCE *** Report suspicious activity immediately ***</div>
             </div>
+
+            <!-- Archive Tools -->
+            <div style="margin-top: 15px; text-align: center;">
+                <label for="case-search" class="terminal-font">SEARCH ARCHIVE:</label>
+                <input type="search" id="case-search" class="form-input" style="max-width: 260px; display: inline-block;"
+                       placeholder="Keyword, case number, tag...">
+                &nbsp;
+                <a href="#" class="nav-button" data-random-case>RANDOM CASE FILE ▶</a>
+                <a href="timeline.html" class="nav-button">OPERATION CHRONOLOGY</a>
+            </div>
+            <p id="case-search-empty" class="terminal-font spooky" style="display: none; text-align: center;">
+                ▓▓ NO RECORDS MATCH QUERY ▓▓
+            </p>
         </div>
 
         <!-- Active Leads Category -->
@@ -607,5 +620,6 @@
 
     <script src="js/site-config.js"></script>
     <script src="js/retro-effects.js"></script>
+    <script src="js/case-index.js"></script>
 </body>
 </html> 
