@@ -9,7 +9,7 @@ Each investigator has a detailed markdown file containing all the information ne
 - **Investigator 07** - `investigator-07-asher-khalid.md` - Field operative with interpersonal skills
 - **Investigator 13** - `investigator-13-nico-rylan.md` - Medical analysis specialist (already created)
 - **Investigator 23** - `investigator-23-victoria-quinn.md` - Cryptid tracking specialist
-- **Investigator 34** - `investigator-34-maya-patel.md` - Historical occult researcher
+- **Investigator 28** - `investigator-28-mordecai-engelbert.md` - Academic explorer and field researcher
 - **Investigator 42** - `investigator-42-donovan-cross.md` - Government conspiracy specialist
 - **Investigator 51** - `investigator-51-river-zhang.md` - Dimensional anomaly researcher
 - **Investigator 66** - `investigator-66-jordan-scott.md` - Lead investigator and team coordinator

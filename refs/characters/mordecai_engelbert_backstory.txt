@@ -1,0 +1,89 @@
+Languages: English, Spanish
+
+    Age: 28
+    Height: 5' 6"
+    Weight: 140 lbs
+
+Concept: An academic explorer who has traveled to remote and inaccessible locales in search of the supernatural and has a penchant for thrown weapons and explosives.
+
+Abilities: 12 Advancements; no ability below 0, no ability can be greater than 3.
+
+    HP/Fortune: 43 [20 +5 +CON @lvl 1, +1d6 +CON per lvl]
+    Toughness: 3 [CON @ lvl1, +1 @lvls 4, 8, 12, etc]
+    Defense: 13 [CON +10 @lvl1, +1 @lvls 4, 8, 12, etc]
+    Speed: 12 [DEX +10], Mordecai can Move/ Run 12/ 24 yards per turn.
+    Resources: 9 [6 -1 @lvl1, +1 per lvl due to Cinematic game mode]
+
+Social Middle Class
+
+Background: Academic
+
+    Ability:  +1 Intelligence
+    Focus: (INT) History
+    Talent: Knowledge
+    Benefit: Focus (INT) Anthropology
+
+Profession: Explorer
+
+    Focus:  (PER) Searching
+    Talent: Scouting
+    Benefit: Health: 20 + 2 CON @lvl1  Resources: 6 -1 @lvl1
+
+Drive: Survivor
+
+    Quality: Preparedness. You survive by being ready for anything and knowing what to do in any situation.
+    Downfall: Cynicism. You are always anticipating and preparing for the worst, making it difficult for you to see the good in anything.
+    Talent: Tactical Awareness
+    Improvement: Health +5
+
+Specialization:  Field Researcher (Special lvl 1 bonus for joining the FBI
+
+Bonds: 2?
+
+    Ezra Carson PhD
+
+    Dr Elizabeth Warren (Head Archivist and Librarian at Yale University)
+
+
+Interludes: tbd
+Level Up 2
+
+Fortune: 5 = 3+2
+
+    Ability:  +1 Intelligence
+    Focus: (INT) Occultism
+    Talent: Theory & Practice
+
+Level Up 3
+
+Fortune: 6 = 4+2
+
+    Ability:  +1 Accuracy
+    Focus: (DEX) Stealth
+    Talent: Hurled Weapon Style
+
+Level Up 4 
+
+Fortune: 3 = 1+2
+
+    Ability:  +1 Intelligence
+    Focus: (ACC) Grenades
+    Talent: +1 Hurled Weapon Style
+    Specialization: +1 Field Researcher
+
+Level Up 5
+
+Fortune: 7 = 5+2
+
+    Ability:  +1 Perception
+    Focus: (INT) Navigation
+    Talent: Maker (Chemistry Focus)
+
+Future Level Up take...
+
+
+Background Story
+
+Born in New Haven Connecticut, and then primary raised in Cusco Peru by American expatriates who moved there to study the Incan culture and ruins, teaching Incan studies at the nearby UNSAAC university (Universidad Nacional de San Antonio Abad del Cusco).
+
+It was there, high in the Andes mountains near the slopes of the majestic Machu Picchu, that Mordecai first discovered his love for exploring and researching the unknown. After finishing his masters degree in the States on the Superstitions and Supernatural Beliefs of Ancient Cultures, he quickly crossed paths with Ezra Carson due to similar academic circles and interests. After doing some independent consulting work for some wealthy private clients as an overqualified treasure hunter, Mordecai eventually found himself an arguably more moral, (if not less safe) job working for an obscure branch of the FBI of all places...

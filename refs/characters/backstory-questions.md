@@ -67,4 +67,18 @@ Victoria Quinn (Investigator 23) is listed in `list_of_investigators.txt` and ha
 
 ---
 
+## 7. Mordecai Engelbert — Open Items
+
+Profile built as **Investigator 28, "RELIC"** (code name reassigned from the retired Investigator 34), First Contact **1999-05-10**. The number and date were assigned when the profile was created and are not from the player's sheet.
+
+- **"Ezra Carson PhD" bond**: Assumed to be **Ezra Cason** (Investigator 89), since both share academic circles. Confirm.
+- **FBI vs. CURSED**: The backstory says Mordecai works for "an obscure branch of the FBI," and his Field Researcher specialization is a "bonus for joining the FBI." Other profiles describe CURSED as a private agency that works *with* the FBI (e.g., Bloodlines). Is Mordecai CURSED proper, an FBI liaison, or does he believe CURSED is part of the FBI?
+- **Bonds count**: Sheet lists "Bonds: 2?". Confirm the two bonds (Ezra Cason, Dr. Elizabeth Warren).
+- **Health/Fortune math**: Level 1 = 20 (Explorer) + 5 (Survivor) + 2 CON = 27, plus level-up gains 5 + 6 + 3 + 7 = 21, totals **48**, but the sheet lists **43**. 43 matches only if the Survivor +5 is left out.
+- **Portrait**: No classified silhouette, decrypted portrait, or thumbnail exists yet; the page and card use text placeholders.
+
+**Ask**: Mordecai's player / GM
+
+---
+
 *Created while building out character profiles — March 2026*

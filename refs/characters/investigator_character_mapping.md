@@ -11,6 +11,7 @@ This document maps the characters from `List_of_investigators.txt` to the existi
 | **Investigator 07** | **Asher Khalid** | Combat / Tactical Field Operations | Active |
 | **Investigator 13** | **Nico Rylan** | Combat Medicine / Search & Rescue | Active |
 | **Investigator 23** | **Victoria Quinn** | [SPECIALIZATION TBD] | [STATUS TBD] |
+| **Investigator 28** | **Mordecai Engelbert** | Field Research / Exploration / Hurled Weapons & Explosives | Active |
 | **Investigator 42** | **Donovan "Dogfather" Cross** | Command & Leadership / K9 Operations | Active |
 | **Investigator 51** | **Bertram "Bertie" Wooster** | Forensic Analysis / Evidence Processing | Supporting Character (formerly main) |
 | **Investigator 66** | **Jordan Scott** | Undercover Operations / Investigation | Active |
@@ -32,6 +33,12 @@ This document maps the characters from `List_of_investigators.txt` to the existi
 - **Background**: [BACKGROUND TBD]
 - **Specialization**: [SPECIALIZATION TBD]
 - **Story Potential**: [STORY POTENTIAL TBD]
+
+#### Mordecai Engelbert (Investigator 28)
+- **Background**: Born in New Haven, CT; raised in Cusco, Peru by American expatriate academics teaching Incan studies at UNSAAC. Age 28. Master's degree in the Superstitions and Supernatural Beliefs of Ancient Cultures. Former independent consultant ("overqualified treasure hunter") for wealthy private clients before joining "an obscure branch of the FBI."
+- **Specialization**: Field Research / Remote Exploration / Hurled Weapons & Explosives
+- **Story Potential**: Remote and inaccessible sites, ancient superstitions and cultural beliefs (especially Incan/Andean), grenades and field chemistry, former treasure-hunting clients resurfacing, Yale archive access via Dr. Elizabeth Warren, his connection to Ezra (currently comms lost — CIB-225)
+- **Note**: New character; not yet in any case file. See `backstory-questions.md` #7 for open items
 
 #### Donovan "Dogfather" Cross (Investigator 42)
 - **Background**: Born in London, England (dual US/UK citizenship). Age 43. Billionaire tech mogul, government special agent, and elite K9 trainer. Aristocratic upbringing, transitioned from executive to command role.
@@ -62,6 +69,7 @@ When creating stories, match the story's theme to the appropriate investigator:
 - **Tactical Combat / Field Operations** → Asher Khalid (07)
 - **Medical Emergencies / Anomalous Entities** → Nico Rylan (13)
 - **[STORY TYPE TBD]** → Victoria Quinn (23)
+- **Remote Exploration / Ancient Beliefs / Explosives** → Mordecai Engelbert (28)
 - **Command / K9 / Strategic Operations** → Donovan Cross (42)
 - **Undercover / Investigation / Urban Ops** → Jordan Scott (66)
 - **Cryptography / Hacking / Occult Research** → Ezra Cason (89)
@@ -70,6 +78,7 @@ When creating stories, match the story's theme to the appropriate investigator:
 
 - **The Ethan Cole Disappearance**: Connects Asher Khalid (07) and Jordan Scott (66) — both were involved in investigating Ethan Cole's vanishing, which led to their CURSED recruitment
 - **Bertie Wooster Connection**: Connects Ezra Cason (89) to CURSED's early formation — Bertie recruited Ezra as one of his first acts with the organization
+- **Ezra Cason Connection**: Connects Mordecai Engelbert (28) and Ezra Cason (89) — the two crossed paths through overlapping academic circles before Mordecai joined; Ezra is one of Mordecai's Bonds
 
 ### Future Development
 

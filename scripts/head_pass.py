@@ -13,7 +13,7 @@ OG_IMAGE = f"{SITE}/images/og-card.png"
 PAGES = {
     "index.html": ("website", "The Redacted Truth - a satirical 1998-era paranormal conspiracy archive. Fictional case files, cryptid sightings, and government cover-ups. Enter the archives."),
     "home.html": ("website", "Homepage of the Cursed Investigations Bureau - declassified case files, investigator dossiers, the lore codex, and field operations of The Redacted Truth."),
-    "investigators.html": ("website", "The classified field investigators of the Cursed Investigations Bureau - codenames GHOST, DOC, DOGFATHER, SHADE, and SAGE."),
+    "investigators.html": ("website", "The classified field investigators of the Cursed Investigations Bureau - codenames GHOST, DOC, RELIC, DOGFATHER, SHADE, and SAGE."),
     "stories.html": ("website", "Complete case file archive: active leads, spectral encounters, cryptid evidence, and government cover-ups documented by the Bureau."),
     "lore.html": ("website", "The Lore Codex - entities, artifacts, covert programs, and unsolved mysteries catalogued by the Cursed Investigations Bureau."),
     "evidence.html": ("website", "The Bureau evidence locker: photographs, recordings, and recovered artifacts from paranormal investigations."),
@@ -22,6 +22,7 @@ PAGES = {
     "operations-map.html": ("website", "Interactive map of Cursed Investigations Bureau field operations and case locations."),
     "characters/investigator-07.html": ("article", "Agent #CIB-007 'GHOST' - combat specialist and field operative. Classified dossier; decryption clearance required."),
     "characters/investigator-13.html": ("article", "Agent #CIB-013 'DOC' - combat medic and field operative. Classified dossier; decryption clearance required."),
+    "characters/investigator-28.html": ("article", "Agent #CIB-028 'RELIC' - academic explorer, field researcher, and explosives specialist. Classified dossier; decryption clearance required."),
     "characters/investigator-42.html": ("article", "Agent #CIB-042 'DOGFATHER' - commander and K9 specialist. Classified dossier; decryption clearance required."),
     "characters/investigator-66.html": ("article", "Agent #CIB-066 'SHADE' - undercover operative and investigator. Classified dossier; decryption clearance required."),
     "characters/investigator-89.html": ("article", "Agent #CIB-089 'SAGE' - scholar, cryptographer, and hacker. Classified dossier; decryption clearance required."),
