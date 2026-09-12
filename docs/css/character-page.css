@@ -91,6 +91,7 @@
 .character-photo img {
     width: 100%;
     max-width: 512px;
+    height: auto;
     border: 2px solid var(--border-primary);
     box-shadow: var(--glow-green);
 }
