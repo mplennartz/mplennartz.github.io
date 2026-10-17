@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Redacted Truth - [PACKET ID]: [LOG TITLE]</title>
+    <meta name="description" content="[One-sentence description for search and share previews]">
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
+    <link rel="stylesheet" href="../../css/cursed-theme.css">
+    <link rel="stylesheet" href="../../css/retro-style.css">
+    <link rel="stylesheet" href="../../css/story-page.css">
+    <style>
+        /* Page-specific styling */
+        .redacted {
+            background-color: var(--text-warning);
+            color: var(--text-warning);
+            padding: 2px 4px;
+        }
+
+        .unknown-field {
+            color: var(--text-dim);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body class="homepage">
+    <div class="container">
+        <!-- Site Header -->
+        <div class="site-header">
+            <h1 class="site-title"><a href="../../home.html" style="text-decoration: none; color: inherit;">THE REDACTED TRUTH</a></h1>
+            <p class="site-subtitle">~~ CURSED INVESTIGATIONS BUREAU - Documenting the Unexplained Since Never ~~</p>
+            <div class="visitor-counter">
+                <span class="terminal-font">VISITORS: 005464</span>
+                <span class="blink">●</span>
+            </div>
+            <div class="last-updated"></div>
+        </div>
+
+        <!-- Navigation Bar -->
+        <nav class="nav-bar">
+            <div class="nav-links">
+                <a href="../../home.html" class="nav-button">HOME</a>
+                <a href="../../investigators.html" class="nav-button">INVESTIGATORS</a>
+                <a href="../../stories.html" class="nav-button">CASE FILES</a>
+                <a href="../../operations-map.html" class="nav-button">OPERATIONS MAP</a>
+                <a href="../../lore.html" class="nav-button">LORE CODEX</a>
+                <a href="../../evidence.html" class="nav-button">EVIDENCE</a>
+                <a href="../../contact.html" class="nav-button">CONTACT</a>
+                <a href="../../guestbook.html" class="nav-button">GUESTBOOK</a>
+            </div>
+        </nav>
+
+        <!-- Case Header -->
+        <div class="case-header">
+            <h1 class="case-number">RECOVERED TRANSMISSION #[PACKET ID]</h1>
+            <h2 class="case-title">[LOG TITLE]</h2>
+            <div class="classification">CLASSIFIED - DISPLACEMENT LOG</div>
+            <p class="timestamp">Received: [BUREAU RECEIPT DATE] | Parent Case: #[CASE-NUMBER] | Status: [PACKET STATUS]</p>
+        </div>
+
+        <!-- Transmission Header -->
+        <div class="tx-header">
+            <strong>PACKET ID:</strong> [PACKET ID]<br>
+            <strong>ORIGIN ERA:</strong> [ERA]<br>
+            <strong>LOCAL DATE:</strong> [LOCAL DATE — e.g. ~66,000,000 BC]<br>
+            <strong>LOCAL POSITION:</strong> [LOCATION — e.g. Redmond-equivalent]<br>
+            <strong>RECEIVED BY BUREAU:</strong> [BUREAU RECEIPT DATE]<br>
+            <strong>SIGNAL INTEGRITY:</strong> [NN]%<br>
+            <strong>SOURCE:</strong> Bureau Field Telemetry Unit (Class T) — carried by Investigator [NN]
+        </div>
+
+        <!-- Log Content -->
+        <div class="story-content">
+            <div class="story-section">
+                <h3 class="section-header">📡 RECOVERED LOG</h3>
+                <p>[What the team experienced in this era. Write it as reconstructed field notes; keep the Bureau voice.]</p>
+
+                <p>[Use <span class="tx-corrupt">▓▒░ GARBLED ░▒▓</span> spans anywhere the signal drops out mid-sentence.]</p>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🧩 CORRUPTED SEGMENTS</h3>
+                <div class="evidence-box">
+                    <strong>SEGMENT [NN] — [PARTIAL / UNRECOVERABLE]</strong><br>
+                    <span class="tx-corrupt">[▓▓▓▒▒░ fragments, timestamps that don't parse, half a name ░▒▒▓▓▓]</span>
+                </div>
+            </div>
+
+            <div class="story-section">
+                <h3 class="section-header">🗂️ BUREAU ANALYST NOTES</h3>
+                <p>[What the 1999 Bureau makes of this packet — what they can confirm, what they can't, and what they're worried about.]</p>
+
+                <div class="warning-box">
+                    <p class="spooky"><strong>⚠️ [ADVISORY TYPE] ⚠️</strong></p>
+                    <p>[Recovery status, recontact attempts, handling advisories.]</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Related Files -->
+        <div class="content-section">
+            <h2 class="section-title">🔗 RELATED FILES</h2>
+            <ul>
+                <li><a href="[PARENT CASE LINK]">Case #[CASE-NUMBER] — [Parent Case Title]</a></li>
+                <li><a href="../../lore/telemetry-field-unit.html">Lore Codex — Bureau Field Telemetry Unit (LORE-ART-225)</a></li>
+                <li><a href="[PREVIOUS PACKET LINK]">Previous packet — [PACKET ID]</a></li>
+            </ul>
+        </div>
+
+        <!-- Navigation -->
+        <div class="footer-nav">
+            <a href="../../stories.html#displacement-logs" class="nav-button">← BACK TO DISPLACEMENT LOGS</a>
+            <a href="../../home.html" class="nav-button">MAIN ARCHIVES</a>
+            <a href="[NEXT-PACKET-LINK]" class="nav-button">NEXT PACKET →</a>
+        </div>
+
+        <!-- Footer -->
+        <hr>
+        <div class="footer-disclaimer">
+            <p>© 1998 The Redacted Truth | Established Never |
+               <span class="terminal-font">Best viewed with Netscape Navigator 4.0</span></p>
+            <p class="small-print">This site is a work of fiction created for entertainment purposes only.</p>
+        </div>
+    </div>
+
+    <script src="../../js/site-config.js"></script>
+    <script src="../../js/retro-effects.js"></script>
+</body>
+</html>
+
+<!--
+TEMPLATE INSTRUCTIONS (Displacement Logs):
+1. Copy this file to docs/stories/displacement-logs/ (e.g. tx-225-002.html)
+2. Packet IDs: TX-[parent case number]-[sequence], e.g. TX-225-002
+3. "Received" is the Bureau's 1999 date; "Local Date" is the era the team is in.
+   They are deliberately separate — packets can arrive out of chronological order.
+4. Wrap dropped-out text in <span class="tx-corrupt">…</span>
+5. Then: add a story-card under #displacement-logs in stories.html, an entry in
+   js/case-index.js (category 'Displacement Logs', era + localDate fields),
+   a pin in operations-map.html (status "temporal"), and bump TEAM_ERA in js/site-config.js
+-->

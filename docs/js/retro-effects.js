@@ -86,6 +86,12 @@ document.addEventListener('DOMContentLoaded', function() {
         if (Math.random() < 0.01) {
             const timestamp = document.querySelector('.last-updated');
             if (timestamp && typeof SITE_CONFIG !== 'undefined') {
+                // Temporal bleed: sometimes the stamp shows where the team is instead
+                const era = SITE_CONFIG.TEAM_ERA;
+                if (era && Math.random() < 0.33) {
+                    timestamp.textContent = `Last Updated: ▓▓ ${era.localDate} ▓▓ [SIGNAL: ${era.label}]`;
+                    return;
+                }
                 const gd = SITE_CONFIG.GAME_DATE;
                 const h = Math.floor(Math.random() * 24);
                 const m = Math.floor(Math.random() * 60);

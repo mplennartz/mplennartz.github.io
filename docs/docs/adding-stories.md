@@ -146,6 +146,19 @@ Update the "Latest Investigations" table on `home.html`:
 </tr>
 ```
 
+## Adding a Displacement Log (Time-Hop Sessions)
+
+Since CIB-225 the team is displaced in time. The site stays the Bureau's 1999 archive; each hop arrives as a **recovered transmission** relayed by the Class T telemetry unit.
+
+1. Copy `templates/transmission-template.html` to `stories/displacement-logs/tx-225-NNN.html` (next sequence number).
+2. Fill in the `tx-header` block. **Received** is the Bureau's 1999 date; **Local Date** is the era the team is in. Keep them separate, because packets may arrive out of order.
+3. Wrap dropped-out text in `<span class="tx-corrupt">…</span>`.
+4. Add a `story-card` under `#displacement-logs` in `stories.html` (copy TX-225-001's card).
+5. Add an entry to `js/case-index.js` with `category: 'Displacement Logs'`, `dateSort` = receipt date, and `era` / `localDate`. The timeline shows the era automatically.
+6. Add a pin to the `missions` array in `operations-map.html` with `status: "temporal"` and its `era`. Use present-day coordinates for where the team is. The ERA filter fills itself in from the data.
+7. Bump `TEAM_ERA` in `js/site-config.js` (drives the timestamp glitch), and update the `LAST KNOWN ERA` line in each displaced investigator's CURRENT STATUS box.
+8. Link the previous packet's footer `NEXT PACKET →` to the new one.
+
 ## Testing Your Story
 
 1. Check all links work correctly

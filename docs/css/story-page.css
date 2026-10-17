@@ -91,3 +91,35 @@
     flex-wrap: wrap;
     gap: 10px;
 }
+
+/* ── Displacement Logs (recovered transmissions) ── */
+.tx-header {
+    background-color: var(--bg-secondary);
+    border: 2px dashed var(--text-temporal);
+    padding: 12px 15px;
+    margin: 15px 0;
+    font-family: var(--font-mono);
+    font-size: 13px;
+    color: var(--text-gray);
+}
+
+.tx-header strong {
+    color: var(--text-temporal);
+}
+
+.tx-corrupt {
+    color: var(--text-dim);
+    font-family: var(--font-mono);
+    letter-spacing: 1px;
+    animation: tx-flicker 3s steps(1) infinite;
+}
+
+@keyframes tx-flicker {
+    0%, 92%, 100% { opacity: 1; }
+    94% { opacity: 0.3; }
+    96% { opacity: 0.8; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .tx-corrupt { animation: none; }
+}

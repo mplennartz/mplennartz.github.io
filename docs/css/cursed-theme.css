@@ -14,6 +14,7 @@
   --text-accent: #ffff00;     /* Yellow highlights */
   --text-warning: #ff0000;    /* Red for warnings/spooky */
   --text-dim: #999999;        /* Dimmed text */
+  --text-temporal: #ff66ff;   /* Magenta - out-of-time signal (Displacement Logs) */
   
   /* Border Colors */
   --border-primary: #333333;

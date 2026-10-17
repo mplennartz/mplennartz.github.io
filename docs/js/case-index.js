@@ -2,6 +2,8 @@
 // the case-file search on stories.html, and the timeline page.
 // URLs are root-relative; entries are keyed by URL (case numbers are
 // not unique — CIB-023 appears twice in the archive).
+// Optional era/localDate fields mark entries that happened outside the
+// Bureau's present (Displacement Logs); dateSort stays the receipt date.
 
 var CIB_INDEX = {
     cases: [
@@ -21,7 +23,9 @@ var CIB_INDEX = {
         { url: 'stories/conspiracy-files/deep-freeze.html', title: 'Deep Freeze', caseNumber: 'CIB-217', category: 'Government Cover-ups', dateSort: '1999-03-25', dateDisplay: '03/25/99', danger: 'CRITICAL THREAT', status: 'CLOSED - COMPROMISED' },
         { url: 'stories/conspiracy-files/circuit-breaker.html', title: 'Circuit Breaker', caseNumber: 'CIB-224', category: 'Government Cover-ups', dateSort: '1999-03-30', dateDisplay: '03/30/99', danger: 'HIGH THREAT', status: 'RESOLVED - AI ISOLATED' },
         { url: 'stories/ghost-stories/bloodlines.html', title: 'Bloodlines', caseNumber: 'CIB-308', category: 'Spectral Encounters', dateSort: '1999-04-05', dateDisplay: '04/05/99', danger: 'HIGH THREAT', status: 'CLOSED - FEDERAL CUSTODY' },
-        { url: 'stories/active-leads/clockwork-horizon.html', title: 'Clockwork Horizon', caseNumber: 'CIB-225', category: 'Active Leads', dateSort: '1999-04-21', dateDisplay: '04/21/99', danger: 'HIGH THREAT', status: 'ACTIVE - TEAM UNREACHABLE' }
+        { url: 'stories/active-leads/clockwork-horizon.html', title: 'Clockwork Horizon', caseNumber: 'CIB-225', category: 'Active Leads', dateSort: '1999-04-21', dateDisplay: '04/21/99', danger: 'HIGH THREAT', status: 'ACTIVE - TEAM UNREACHABLE' },
+        // Displacement Logs: dateSort = Bureau receipt date; era/localDate = where the team actually was
+        { url: 'stories/displacement-logs/tx-225-001.html', title: 'TX-225-001: First Light', caseNumber: 'TX-225-001', category: 'Displacement Logs', dateSort: '1999-04-22', dateDisplay: '04/22/99', danger: 'HIGH THREAT', status: 'PARTIAL RECOVERY', era: 'Late Cretaceous', localDate: '~66,000,000 BC' }
     ],
     lore: [
         { url: 'lore/breathing-ground-entity.html', title: 'Breathing Ground Fungal Intelligence', caseNumber: 'LORE-ENT-015', dateSort: '1999-01-18', dateDisplay: '01/18/99', status: 'DORMANT / UNKNOWN' },
@@ -119,6 +123,7 @@ document.addEventListener('DOMContentLoaded', function() {
             var meta = document.createElement('span');
             meta.className = 'timeline-meta';
             meta.textContent = d.caseNumber + (d.status ? ' — ' + d.status : '');
+            if (d.era) meta.textContent += ' — ERA: ' + d.era.toUpperCase() + (d.localDate ? ' (' + d.localDate + ')' : '');
 
             row.appendChild(date);
             row.appendChild(badge);
