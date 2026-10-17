@@ -25,7 +25,9 @@ var CIB_INDEX = {
         { url: 'stories/ghost-stories/bloodlines.html', title: 'Bloodlines', caseNumber: 'CIB-308', category: 'Spectral Encounters', dateSort: '1999-04-05', dateDisplay: '04/05/99', danger: 'HIGH THREAT', status: 'CLOSED - FEDERAL CUSTODY' },
         { url: 'stories/active-leads/clockwork-horizon.html', title: 'Clockwork Horizon', caseNumber: 'CIB-225', category: 'Active Leads', dateSort: '1999-04-21', dateDisplay: '04/21/99', danger: 'HIGH THREAT', status: 'ACTIVE - TEAM UNREACHABLE' },
         // Displacement Logs: dateSort = Bureau receipt date; era/localDate = where the team actually was
-        { url: 'stories/displacement-logs/tx-225-001.html', title: 'TX-225-001: First Light', caseNumber: 'TX-225-001', category: 'Displacement Logs', dateSort: '1999-04-22', dateDisplay: '04/22/99', danger: 'HIGH THREAT', status: 'PARTIAL RECOVERY', era: 'Late Cretaceous', localDate: '~66,000,000 BC' }
+        { url: 'stories/displacement-logs/before-chicxulub.html', title: 'Before Chicxulub', caseNumber: 'TX-225-001–003', category: 'Displacement Logs', dateSort: '1999-04-22', dateDisplay: '04/22/99', danger: 'HIGH THREAT', status: 'TRANSITIONED', era: 'Late Cretaceous', localDate: '~66,000,000 BC' },
+        { url: 'stories/displacement-logs/buried.html', title: 'Buried', caseNumber: 'TX-225-004–005', category: 'Displacement Logs', dateSort: '1999-04-22', dateDisplay: '04/22/99', danger: 'HIGH THREAT', status: 'TRANSITIONED - PACKET LOST', era: 'Middle Kingdom Egypt', localDate: 'c. 2055–1650 BC' },
+        { url: 'stories/displacement-logs/a-cup-of-friendship.html', title: 'A Cup of Friendship', caseNumber: 'TX-225-006', category: 'Displacement Logs', dateSort: '1999-04-22', dateDisplay: '04/22/99', danger: 'HIGH THREAT', status: 'ACTIVE', era: 'Imperial Rome', localDate: '29 Dec 192 CE' }
     ],
     lore: [
         { url: 'lore/breathing-ground-entity.html', title: 'Breathing Ground Fungal Intelligence', caseNumber: 'LORE-ENT-015', dateSort: '1999-01-18', dateDisplay: '01/18/99', status: 'DORMANT / UNKNOWN' },
@@ -33,6 +35,7 @@ var CIB_INDEX = {
         { url: 'lore/whitlock-lineage.html', title: 'The Whitlock Continuity Pattern', caseNumber: 'LORE-MYS-308', dateSort: '1999-04-05', dateDisplay: '04/05/99', status: 'CLOSED' },
         { url: 'lore/nexstep-displacement-event.html', title: 'NeXstep Displacement Event', caseNumber: 'LORE-MYS-225', dateSort: '1999-04-22', dateDisplay: '04/22/99', status: 'ACTIVE' },
         { url: 'lore/k-vance-identity-shell.html', title: 'K. Vance Identity Shell', caseNumber: 'LORE-PRO-225', dateSort: '1999-04-22', dateDisplay: '04/22/99', status: 'ACTIVE' },
+        { url: 'lore/resonance-anchors.html', title: 'Resonance Anchors', caseNumber: 'LORE-MYS-226', dateSort: '1999-04-22', dateDisplay: '04/22/99', status: 'ACTIVE' },
         { url: 'lore/telemetry-field-unit.html', title: 'Bureau Field Telemetry Unit (Class T)', caseNumber: 'LORE-ART-225', dateSort: '1999-04-22', dateDisplay: '04/22/99', status: 'WITH DISPLACED TEAM' }
     ]
 };

@@ -1,0 +1,73 @@
+========================================================================
+RECOVERED TRANSMISSION - DRAFT PACKET HEADER
+========================================================================
+Packet ID          : TX-225-002
+Working title      : Chroniton
+Adventure          : Before Chicxulub (part 1 of 2)
+Session            : Session 14 - 06/12/26
+Origin era         : Late Cretaceous
+Local date         : ~66,000,000 BC (pre-Chicxulub impact)
+Local position     : Redmond-equivalent; cave system, river, swamp/tar pits to the west
+Named in notes     : 66, 28, 89, 07 (assume full displaced team present)
+Received by Bureau : TBD - Bureau time undecided
+Signal integrity   : TBD (suggest 50-60%)
+========================================================================
+
+-- Session Starts Here --
+
+    We pick back up in the VERY distance past – waking up to a T-Rex stalking us.
+    We immediately enter into a chase test with the T-Rex
+    After some lucky rolls, we are able to escape the T-Rex.
+    As we start to wonder this strange, new place we find ourselves – we all notice Jordan is holding something that is pulsing.
+    Mordecai, the “new” agent on the team who knows Ezra from the academic circles and was shadowing us on the recent Agencorp assignment, knows this pulsing device is a chronton detector. Chroniton is a subatomic particle with temporal properties.
+    Chroniton frequently are used to detect and monitor time travel and temporal anomalies.
+    Using the chroniton device, we see the device is signaling or pointing to a strong point of “source”, so we start moving toward destination.
+    This leads us to a cave and we cautiously start moving into the cave and enter dangerous exploration.
+    As we move through the cave, we come to a large room with a massive drop off and a narrow ledge leading to the west – a potential escape.
+    The problem is, two Pteranodon’s are flying around in the room.
+    We all cautiously start to move along the edge, trying to avoid drawing the attention of the Pteranodons.
+    While trying to get past the Pteranodons, Ezra is snatched up by one … leading to a grappling fight by the two Pteranodons – eventually causing the first Pteranodon to drop Ezra about a 100 feet into a swift moving river.
+    The other are able to escape and meet back up with Ezra who gets washed ashore down river.
+    Gather themselves, they continue heading west, following the intensifying beeps of the chroniton device.
+    As we move, Ezra asks Jordan if he could look/read the chroniton device … Ezra can tell the detector’s pulses repeat in fixed intervals inconsistent with natural magnetic, geothermal, or seismic activity.
+    He posits this confirms the signal source is stable and artificial in nature.
+    He also can hear and see near stronger readings, the detector produces a second layered tone and its internal components begin vibrating in sync with the signal source.
+    With this, Ezra posits this establishes the detector is attempting to synchronize with whatever is generating the signal.
+    Still having his laptop, Ezra connects to the device so that he can program it to function more like an electronic compass so that we can determine exactly where we need to head instead of just swinging the device around random to see how strong the signal sounds.
+    As he does this, Ezra notices an aperture starts to slide open as the device is pointed in the direction from which the signal comes, revealing the glimpse of some sort of contact plate – not for fingerprints, but possibly to some other device of some kind.
+    Not knowing exactly what the aperture is really for, Ezra just knows this is aligned to opening when lined up with the artificial signal.
+    Sharing this with the group, they all look to Ezra to lead the way and the group begins to move again.
+    As we come up to the edge of a swap and marshy area – the device is vibrating very strongly now and the aperture is nearly fully open.
+    Ezra posits to the team, wherever they need to go, it is most likely in the middle of that swamp.
+    Looking around some of the group pick up some sticks to fashion as a spears and Asher looks around to see numerous sets of tracks – signaling this area is most likely well hunted.
+    We know we need to find a “safe” path through the swamp, avoiding as much of the animal tracks as possible.
+    Looking over Ezra’s shoulder, Mordecai sees a large white object out in distance, and using some good navigation, begins to lead the group to the object.
+    As we make our way through the swamp to the white object, the device in Ezra’s hand begin to go even crazier – leading Ezra to realize that the device wants to be “connected” to the large white object.
+    We move with more haste to connect the two devices.
+    We come to a area of the swamp that darkens and surrounded by tall trees and pools of tar.
+    We start to cautiously move through this new hazard.
+    As we approach, what seems like a glowing light, three Velociraptors appear.
+    We enter into combat.
+    We end the session with one Velociraptor dead, one pretty wounded, and one still looking fresh.
+
+-- Session Ends Here --
+
+========================================================================
+IMPLEMENTATION NOTES
+========================================================================
+- Picks up directly after TX-225-001 (Session 13 notes live in
+  refs/stories/clockwork-horizon/clockwork-horizon-part-2.txt).
+- OMIT from site (mechanics): "chase test", "dangerous exploration",
+  "enter into combat" phrasing; keep the in-world events.
+- Ends on a cliffhanger: 1 raptor dead, 1 wounded, 1 fresh.
+- LORE: first naming of the CHRONITON DETECTOR. Update
+  docs/lore/telemetry-field-unit.html (Class T unit = chroniton detector?):
+  fixed-interval artificial pulses, layered tone + sympathetic vibration
+  near source, aperture/contact plate that opens toward the signal,
+  Investigator 89 reprograms it via laptop into a compass.
+- CONTINUITY: Session 13 says the device was at Investigator 89's feet;
+  here Investigator 66 is holding a pulsing device. Same device or two?
+- CONTINUITY: Investigator 28 is named as on the team (was shadowing
+  the Argencorp job). TX-225-001 page / ops map / profiles omit 28.
+- Corrupted-segment candidates: Pteranodon snatch + 100 ft fall into the
+  river (partial audio), the glowing light in the tar-pit grove.

@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Redacted Truth - [PACKET ID]: [LOG TITLE]</title>
+    <title>The Redacted Truth - [ADVENTURE TITLE]</title>
     <meta name="description" content="[One-sentence description for search and share previews]">
     <link rel="icon" type="image/svg+xml" href="../../favicon.svg">
     <link rel="stylesheet" href="../../css/cursed-theme.css">
@@ -52,47 +52,50 @@
 
         <!-- Case Header -->
         <div class="case-header">
-            <h1 class="case-number">RECOVERED TRANSMISSION #[PACKET ID]</h1>
-            <h2 class="case-title">[LOG TITLE]</h2>
-            <div class="classification">CLASSIFIED - DISPLACEMENT LOG</div>
-            <p class="timestamp">Received: [BUREAU RECEIPT DATE] | Parent Case: #[CASE-NUMBER] | Status: [PACKET STATUS]</p>
+            <h1 class="case-number">DISPLACEMENT LOG #[FIRST PACKET] – [LAST PACKET]</h1>
+            <h2 class="case-title">[ADVENTURE TITLE]</h2>
+            <div class="classification">CLASSIFIED - [THREAT LEVEL]</div>
+            <p class="timestamp">Received: [BUREAU RECEIPT DATE] | Parent Case: #[CASE-NUMBER] | Status: [LOG STATUS]</p>
         </div>
 
         <!-- Transmission Header -->
         <div class="tx-header">
-            <strong>PACKET ID:</strong> [PACKET ID]<br>
+            <strong>PACKETS:</strong> [FIRST PACKET] – [LAST PACKET]<br>
             <strong>ORIGIN ERA:</strong> [ERA]<br>
             <strong>LOCAL DATE:</strong> [LOCAL DATE — e.g. ~66,000,000 BC]<br>
-            <strong>LOCAL POSITION:</strong> [LOCATION — e.g. Redmond-equivalent]<br>
+            <strong>LOCAL POSITION:</strong> [LOCATION]<br>
             <strong>RECEIVED BY BUREAU:</strong> [BUREAU RECEIPT DATE]<br>
-            <strong>SIGNAL INTEGRITY:</strong> [NN]%<br>
-            <strong>SOURCE:</strong> Bureau Field Telemetry Unit (Class T) — carried by Investigator [NN]
+            <strong>FIELD TEAM:</strong> Investigators [NN, NN, ...]<br>
+            <strong>SOURCE:</strong> Bureau Field Telemetry Unit (Class T) / chroniton detector
         </div>
 
-        <!-- Log Content -->
+        <!-- Log Content: one PACKET section per session -->
         <div class="story-content">
             <div class="story-section">
-                <h3 class="section-header">📡 RECOVERED LOG</h3>
-                <p>[What the team experienced in this era. Write it as reconstructed field notes; keep the Bureau voice.]</p>
+                <h3 class="section-header">📡 PACKET [PACKET ID] — [PACKET TITLE]</h3>
+                <p class="timestamp">Local: [LOCAL DATE] | Signal Integrity: [NN]%</p>
+                <p>[What the team experienced this session, as reconstructed field notes in the Bureau voice. Investigator NN only; no mechanics.]</p>
 
-                <p>[Use <span class="tx-corrupt">▓▒░ GARBLED ░▒▓</span> spans anywhere the signal drops out mid-sentence.]</p>
+                <p>[Use <span class="tx-corrupt">▓▒░ GARBLED ░▒▓</span> spans anywhere the signal drops out.]</p>
             </div>
 
+            <!-- Lost packet (session with no notes) -->
             <div class="story-section">
-                <h3 class="section-header">🧩 CORRUPTED SEGMENTS</h3>
+                <h3 class="section-header">📡 PACKET [PACKET ID] — LOST PACKET</h3>
+                <p class="timestamp">Local: unknown | Signal Integrity: [0-5]%</p>
                 <div class="evidence-box">
-                    <strong>SEGMENT [NN] — [PARTIAL / UNRECOVERABLE]</strong><br>
-                    <span class="tx-corrupt">[▓▓▓▒▒░ fragments, timestamps that don't parse, half a name ░▒▒▓▓▓]</span>
+                    <strong>SEGMENT 01 — UNRECOVERABLE</strong><br>
+                    <span class="tx-corrupt">▓▓▒▒░░▓▓▓▒░ ▓▓▓▓▒▒ ░░░▓▒ ▓▓▓▓▓▓▓▓▒░</span>
                 </div>
             </div>
 
             <div class="story-section">
                 <h3 class="section-header">🗂️ BUREAU ANALYST NOTES</h3>
-                <p>[What the 1999 Bureau makes of this packet — what they can confirm, what they can't, and what they're worried about.]</p>
+                <p>[What the 1999 Bureau makes of these packets: what it can confirm, what it can't, and what worries it.]</p>
 
                 <div class="warning-box">
                     <p class="spooky"><strong>⚠️ [ADVISORY TYPE] ⚠️</strong></p>
-                    <p>[Recovery status, recontact attempts, handling advisories.]</p>
+                    <p>[Recovery status, recontact attempts, link to the next log if the team has left this era.]</p>
                 </div>
             </div>
         </div>
@@ -103,15 +106,15 @@
             <ul>
                 <li><a href="[PARENT CASE LINK]">Case #[CASE-NUMBER] — [Parent Case Title]</a></li>
                 <li><a href="../../lore/telemetry-field-unit.html">Lore Codex — Bureau Field Telemetry Unit (LORE-ART-225)</a></li>
-                <li><a href="[PREVIOUS PACKET LINK]">Previous packet — [PACKET ID]</a></li>
+                <li><a href="../../lore/resonance-anchors.html">Lore Codex — Resonance Anchors (LORE-MYS-226)</a></li>
             </ul>
         </div>
 
         <!-- Navigation -->
         <div class="footer-nav">
-            <a href="../../stories.html#displacement-logs" class="nav-button">← BACK TO DISPLACEMENT LOGS</a>
-            <a href="../../home.html" class="nav-button">MAIN ARCHIVES</a>
-            <a href="[NEXT-PACKET-LINK]" class="nav-button">NEXT PACKET →</a>
+            <a href="[PREV-LOG-LINK]" class="nav-button">← PREV LOG</a>
+            <a href="../../stories.html#displacement-logs" class="nav-button">DISPLACEMENT LOGS</a>
+            <a href="[NEXT-LOG-LINK]" class="nav-button">NEXT LOG →</a>
         </div>
 
         <!-- Footer -->
@@ -130,12 +133,14 @@
 
 <!--
 TEMPLATE INSTRUCTIONS (Displacement Logs):
-1. Copy this file to docs/stories/displacement-logs/ (e.g. tx-225-002.html)
-2. Packet IDs: TX-[parent case number]-[sequence], e.g. TX-225-002
-3. "Received" is the Bureau's 1999 date; "Local Date" is the era the team is in.
-   They are deliberately separate — packets can arrive out of chronological order.
-4. Wrap dropped-out text in <span class="tx-corrupt">…</span>
-5. Then: add a story-card under #displacement-logs in stories.html, an entry in
+1. One page per ADVENTURE (era). Copy to docs/stories/displacement-logs/<adventure-slug>.html
+2. One PACKET section per session. Packet IDs run continuously across adventures:
+   TX-[parent case]-[sequence], e.g. TX-225-007. Source notes: refs/stories/time-hopping/
+3. Received date = the site's GAME_DATE (all packets so far arrived in one burst on 04/22/99).
+4. Sessions with no notes become a LOST PACKET section.
+5. Wrap dropped-out text in <span class="tx-corrupt">...</span>
+6. Then: add a story-card under #displacement-logs in stories.html, an entry in
    js/case-index.js (category 'Displacement Logs', era + localDate fields),
-   a pin in operations-map.html (status "temporal"), and bump TEAM_ERA in js/site-config.js
+   a pin in operations-map.html (status "temporal"), bump TEAM_ERA in js/site-config.js,
+   and update the LAST KNOWN ERA line on displaced investigators' profiles.
 -->

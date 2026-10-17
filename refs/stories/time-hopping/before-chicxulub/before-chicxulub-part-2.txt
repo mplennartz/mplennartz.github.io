@@ -1,0 +1,42 @@
+========================================================================
+RECOVERED TRANSMISSION - DRAFT PACKET HEADER
+========================================================================
+Packet ID          : TX-225-003
+Working title      : The White Skull
+Adventure          : Before Chicxulub (part 2 of 2 - conclusion)
+Session            : Session 15 - 07/10/26 (first half)
+Origin era         : Late Cretaceous
+Local date         : ~66,000,000 BC
+Local position     : Tar-pit swamp, fossil skull (Resonance Anchor)
+Named in notes     : 89 (assume full displaced team present)
+Received by Bureau : TBD - Bureau time undecided
+Signal integrity   : TBD (suggest higher near anchor contact, e.g. 70%)
+========================================================================
+
+-- Session Starts Here --
+
+    We pick back up in the swamp of tar and trees, in combat with the two remaining velociraptors.
+    As we are fighting the two velociraptors, off to the west, we see four more coming our way!
+    After some good shots and well placed strikes, we are able to kill 5 of the 6 velociraptors we were now facing.
+    The last velociraptor, gets skittish and runs off.
+    We continue to cautiously making our way to the white object.
+    After a quick hop over some dinosaur bones to cross the tar – we slowly approach the head of the dinosaur.
+    The chroniton device is now just humming – no longer pulsing. The aperture on the device is no full opening and sticking out about an inch.
+    Ezra walks to the dinosaur skull and touches the skull.
+    Bringing the chronton detector into direct contact with the fossil skull causes a violent surge of energy through the surrounding marsh as the air tears open into a shimmering spatial anomaly. Through it, you glimpse a vast desert beneath a blazing sun and the unmistakable silhouettes of massive pyramids rising in the distance before the unstable opening begins to tremble.
+    This is end Before Chicxulub adventure, and starts the Buried adventure.
+
+-- Session Ends Here --
+
+========================================================================
+IMPLEMENTATION NOTES
+========================================================================
+- Short packet: the raptor fight ends (5 of 6 killed, last one flees),
+  the team crosses the tar on bones, contact with the fossil skull opens
+  the passage to Egypt.
+- OMIT: the "This is end Before Chicxulub adventure" GM line (line 93 of
+  the dump) - keep only as the hand-off to TX-225-004.
+- LORE: first RESONANCE ANCHOR (fossil dinosaur skull). Candidate new
+  lore entry: "Resonance Anchors" (detector + anchor = temporary passage).
+- Could be merged with part-1 into one page if you prefer one page per
+  adventure instead of one per session.

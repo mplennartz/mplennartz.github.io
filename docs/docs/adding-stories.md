@@ -148,16 +148,18 @@ Update the "Latest Investigations" table on `home.html`:
 
 ## Adding a Displacement Log (Time-Hop Sessions)
 
-Since CIB-225 the team is displaced in time. The site stays the Bureau's 1999 archive; each hop arrives as a **recovered transmission** relayed by the Class T telemetry unit.
+Since CIB-225 the team is displaced in time. The site stays the Bureau's 1999 archive; reports arrive as **recovered transmissions** relayed by the chroniton detector. There is **one page per adventure (era)** and **one packet section per session**. Source notes live in `refs/stories/time-hopping/`; see its README for the session-to-packet index.
 
-1. Copy `templates/transmission-template.html` to `stories/displacement-logs/tx-225-NNN.html` (next sequence number).
-2. Fill in the `tx-header` block. **Received** is the Bureau's 1999 date; **Local Date** is the era the team is in. Keep them separate, because packets may arrive out of order.
-3. Wrap dropped-out text in `<span class="tx-corrupt">…</span>`.
-4. Add a `story-card` under `#displacement-logs` in `stories.html` (copy TX-225-001's card).
-5. Add an entry to `js/case-index.js` with `category: 'Displacement Logs'`, `dateSort` = receipt date, and `era` / `localDate`. The timeline shows the era automatically.
-6. Add a pin to the `missions` array in `operations-map.html` with `status: "temporal"` and its `era`. Use present-day coordinates for where the team is. The ERA filter fills itself in from the data.
-7. Bump `TEAM_ERA` in `js/site-config.js` (drives the timestamp glitch), and update the `LAST KNOWN ERA` line in each displaced investigator's CURRENT STATUS box.
-8. Link the previous packet's footer `NEXT PACKET →` to the new one.
+**New session in an ongoing adventure:** add a `PACKET TX-225-NNN` section to that adventure's page (copy an existing one), then update its story card and case-index entry (packet range).
+
+**New adventure:**
+1. Copy `templates/transmission-template.html` to `stories/displacement-logs/<adventure-slug>.html`.
+2. Received date = `GAME_DATE`. Local date and era go in the header and on each packet. A session with no notes becomes a **LOST PACKET** section.
+3. Add a `story-card` at the top of `#displacement-logs` in `stories.html` (newest first).
+4. Add an entry to `js/case-index.js` with `category: 'Displacement Logs'`, `dateSort` = receipt date, and `era` / `localDate`.
+5. Add a pin to the `missions` array in `operations-map.html` with `status: "temporal"` and its `era`. Use present-day coordinates. The ERA filter fills itself in.
+6. Bump `TEAM_ERA` in `js/site-config.js`, update the `LAST KNOWN ERA` line on each displaced investigator's profile, the home marquee and LATEST INVESTIGATIONS row, and `lore/resonance-anchors.html`.
+7. Point the previous log's `NEXT LOG →` button and its "team has left this era" warning box at the new page.
 
 ## Testing Your Story
 

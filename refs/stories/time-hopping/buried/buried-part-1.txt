@@ -1,0 +1,102 @@
+========================================================================
+RECOVERED TRANSMISSION - DRAFT PACKET HEADER
+========================================================================
+Packet ID          : TX-225-004
+Working title      : Khetef's Tomb
+Adventure          : Buried (part 1)
+Session            : Session 15 - 07/10/26 (second half)
+Origin era         : Middle Kingdom, Ancient Egypt (estimate by Investigator 28)
+Local date         : c. 2055-1650 BC (provisional)
+Local position     : Valley town below the pyramids; desert crossing west; tomb at cave mouth/cliff ledge
+Named in notes     : 89, 28, 66, 42, 07 (assume full displaced team present)
+Received by Bureau : TBD - Bureau time undecided
+Signal integrity   : TBD - note: detector signal degrading in this era
+========================================================================
+
+-- Session Starts Here --
+
+    With a flash, we are now standing on some heights looking over a valley with, what looks like, the great pyramids of Egypt.
+    Ezra now knows that the detector and signal source together create a temporary passage into another era.
+    He posits that the detector is designed to locate and interface with Resonance Anchors hidden within each era. Bringing the detector into physical contact with an anchor opens the transition point to the next simulation. Without this process, escape is impossible.
+    We can observe some people moving about off in the distance; and by looking at their clothing and the aging of the pyramids, Mordecai suspects we are now in the middle kingdom age of ancient Egypt.
+    The detector is now pulsing – points in a direction off to the west – into the desert past the city and pyramids.
+    We know we need to get some supplies before we start heading off to the desert, we know it’s going to be tricky as we all will stand out – except maybe Asher who is of middle eastern decent.
+    Also knowing we don’t have money, we know we will have to probably steal the supplies.
+    We make our way to the community below – we many and various looks (bewilderment, confusion, slight fear, etc) as we stand out.
+    We do notice one person in particular take notice of us and immediately rush off – looking as if he is going to warn someone.
+    We cautiously make our way to what looks like a market/bazaar.
+    Jordan spots an order woman merchant and approaches with supplication hands out – trying to communicate without language to get us food and water.
+    Donovan follows suite – and the woman seems to take a deep liking to Donovan – almost as if a grandmother has seen her weathered and parched grandchild in Donovan.
+    She motions for us all to follow her and she gives us plenty of water to drink and a little bit of food – though she doesn’t have much.
+    In her domicile we can see she leaves alone and we see two alter areas set up.
+    Ezra looking that the statues can see one is set up to Dagon, the “Fish” god, who was a deity of agriculture and grain.
+    The other was an iteration of Baal – particularly an iteration of recompence.
+    Not wanting to rely on just this gracious, older woman, we head out to look for others in the area for assistance.
+    One particular older man meets Jordan’s eyes. He looks like he was skittish as was about to go off and tell the authorities, but Jordan pulls some loose change from her pocket in an attempt to bribe him.
+    This seems to shift his attitude and gently starts to pull Jordan to his alcove and domicile area.
+    He pulls back a reed mat that reveals a plank door. He lifts the door and shows her a decent size empty room underneath and starts to motion for Jordan and all of us to get in.
+    Getting a sense the old man knows danger is coming, we all get into the hiding place.
+    We hear the old man move the mat back over the boards and what sounds like a table on the mat.
+    Shortly after we can hear hush voices above us – they seem to be roughing up the man a bit.
+    After several minutes, the voices quite down again – but we don’t hear the old man come back to us. So we stay hidden, though we can see through the planks, the sun is starting to set.
+    After many hours, the sun starts to peak back through the planks – it’s morning again.
+    The old man still hasn’t come back.
+    Mordecai makes the first move, we are able to move the table off from on top of the planks, and he sneaks out to see the town is up and about again.
+    Mordecai does see the old lady who gave us water and bread, and she has a welp across her face.
+    Mordecai also sees the old man off in the distance in the fields working already – so he must have just not come back for us last night.
+     Mordecai comes back to let us know the coast is clear and we all emerge from the room.
+    With some stealth and crafting, we are able to gather up some supplies (i.e. cloth to protect our skin, containers for water, etc).
+    The Chroniton still pulsing, we know we need to head out west in the direction it is leading us.
+    We have one of three options to get to our destination:
+        Follow the Caravan Road (Safe):
+            Travel Time: 28 hours.
+            Effects: Gain a Breather. +1 TN accumulative penalty to tests in future scenes due to the time lost.
+        Hire Local Guides (Moderate):
+            Travel Time: 18 hours.
+            Effects: No Breather. The party must trade-away one of their listed items. In addition, their guides spread word of their destination, causing a +2 TN penalty to each of their first tests in the next scene.
+        Cross the Open Desert (Risky):
+            Travel Time: 10 hours.
+            Effects: No Breather. Each PC must succeed at a CON (Stamina) TN 14 test or suffer 2d6 penetrating damage from heat and exhaustion.
+    Not wanting to leave really any trace of our presence behind, we opt for option 3.
+    Luckily we all make great stamina checks and make it across the desert unharmed.
+    Following the chroniton detector, we arrive to the mouth of a cave.
+    Off to the right, of the path we are on, we can see 40’ drop off ledge.
+    Hanging slightly over the ledge, we can see a building structure of some sort hanging out over the edge.
+    Looking at the chroniton device, Ezra estimates the device is guiding us through the doorway entrance.
+    We enter into dangerous exploration.
+    Jordan approaches the door and opens it.
+    As Ezra moves through the first door, carefully passing over a section of flooring that has collapsed, approaches an inner door.
+    Just then Ezra has a flashback moment …
+        As Ezra brushes centuries of dust from a carved limestone wall, his fingertips pause over a familiar arrangement of symbols. Though weathered by time, the pattern is unmistakable. It is the same funerary cipher he had seen reproduced countless times in books, journal articles, and lecture slides. Yet something immediately catches his attention. The inscription does not end where every modern transcription says it should. Additional glyphs continue beyond the accepted sequence.
+        His mind drifts back to a seminar room at Brown University years earlier. Afternoon sunlight spilled through the tall windows, illuminating shelves crowded with books on linguistics, comparative religion, and cryptography. A spirited discussion had erupted over whether Egyptian ritual inscriptions contained deliberate layers of encoded meaning or were merely decorative. When Ezra proposed that the priesthood had embedded genuine ciphers within ceremonial language to protect sacred knowledge, one of his professors politely dismissed the notion. "Ancient priests weren't designing ciphers, Mr. Cason. They were writing theology." Ezra calmly presented examples of recurring patterns that seemed too deliberate to be coincidence, arguing that any culture entrusted with powerful religious secrets would naturally conceal them behind multiple layers of symbolism and restricted interpretation. The professor acknowledged his enthusiasm, labeled the idea speculative, and moved the class on.
+        After the lecture, Ezra remained alone in the classroom. He carefully copied several damaged inscriptions from the projection screen into a notebook, convinced that scholars had mistaken incomplete archaeological evidence for complete texts. If the surviving inscriptions were just fragments, then generations of translations rested upon shaky ground. That notebook accompanied him everywhere afterward. It traveled with him to Miskatonic University, across a few expeditions in Europe and Asia, through years of research, and eventually into the field with CURSED Investigations. More than once he revisited those pages, wondering if he had devoted so much time to an elegant but ultimately unprovable theory.
+        Now, standing inside Khetef's tomb, Ezra slowly traces the continuation of the inscription with one gloved finger. The missing symbols were never destroyed. They were never mistranslated. No one had simply stood where he now stood to record them. For the first time in his career, he is looking not at a reproduction or a damaged fragment, but at the original source itself. Every lecture, every journal article, and every academic debate suddenly feels very far away. A quiet smile crosses his face. He had been right all along.  
+    Ezra immediately grabs a piece of paper and lead pencil to make a rubbing of the symbols.
+    Mordecai follows behind Ezra and passes by and opens the inner door – revealing a large room with mosaics lain into the floor.
+    On the other side of the room, he sees a ledge with a door above.
+    Looking mosaic and painting on the floor – Mordecai suspects under the center of the floor is a large sacrificial pit. So we know we will have to gingerly walk around the room.
+    The group continues deeper into, what we now fully believe is, a burial chamber.
+    As we move through the chamber, Ezra notices the chroniton detector signal seems to be depredating since we enter this period of Egypt.
+
+-- Session Ends Here --
+
+========================================================================
+IMPLEMENTATION NOTES
+========================================================================
+- OMIT (mechanics): the three travel options with TN/breather effects
+  (keep only "they crossed the open desert to leave no trace"),
+  "dangerous exploration".
+- KEEP: Investigator 89's flashback (Brown seminar, the notebook,
+  the unfinished funerary cipher). Strong candidate for a personal-log
+  segment or its own "Analyst Notes" sidebar. Use "Investigator 89" and
+  drop real university names only if you want to keep the alias style
+  strict.
+- LORE hooks: Ezra's theory that each era is a "simulation" and anchors
+  open "the next simulation"; Khetef's tomb and the hidden cipher
+  continuation; the detector signal weakening the longer they stay;
+  household altars to Dagon and Baal (Canaanite gods in an Egyptian
+  town - intentional clue?).
+- NPCs: the grandmotherly merchant (struck across the face after hiding
+  them), the old man who hid the team under the floor, the watcher who
+  ran to warn someone.
+- Ends inside the burial chamber, sacrificial pit under the mosaic floor.

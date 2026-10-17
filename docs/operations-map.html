@@ -215,6 +215,7 @@
                     <option value="07">07</option>
                     <option value="13">13</option>
                     <option value="23">23</option>
+                    <option value="28">28</option>
                     <option value="42">42</option>
                     <option value="51">51</option>
                     <option value="66">66</option>
@@ -260,17 +261,43 @@
     <script>
         const missions = [
             {
+                id: "TX-225-006",
+                title: "A Cup of Friendship",
+                status: "temporal",
+                era: "Imperial Rome",
+                date: "29 Dec 192 CE (rcvd 04/22/99)",
+                location: "Palatine Hill, Rome",
+                investigators: ["07", "13", "28", "42", "66", "89"],
+                lat: 41.889,
+                lng: 12.487,
+                href: "stories/displacement-logs/a-cup-of-friendship.html",
+                summary: "Team inside the conspiracy against Commodus, holding writs to the palace; anchor somewhere in the palace."
+            },
+            {
+                id: "TX-225-004",
+                title: "Buried",
+                status: "temporal",
+                era: "Middle Kingdom Egypt",
+                date: "c. 2055–1650 BC (rcvd 04/22/99)",
+                location: "Western desert beyond the pyramids (approx.)",
+                investigators: ["07", "13", "28", "42", "66", "89"],
+                lat: 29.95,
+                lng: 30.95,
+                href: "stories/displacement-logs/buried.html",
+                summary: "Hidden by townsfolk; desert crossing to Khetef's tomb; unfinished cipher recovered; final packet lost."
+            },
+            {
                 id: "TX-225-001",
-                title: "First Light",
+                title: "Before Chicxulub",
                 status: "temporal",
                 era: "Late Cretaceous",
                 date: "~66,000,000 BC (rcvd 04/22/99)",
                 location: "Redmond-equivalent, ~66 MYA",
-                investigators: ["89", "66", "42", "07", "13", "51"],
+                investigators: ["07", "13", "28", "42", "66", "89"],
                 lat: 47.67,
                 lng: -122.12,
-                href: "stories/displacement-logs/tx-225-001.html",
-                summary: "First recovered packet post-displacement: wet primeval woodland, Class T unit recovered, megafauna (T-Rex) contact."
+                href: "stories/displacement-logs/before-chicxulub.html",
+                summary: "Chroniton detector identified; T-Rex, Pteranodons, raptors; fossil-skull Resonance Anchor opens a passage."
             },
             {
                 id: "CIB-225",
@@ -279,7 +306,7 @@
                 era: "1998–99 (Bureau Present)",
                 date: "04/22/99",
                 location: "Redmond, WA (NeXstep)",
-                investigators: ["89", "66", "42", "07", "13", "51"],
+                investigators: ["89", "66", "42", "07", "13", "28", "51"],
                 lat: 47.67,
                 lng: -122.12,
                 href: "stories/active-leads/clockwork-horizon.html",

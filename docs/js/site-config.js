@@ -3,5 +3,5 @@
 // team was last heard from — bump it each session from the newest packet.
 var SITE_CONFIG = {
     GAME_DATE: { year: 1999, month: 'Apr', day: 22 },
-    TEAM_ERA: { label: 'LATE CRETACEOUS', localDate: '~66,000,000 BC', lastPacket: 'TX-225-001' }
+    TEAM_ERA: { label: 'IMPERIAL ROME', localDate: '29 DEC 192 CE', lastPacket: 'TX-225-006' }
 };

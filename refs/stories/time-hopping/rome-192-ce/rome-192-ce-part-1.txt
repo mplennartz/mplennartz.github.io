@@ -1,0 +1,85 @@
+========================================================================
+RECOVERED TRANSMISSION - DRAFT PACKET HEADER
+========================================================================
+Packet ID          : TX-225-006
+Working title      : Palatine
+Adventure          : A Cup of Friendship (part 1)
+Session            : Session 17 - 10/09/26
+Origin era         : Imperial Rome, reign of Commodus
+Local date         : 29 December 192 CE (Commodus assassinated 31 Dec)
+Local position     : Rome - Forum, Palatine Hill, imperial bath house, gladiator camp, Colosseum
+Named in notes     : 28, 89, 13, 66 (assume full displaced team present)
+Received by Bureau : TBD - Bureau time undecided
+Signal integrity   : TBD
+========================================================================
+
+-- Session Starts Here --
+
+    We pick back up in what appears to be ancient Rome and having, what we estimate is 72 hours, to find the Chroniton resonance anchor location.
+    We approach the nearby city near the palatine hill, near the palatine palace.
+    Above the Forum, guarded palace buildings rise along the Palatine. The chroniton detector gives a weak pulse in that direction before falling silent again. Whatever serves as the Resonance Anchor is somewhere inside the imperial precinct, but the entrances ahead are watched by Praetorian guards.
+    Looking at the surroundings, hanging posters, coins, etc, and using his History knowledge, Mordecai is able to determine we are in ancient Rome - 29 Dec 192 CE. Commodus is the Emperor.
+    Hearing the name Commodus and the date, Ezra knows Commodus will be assassinated on December 31 after exercising and bathing, and that Aemilius Laetus participated in the conspiracy.
+    Knowing we stand out like a sore thumb in our modern clothes and that we only have about 3 days to locate the anchor source, we opt to try and steal some clothing to blend in more before we start making our way through Rome to the anchor location.
+    Nico is able to snag us some tunics, but we are all starting to feel the pangs of hunger.
+    Ezra, using his Psychic Hallucination powers, is able to make a local food vendor believe a handful of rocks is denarii. This allows Ezra to get 5 days’ worth of provisions for the group.
+     We then set off to figure out a way onto Palatine Hill.
+    We first approach a Praetorian guard and convince him that we are part of a entertainment group requested by Aemilius Laetus, but that didn’t work.
+    So, we opt to sneak onto the hill – which leads us to a skill challenge.
+     After some fortune spent to alter the dice, we are able to all successfully sneak onto Palatine Hill.
+    Looking at the Chorniton device again, Ezra can see it’s pointing to the bath house.
+    As we make our way to the bath house, we are spotted some come Praetorian Guards – leading to a brief chase before we are able to lose them.
+    We arrive to the bath house and slowly and discretely start making our way through the bath house.
+    As we make our way through the bath house, Mordecai scans some of the people, and spots someone who looks more important than others – turns out it is Aemilius Laetus.
+    Nearly at the same time, Jordan spots a man off to the side receiving a lot of special (i.e. being oiled up, massaged, tended to by several servants, etc).
+    Just then, the man starts to approach us – overhearing some of the man’s conversation, Ezra is able to decern this man is Narcissus – the man recruited by Aemilius to assassinate Commodus.
+    After some quick conversation, Narcissus requests us to disrobe and begins to have us do squats and various other exercise moves – he is clearly assessing us.
+    Narcissus confirms he is checking us out for the games tomorrow and asks if Aemilius sent us.
+    Ezra confirms he did, but Narcissus asks for a writ from Aemilius.
+    We have to confess we don’t have one at the moment and Narcissus chalks it up to Aemilius just being forgetful and says we need to go to him and get a writ.
+    After some more talking, Narcissus provides us with a writ to give us free passage on Palatine Hill so that we can get to Aemilius – and our opening to potentially track down the Chroniton anchor point.
+    At some point, while trying to get the writ from Aemilius, Ezra is able to get a look at the Chroniton device again and can tell the anchor point isn’t in the bath house, but somewhere in the palace.
+    Outside the bath house, Narcissus questions how we know Aemilius Ezra is able to lie saying that we knew Aemilius from coming across him during Aemilius military operations across the empire.
+    Skeptical still, Narcissus concedes and sends us on our way to Aemilius.
+    Now in front of Aemilius, Aemilius questions us if we are there because Narcissus has brought us into the scheme to kill Commodus.
+    Ezra, who is the only one in the group who speaks Latin, confirms Narcissus did. Though Aemilius does look a little skeptical, he does right us a writ that even allows us access to the palace.
+    Before we can continue our search for the anchor point, we have to participate in Narcissus’ early morning gladiatorial trial.
+    We make our way back to Narcissus camp as he is a gladiatorial trainer and had offered us lodging and potential training/weapons to use in the games trial tomorrow.
+    At the camp, we have several options to choose from:
+        Sleep Well: You retire early to the gladiator barracks and spend the night sleeping, eating, and conserving your strength for the trial.
+            Benefit: Gain +2 on CON (Stamina) tests.
+            Drawback: Suffer −1 on attack rolls using Roman gladiatorial weapons until the PC scores their first hit.
+        Arena Recon: You study the Colosseum’s entrances, gates, fighting ground, and visible mechanisms to learn how the arena may be used during the trial.
+            Benefit: Gain +2 on PER (Searching) and DEX (Acrobatics) tests involving arena terrain or hazards.
+            Drawback: Suffer −2 on CON (Stamina) tests.
+        Weapons Practice: You spend the night drilling with a selected gladiatorial weapon until its weight, reach, and balance become familiar.
+            Benefit: Gain +1 on attack rolls with one selected gladiatorial weapon.
+            Drawback: Suffer −2 on DEX (Initiative) test.
+        Study Rivals: You observe the other candidates training and memorize the stance, favored attacks, and defensive habits of one gladiator type.
+            Benefit: Gain +1 Defense against one selected gladiator type.
+            Drawback: Suffer −1 Defense against every other gladiator type.
+        Study the Animals: You spend the night observing the arena animals, learning how they move, react to handlers, and signal an impending attack.
+            Benefit: Gain +1 on attack rolls and Defense against animals.
+            Drawback: Suffer −1 on attack rolls and Defense against human opponents.
+    After we all make our choices (some do weapons training, some recon, some rest) – we awake the next morning and lead to the arena to start the trial.
+    We enter into combat.
+    Session ends at the top of 3rd round of combat.
+
+-- Session Ends Here --
+
+========================================================================
+IMPLEMENTATION NOTES
+========================================================================
+- OMIT (mechanics): "skill challenge", fortune spent on dice, the five
+  camp-night options with their bonuses/penalties (keep only "some
+  drilled with weapons, some scouted the arena, some rested"), "top of
+  3rd round of combat".
+- Investigator 89 uses Psychic Hallucination to pass rocks as denarii -
+  keep as an in-world anomaly (Bureau analysts would flag it).
+- Historical NPCs: Commodus, Aemilius Laetus (Praetorian prefect,
+  conspirator), Narcissus (gladiator trainer / assassin). The team now
+  holds writs from both conspirators.
+- Clock: ~72 hours to reach the anchor; anchor is inside the palace,
+  not the bath house.
+- Ends mid-combat in the Colosseum trial (cliffhanger).
+- Need: the adventure's actual name for the folder/page title.

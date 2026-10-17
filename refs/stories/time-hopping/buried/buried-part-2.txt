@@ -1,0 +1,30 @@
+========================================================================
+RECOVERED TRANSMISSION - DRAFT PACKET HEADER
+========================================================================
+Packet ID          : TX-225-005
+Working title      : TBD
+Adventure          : Buried (part 2 - presumed conclusion)
+Session            : Session 16 - 08/14/26
+Origin era         : Middle Kingdom, Ancient Egypt -> transition to Rome
+Local date         : TBD
+Local position     : TBD
+Named in notes     : -
+Received by Bureau : TBD
+Signal integrity   : TBD
+========================================================================
+
+-- Session Starts Here --
+
+    [NO NOTES IN DUMP - Session 16 entry was empty]
+
+-- Session Ends Here --
+
+========================================================================
+IMPLEMENTATION NOTES
+========================================================================
+- Session 16 notes are missing. This session presumably covers the rest
+  of the tomb, the Egypt anchor, and the jump to Rome (Session 17 opens
+  already in Rome with a 72-hour estimate).
+- Options: (a) fill in from memory/another player's notes, or
+  (b) publish as a LOST PACKET (0-5% integrity, almost entirely
+  .tx-corrupt) - fits the recovered-transmission framing well.
